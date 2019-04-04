@@ -1,0 +1,22 @@
+{
+    "name": "laravel-frontend-presets/material-dashboard",
+    "description": "Laravel 5.x Front-end preset for argon",
+    "license": "MIT",
+    "homepage": "https://github.com/creativetimofficial/material-dashboard-laravel",
+    "keywords": ["Laravel", "Preset", "Material"],
+    "require": {
+        "laravel/framework": "^5.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "LaravelFrontendPresets\\MaterialPreset\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LaravelFrontendPresets\\MaterialPreset\\MaterialPresetServiceProvider"
+            ]
+        }
+    }
+}
