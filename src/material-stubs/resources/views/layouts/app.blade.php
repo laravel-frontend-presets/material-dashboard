@@ -79,7 +79,7 @@
                       </a>
                   </li> -->
               <li class="button-container">
-                <a href="https://material-dashboard-laravel.creative-tim.com/docs/getting-started/introduction.html" target="_blank" class="btn btn-default btn-block">
+                <a href="https://material-dashboard-laravel.creative-tim.com/docs/getting-started/laravel-setup.html" target="_blank" class="btn btn-default btn-block">
                   View Documentation
                 </a>
               </li>

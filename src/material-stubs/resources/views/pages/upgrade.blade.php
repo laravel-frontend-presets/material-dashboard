@@ -22,6 +22,56 @@
                 </thead>
                 <tbody>
                   <tr>
+                    <td><h3 class="text-primary">Laravel</h3></td>
+                    <td class="text-center"></td>
+                    <td class="text-center"></td>
+                  </tr>
+                  <tr>
+                    <td>Login, Register, Forgot password pages</td>
+                    <td class="text-center"><i class="fa fa-check text-success"></i></td>
+                    <td class="text-center"><i class="fa fa-check text-success"></i></td>
+                  </tr>
+                  <tr>
+                    <td>User profile</td>
+                    <td class="text-center"><i class="fa fa-check text-success"></i></td>
+                    <td class="text-center"><i class="fa fa-check text-success"></i></td>
+                  </tr>
+                  <tr>
+                    <td>Users management</td>
+                    <td class="text-center"><i class="fa fa-check text-success"></i></td>
+                    <td class="text-center"><i class="fa fa-check text-success"></i></td>
+                  </tr>
+                  <tr>
+                    <td>User roles management </td>
+                    <td class="text-center"><i class="fa fa-times text-danger"></i></td>
+                    <td class="text-center"><i class="fa fa-check text-success"></i></td>
+                  </tr>
+                  <tr>
+                    <td>Items management </td>
+                    <td class="text-center"><i class="fa fa-times text-danger"></i></td>
+                    <td class="text-center"><i class="fa fa-check text-success"></i></td>
+                  </tr>
+                  <tr>
+                    <td>Categories management, Tags management </td>
+                    <td class="text-center"><i class="fa fa-times text-danger"></i></td>
+                    <td class="text-center"><i class="fa fa-check text-success"></i></td>
+                  </tr>
+                  <tr>
+                    <td>Wysiwyg, image upload, date picker inputs</td>
+                    <td class="text-center"><i class="fa fa-times text-danger"></i></td>
+                    <td class="text-center"><i class="fa fa-check text-success"></i></td>
+                  </tr>
+                  <tr>
+                    <td>Radio button, checkbox, toggle inputs</td>
+                    <td class="text-center"><i class="fa fa-times text-danger"></i></td>
+                    <td class="text-center"><i class="fa fa-check text-success"></i></td>
+                  </tr>
+                  <tr>
+                    <td><h3 class="text-primary">Frontend</h3></td>
+                    <td class="text-center"></td>
+                    <td class="text-center"></td>
+                  </tr>
+                  <tr>
                     <td>Components</td>
                     <td class="text-center">60</td>
                     <td class="text-center">200</td>
@@ -52,14 +102,14 @@
                     <td class="text-center"><i class="fa fa-check text-success"></i></td>
                   </tr>
                   <tr>
-                    <td>Premium Support</td>
+                    <td><h3 class="text-primary">Premium Support</h3></td>
                     <td class="text-center"><i class="fa fa-times text-danger"></i></td>
                     <td class="text-center"><i class="fa fa-check text-success"></i></td>
                   </tr>
                   <tr>
                     <td></td>
                     <td class="text-center">Free</td>
-                    <td class="text-center">Just $49</td>
+                    <td class="text-center">Just $149</td>
                   </tr>
                   <tr>
                     <td class="text-center"></td>
@@ -67,7 +117,7 @@
                       <a href="#" class="btn btn-round btn-fill btn-default disabled">Current Version</a>
                     </td>
                     <td class="text-center">
-                      <a target="_blank" href="http://www.creative-tim.com/product/material-dashboard-pro/?ref=md-free-upgrade-live" class="btn btn-round btn-fill btn-info">Upgrade to PRO</a>
+                      <a target="_blank" href="javascript:void(0)" aria-disabled="true" class="btn btn-round btn-fill btn-info">Coming soon</a>
                     </td>
                   </tr>
                 </tbody>
