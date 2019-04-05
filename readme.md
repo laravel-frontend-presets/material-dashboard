@@ -2,7 +2,7 @@
 
 Speed up your web development with the Bootstrap 4 Admin Dashboard built for Laravel Framework 5.5 and up.
 
-*Current version*: Material Dashboard v1.0.0. More info at https://www.creative-tim.com/product/material-dashboard-laravel.
+*Current version*: Material Dashboard Free Laravel <a href="https://packagist.org/packages/laravel-frontend-presets/material-dashboard"><img src="https://poser.pugx.org/laravel-frontend-presets/material-dashboard/v/stable.svg" alt="Latest Stable Version"></a>.
 
 ## Note
 
