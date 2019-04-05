@@ -2,7 +2,9 @@
 
 Speed up your web development with the Bootstrap 4 Admin Dashboard built for Laravel Framework 5.5 and up.
 
-*Current version*: Material Dashboard v1.0.0. More info at https://www.creative-tim.com/product/material-dashboard-laravel.
+*Current version*: Material Dashboard Free Laravel <a href="https://packagist.org/packages/laravel-frontend-presets/material-dashboard"><img src="https://poser.pugx.org/laravel-frontend-presets/material-dashboard/v/stable.svg" alt="Latest Stable Version"></a>
+
+*Frontend version*: Material Dashboard v2.1.1. More info at https://www.creative-tim.com/product/material-dashboard
 
 ## Note
 
@@ -26,7 +28,7 @@ After initializing a fresh instance of Laravel (and making all the necessary con
 ### Via composer
 
 1. `Cd` to your Laravel app  
-2. Install this preset via `composer require laravel-frontend-presets/material`. No need to register the service provider. Laravel 5.5 & up can auto detect the package.
+2. Install this preset via `composer require laravel-frontend-presets/material-dashboard`. No need to register the service provider. Laravel 5.5 & up can auto detect the package.
 3. Run `php artisan preset material` command to install the Argon preset. This will install all the necessary assets and also the custom auth views, it will also add the auth route in `routes/web.php`
 (NOTE: If you run this command several times, be sure to clean up the duplicate Auth entries in routes/web.php)
 4. In your terminal run `composer dump-autoload`
