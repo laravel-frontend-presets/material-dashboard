@@ -2,8 +2,6 @@
 
 <a href="https://packagist.org/packages/laravel-frontend-presets/material-dashboard"><img src="https://poser.pugx.org/laravel-frontend-presets/material-dashboard/v/stable.svg" alt="Latest Stable Version"></a> ![license](https://img.shields.io/badge/license-MIT-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/laravel-frontend-presets/material-dashboard.svg?maxAge=2592000)](https://github.com/laravel-frontend-presets/material-dashboard/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/laravel-frontend-presets/material-dashboard.svg?maxAge=2592000)](https://github.com/laravel-frontend-presets/material-dashboard/issues?q=is%3Aissue+is%3Aclosed)
 
-*Current version*: Material Dashboard Free Laravel <a href="https://packagist.org/packages/laravel-frontend-presets/material-dashboard"><img src="https://poser.pugx.org/laravel-frontend-presets/material-dashboard/v/stable.svg" alt="Latest Stable Version"></a>
-
 *Frontend version*: Material Dashboard v2.1.1. More info at https://www.creative-tim.com/product/material-dashboard
 
 ![Product Image](https://github.com/creativetimofficial/public-assets/blob/master/material-dashboard-laravel%20/md-laravel.gif?raw=true)
