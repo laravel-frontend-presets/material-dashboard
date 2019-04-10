@@ -497,14 +497,14 @@ Please see the [changelog](CHANGELOG.md) for more information on what has change
 
 ## Credits
 
-- [Creative Tim](https://creative-tim.com/)
+- [Creative Tim](https://creative-tim.com/?ref=adnp-readme)
 - [UPDIVISION](https://updivision.com)
 
 ## Reporting Issues
 
 We use GitHub Issues as the official bug tracker for the Material Dashboard Laravel. Here are some advices for our users that want to report an issue:
 
-1. Make sure that you are using the latest version of the Material Dashboard Laravel. Check the CHANGELOG from your dashboard on our [website](https://www.creative-tim.com/).
+1. Make sure that you are using the latest version of the Material Dashboard Laravel. Check the CHANGELOG from your dashboard on our [website](https://www.creative-tim.com/?ref=adnp-readme).
 2. Providing us reproducible steps for the issue will shorten the time it takes for it to be fixed.
 3. Some issues may be browser specific, so specifying in what browser you encountered the issue might help.
 
@@ -539,5 +539,5 @@ Instagram: <https://www.instagram.com/CreativeTimOfficial?ref=adnp-readme>
 
 ## Credits
 
-- [Creative Tim](https://creative-tim.com/)
+- [Creative Tim](https://creative-tim.com/?ref=adnp-readme)
 - [UPDIVISION](https://updivision.com)
