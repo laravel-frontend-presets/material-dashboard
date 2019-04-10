@@ -156,7 +156,7 @@ public function store(UserRequest $request, User $model)
 [<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/laravel_logo.png?raw=true" width="60" height="60" />](https://argon-dashboard-pro-laravel.creative-tim.com/?ref=adnp-readme)
 
 | HTML | LARAVEL |
-| --- | --- | --- |
+| --- | --- |
 | [![Material Dashboard HTML](https://s3.amazonaws.com/creativetim_bucket/products/50/original/opt_md_thumbnail.jpg?1522232645)](https://demos.creative-tim.com/material-dashboard/examples/dashboard.html?ref=adnp-readme) | [![Material Dashboard Laravel](https://s3.amazonaws.com/creativetim_bucket/products/154/original/opt_md_laravel_thumbnail.jpg?1554814177)](https://material-dashboard-laravel.creative-tim.com/?ref=adnp-readme)
 
 ## Demo
@@ -488,7 +488,7 @@ At present, we officially aim to support the last two versions of the following 
 - **Dashboards:**
 
 | HTML | LARAVEL |
-| --- | --- | --- |
+| --- | --- |
 | [![Material Dashboard HTML](https://s3.amazonaws.com/creativetim_bucket/products/50/original/opt_md_thumbnail.jpg?1522232645)](https://demos.creative-tim.com/material-dashboard/examples/dashboard.html?ref=adnp-readme) | [![Material Dashboard Laravel](https://s3.amazonaws.com/creativetim_bucket/products/154/original/opt_md_laravel_thumbnail.jpg?1554814177)](https://material-dashboard-laravel.creative-tim.com/?ref=adnp-readme)
 
 ## Change log
