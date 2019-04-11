@@ -18819,4 +18819,39 @@ Copyright (c) 2015 Daniel Eden
   }
 }
 
+.page-header > .container {
+  flex-grow: 1;
+}
+
+.page-header {
+  flex-direction: column;
+  padding-bottom: 0 !important;
+}
+
+.page-header .footer {
+  flex-grow: 0;
+  position: static
+}
+
+.page-header.login-page {
+  max-height: inherit;
+  height:auto;
+}
+
+.off-canvas-sidebar .navbar-collapse:after {
+  background-color: #282828;
+}
+
+@media screen and (max-width: 991px) {
+  .navbar .navbar-collapse .navbar-nav {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+
 /*# sourceMappingURL=dashboard-free.css.map */

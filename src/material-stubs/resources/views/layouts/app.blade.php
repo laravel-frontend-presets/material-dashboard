@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>{{ config('app.name', 'Material Dashboard') }}</title>
+    <title>{{ __('Material Dashboard Laravel - Free Frontend Preset for Laravel') }}</title>
     <link rel="apple-touch-icon" sizes="76x76" href="{{ asset('material') }}/img/apple-icon.png">
     <link rel="icon" type="image/png" href="{{ asset('material') }}/img/favicon.png">
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
@@ -38,10 +38,10 @@
               <li class="adjustments-line">
                 <a href="javascript:void(0)" class="switch-trigger active-color">
                   <div class="badge-colors ml-auto mr-auto">
-                    <span class="badge filter badge-purple active" data-color="purple"></span>
+                    <span class="badge filter badge-purple " data-color="purple"></span>
                     <span class="badge filter badge-azure" data-color="azure"></span>
                     <span class="badge filter badge-green" data-color="green"></span>
-                    <span class="badge filter badge-warning" data-color="orange"></span>
+                    <span class="badge filter badge-warning active" data-color="orange"></span>
                     <span class="badge filter badge-danger" data-color="danger"></span>
                     <span class="badge filter badge-rose" data-color="rose"></span>
                   </div>
