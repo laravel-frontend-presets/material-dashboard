@@ -9,3 +9,6 @@ All notable changes to `Material Dashboard` frontend preset for Laravel will be 
 - Laravel Auth preset
 - Change user profile
 - User CRUD
+
+## Version 1.0.0 - Version 1.0.4
+- Bugfixes
