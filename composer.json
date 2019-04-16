@@ -1,6 +1,6 @@
 {
     "name": "laravel-frontend-presets/material-dashboard",
-    "description": "Laravel 5.x Front-end preset for argon",
+    "description": "Laravel 5.x Front-end preset for material dashboard",
     "license": "MIT",
     "homepage": "https://github.com/creativetimofficial/material-dashboard-laravel",
     "keywords": ["Laravel", "Preset", "Material"],
