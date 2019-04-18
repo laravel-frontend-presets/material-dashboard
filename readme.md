@@ -16,7 +16,7 @@ We recommend installing this preset on a project that you are starting from scra
 
 If you don't already have an Apache local environment with PHP and MySQL, use one of the following links:
 
- - Windows: http://tutorial.razi.net.my/search?q=uwamp
+ - Windows: https://updivision.com/blog/post/beginner-s-guide-to-setting-up-your-local-development-environment-on-windows
  - Linux: https://howtoubuntu.org/how-to-install-lamp-on-ubuntu
  - Mac: https://wpshout.com/quick-guides/how-to-install-mamp-on-your-mac/
 
