@@ -18842,6 +18842,10 @@ Copyright (c) 2015 Daniel Eden
   background-color: #282828;
 }
 
+.off-canvas-sidebar .wrapper-full-page .page-header {
+  padding-bottom: 0px !important;
+}
+
 @media screen and (max-width: 991px) {
   .navbar .navbar-collapse .navbar-nav {
     display: -ms-flexbox;
