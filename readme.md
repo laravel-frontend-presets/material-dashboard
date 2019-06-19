@@ -4,7 +4,7 @@
 
 *Frontend version*: Material Dashboard v2.1.1. More info at https://www.creative-tim.com/product/material-dashboard
 
-![Product Image](https://github.com/creativetimofficial/public-assets/blob/master/material-dashboard-laravel%20/md-laravel.gif?raw=true)
+![Product Image](https://s3.amazonaws.com/creativetim_bucket/products/154/original/opt_md_laravel_thumbnail.jpg?1554814177)
 
 Speed up your web development with the Bootstrap 4 Admin Dashboard built for Laravel Framework 5.5 and up.
 
@@ -152,26 +152,26 @@ public function store(UserRequest $request, User $model)
 
 ## Versions
 
-[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/html-logo.jpg?raw=true" width="60" height="60" />](https://demos.creative-tim.com/argon-dashboard-pro/pages/dashboards/dashboard.html?ref=adnp-readme)
-[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/laravel_logo.png?raw=true" width="60" height="60" />](https://argon-dashboard-pro-laravel.creative-tim.com/?ref=adnp-readme)
+[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/html-logo.jpg?raw=true" width="60" height="60" />](https://demos.creative-tim.com/argon-dashboard-pro/pages/dashboards/dashboard.html?ref=mdl-readme)
+[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/laravel_logo.png?raw=true" width="60" height="60" />](https://argon-dashboard-pro-laravel.creative-tim.com/?ref=mdl-readme)
 
 | HTML | LARAVEL |
 | --- | --- |
-| [![Material Dashboard HTML](https://s3.amazonaws.com/creativetim_bucket/products/50/original/opt_md_thumbnail.jpg?1522232645)](https://demos.creative-tim.com/material-dashboard/examples/dashboard.html?ref=adnp-readme) | [![Material Dashboard Laravel](https://s3.amazonaws.com/creativetim_bucket/products/154/original/opt_md_laravel_thumbnail.jpg?1554814177)](https://material-dashboard-laravel.creative-tim.com/?ref=adnp-readme)
+| [![Material Dashboard HTML](https://s3.amazonaws.com/creativetim_bucket/products/50/original/opt_md_thumbnail.jpg?1522232645)](https://demos.creative-tim.com/material-dashboard/examples/dashboard.html?ref=mdl-readme) | [![Material Dashboard Laravel](https://s3.amazonaws.com/creativetim_bucket/products/154/original/opt_md_laravel_thumbnail.jpg?1554814177)](https://material-dashboard-laravel.creative-tim.com/?ref=mdl-readme)
 
 ## Demo
 
 | Register | Login | Dashboard |
 | --- | --- | ---  |
-| [![Register](/screens/Register.png)](https://material-dashboard-laravel.creative-tim.com/register?ref=adnp-readme)  | [![Login](/screens/Login.png)](https://material-dashboard-laravel.creative-tim.com/login?ref=adnp-readme)  | [![Dashboard](/screens/Dashboard.png)](https://material-dashboard-laravel.creative-tim.com/?ref=adnp-readme)
+| [![Register](/screens/Register.png)](https://material-dashboard-laravel.creative-tim.com/register?ref=mdl-readme)  | [![Login](/screens/Login.png)](https://material-dashboard-laravel.creative-tim.com/login?ref=mdl-readme)  | [![Dashboard](/screens/Dashboard.png)](https://material-dashboard-laravel.creative-tim.com/?ref=mdl-readme)
 
 | Profile Page | Users Page | Tables Page  |
 | --- | --- | ---  |
-| [![Profile Page](screens/Profile.png)](https://material-dashboard-laravel.creative-tim.com/profile?ref=adnp-readme)  | [![Users Page](screens/Users.png)](https://material-dashboard-laravel.creative-tim.com/user?ref=adnp-readme) | [![Tables Page](screens/Tables.png)](https://material-dashboard-laravel.creative-tim.com/table-list?ref=adnp-readme)
-[View More](https://material-dashboard-laravel.creative-tim.com/?ref=adnp-readme)
+| [![Profile Page](screens/Profile.png)](https://material-dashboard-laravel.creative-tim.com/profile?ref=mdlp-readme)  | [![Users Page](screens/Users.png)](https://material-dashboard-laravel.creative-tim.com/user?ref=mdl-readme) | [![Tables Page](screens/Tables.png)](https://material-dashboard-laravel.creative-tim.com/table-list?ref=mdl-readme)
+[View More](https://material-dashboard-laravel.creative-tim.com/?ref=mdl-readme)
 
 ## Documentation
-The documentation for the Material Dashboard Laravel is hosted at our [website](https://material-dashboard-laravel.creative-tim.com/docs/getting-started/laravel-setup.html?ref=adn-readme).
+The documentation for the Material Dashboard Laravel is hosted at our [website](https://material-dashboard-laravel.creative-tim.com/docs/getting-started/laravel-setup.html?ref=mdl-readme).
 
 ## File Structure
 ```
@@ -479,9 +479,9 @@ At present, we officially aim to support the last two versions of the following 
 
 
 ## Resources
-- Demo: <https://material-dashboard-laravel.creative-tim.com/?ref=adnp-readme>
-- Download Page: <https://www.creative-tim.com/product/material-dashboard-laravel?ref=adnp-readme>
-- Documentation: <https://material-dashboard-laravel.creative-tim.com/docs/getting-started/laravel-setup.html?ref=adnp-readme>
+- Demo: <https://material-dashboard-laravel.creative-tim.com/?ref=mdlp-readme>
+- Download Page: <https://www.creative-tim.com/product/material-dashboard-laravel?ref=mdl-readme>
+- Documentation: <https://material-dashboard-laravel.creative-tim.com/docs/getting-started/laravel-setup.html?ref=mdl-readme>
 - License Agreement: <https://www.creative-tim.com/license>
 - Support: <https://www.creative-tim.com/contact-us>
 - Issues: [Github Issues Page](https://github.com/laravel-frontend-presets/material-dashboard/issues)
@@ -489,7 +489,7 @@ At present, we officially aim to support the last two versions of the following 
 
 | HTML | LARAVEL |
 | --- | --- |
-| [![Material Dashboard HTML](https://s3.amazonaws.com/creativetim_bucket/products/50/original/opt_md_thumbnail.jpg?1522232645)](https://demos.creative-tim.com/material-dashboard/examples/dashboard.html?ref=adnp-readme) | [![Material Dashboard Laravel](https://s3.amazonaws.com/creativetim_bucket/products/154/original/opt_md_laravel_thumbnail.jpg?1554814177)](https://material-dashboard-laravel.creative-tim.com/?ref=adnp-readme)
+| [![Material Dashboard HTML](https://s3.amazonaws.com/creativetim_bucket/products/50/original/opt_md_thumbnail.jpg?1522232645)](https://demos.creative-tim.com/material-dashboard/examples/dashboard.html?ref=mdl-readme) | [![Material Dashboard Laravel](https://s3.amazonaws.com/creativetim_bucket/products/154/original/opt_md_laravel_thumbnail.jpg?1554814177)](https://material-dashboard-laravel.creative-tim.com/?ref=mdl-readme)
 
 ## Change log
 
@@ -497,20 +497,20 @@ Please see the [changelog](CHANGELOG.md) for more information on what has change
 
 ## Credits
 
-- [Creative Tim](https://creative-tim.com/?ref=adnp-readme)
+- [Creative Tim](https://creative-tim.com/?ref=mdl-readme)
 - [UPDIVISION](https://updivision.com)
 
 ## Reporting Issues
 
 We use GitHub Issues as the official bug tracker for the Material Dashboard Laravel. Here are some advices for our users that want to report an issue:
 
-1. Make sure that you are using the latest version of the Material Dashboard Laravel. Check the CHANGELOG from your dashboard on our [website](https://www.creative-tim.com/?ref=adnp-readme).
+1. Make sure that you are using the latest version of the Material Dashboard Laravel. Check the CHANGELOG from your dashboard on our [website](https://www.creative-tim.com/?ref=mdl-readme).
 2. Providing us reproducible steps for the issue will shorten the time it takes for it to be fixed.
 3. Some issues may be browser specific, so specifying in what browser you encountered the issue might help.
 
 ## Licensing
 
-- Copyright 2019 Creative Tim (https://www.creative-tim.com/?ref=adnp-readme)
+- Copyright 2019 Creative Tim (https://www.creative-tim.com/?ref=mdl-readme)
 - [Creative Tim License](https://www.creative-tim.com/license).
 
 
@@ -520,24 +520,36 @@ We use GitHub Issues as the official bug tracker for the Material Dashboard Lara
 - [Affiliate Program](https://www.creative-tim.com/affiliates/new) (earn money)
 - [Blog Creative Tim](http://blog.creative-tim.com/)
 - [Free Products](https://www.creative-tim.com/bootstrap-themes/free) from Creative Tim
-- [Premium Products](https://www.creative-tim.com/bootstrap-themes/premium?ref=adn-readme) from Creative Tim
-- [React Products](https://www.creative-tim.com/bootstrap-themes/react-themes?ref=adn-readme) from Creative Tim
-- [Angular Products](https://www.creative-tim.com/bootstrap-themes/angular-themes?ref=adn-readme) from Creative Tim
-- [VueJS Products](https://www.creative-tim.com/bootstrap-themes/vuejs-themes?ref=adn-readme) from Creative Tim
-- [More products](https://www.creative-tim.com/bootstrap-themes?ref=adn-readme) from Creative Tim
-- Check our Bundles [here](https://www.creative-tim.com/bundles??ref=adn-readme)
+- [Premium Products](https://www.creative-tim.com/bootstrap-themes/premium?ref=mdl-readme) from Creative Tim
+- [React Products](https://www.creative-tim.com/bootstrap-themes/react-themes?ref=mdl-readme) from Creative Tim
+- [Angular Products](https://www.creative-tim.com/bootstrap-themes/angular-themes?ref=mdl-readme) from Creative Tim
+- [VueJS Products](https://www.creative-tim.com/bootstrap-themes/vuejs-themes?ref=mdl-readme) from Creative Tim
+- [More products](https://www.creative-tim.com/bootstrap-themes?ref=mdl-readme) from Creative Tim
+- Check our Bundles [here](https://www.creative-tim.com/bundles??ref=mdl-readme)
 
 ### Social Media
 
-Twitter: <https://twitter.com/CreativeTim?ref=adnp-readme>
+### Creative Tim:
 
-Facebook: <https://www.facebook.com/CreativeTim?ref=adnp-readme>
+Twitter: <https://twitter.com/CreativeTim?ref=mdl-readme>
 
-Dribbble: <https://dribbble.com/creativetim?ref=adnp-readme>
+Facebook: <https://www.facebook.com/CreativeTim?ref=mdl-readme>
 
-Instagram: <https://www.instagram.com/CreativeTimOfficial?ref=adnp-readme>
+Dribbble: <https://dribbble.com/creativetim?ref=mdl-readme>
+
+Instagram: <https://www.instagram.com/CreativeTimOfficial?ref=mdl-readme>
+
+### Updivision:
+
+Twitter: <https://twitter.com/updivision?ref=mdl-readme>
+
+Facebook: <https://www.facebook.com/updivision?ref=mdl-readme>
+
+Linkedin: <https://www.linkedin.com/company/updivision?ref=mdl-readme>
+
+Updivision Blog: <https://updivision.com/blog/?ref=mdl-readme>
 
 ## Credits
 
-- [Creative Tim](https://creative-tim.com/?ref=adnp-readme)
+- [Creative Tim](https://creative-tim.com/?ref=mdl-readme)
 - [UPDIVISION](https://updivision.com)
