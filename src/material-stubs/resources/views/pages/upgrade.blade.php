@@ -117,7 +117,7 @@
                       <a href="#" class="btn btn-round btn-fill btn-default disabled">Current Version</a>
                     </td>
                     <td class="text-center">
-                      <a target="_blank" href="javascript:void(0)" aria-disabled="true" class="btn btn-round btn-fill btn-info">Coming soon</a>
+                      <a target="_blank" href="https://www.creative-tim.com/product/material-dashboard-pro-laravel" aria-disabled="true" class="btn btn-round btn-fill btn-info">Upgrade to PRO</a>
                     </td>
                   </tr>
                 </tbody>
