@@ -83,6 +83,11 @@
                   View Documentation
                 </a>
               </li>
+              <li class="button-container">
+                <a href="https://www.creative-tim.com/product/material-dashboard-pro-laravel" target="_blank" class="btn btn-danger btn-block btn-round">
+                  Upgrade to PRO
+                </a>
+              </li>
               <li class="button-container github-star">
                 <a class="github-button" href="https://github.com/creativetimofficial/material-dashboard-laravel" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star ntkme/github-buttons on GitHub">Star</a>
               </li>
