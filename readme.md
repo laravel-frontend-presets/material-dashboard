@@ -64,7 +64,7 @@ You can access the dashboard either by using the "**Dashboard**" link in the lef
 
 You have the option to edit the current logged in user's profile (change name, email and password). To access this page just click the "**User profile**" link in the left sidebar or by adding **/profile** in the url.
 
-The `App\Htttp\Controlers\ProfileController` handles the update of the user information. 
+The `App\Http\Controllers\ProfileController` handles the update of the user information. 
 
 ```
 public function update(ProfileRequest $request)
