@@ -107,7 +107,7 @@ The first thing you will see is the listing of the existing users. You can add n
 </div>
 ```
 
-Also validation rules were added so you will know exactely what to enter in the form fields (see `App\Http\Requests\UserRequest`). Note that these validation rules also apply for the user edit option.
+Also validation rules were added so you will know exactly what to enter in the form fields (see `App\Http\Requests\UserRequest`). Note that these validation rules also apply for the user edit option.
 
 ```
 public function rules()
