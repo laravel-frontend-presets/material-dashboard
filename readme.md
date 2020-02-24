@@ -54,7 +54,7 @@ After initializing a fresh instance of Laravel (and making all the necessary con
 
 Register a user or login using **admin@material.com** and **secret** and start testing the preset (make sure to run the migrations and seeders for these credentials to be available).
 
-Besides the dashboard and the auth pages this preset also has a user management example and an edit profile page. All the necessary files (controllers, requests, views) are installed out of the box and all the needed routes are added to `routes/web.php`. Keep in mind that all of the features can be viewed once you login using the credentials provided above or by registering your own user. 
+Besides the dashboard and the auth pages this preset also has an edit profile page. All the necessary files (controllers, requests, views) are installed out of the box and all the needed routes are added to `routes/web.php`. Keep in mind that all of the features can be viewed once you login using the credentials provided above or by registering your own user. 
 
 ### Dashboard
 
@@ -85,57 +85,6 @@ public function rules()
         'password' => ['required', 'min:6', 'confirmed', 'different:old_password'],
         'password_confirmation' => ['required', 'min:6'],
     ];
-}
-```
-
-### User management
-
-The preset comes with a user management option out of the box. To access this click the "**User Management**" link in the left sidebar or add **/user** to the url.
-The first thing you will see is the listing of the existing users. You can add new ones by clicking the "**Add user**" button (above the table on the right). On the Add user page you will see the form that allows you to do this. All pages are generate using blade templates:
-
-```
-<div class="row">
-  <label class="col-sm-2 col-form-label">{{ __('Name') }}</label>
-  <div class="col-sm-7">
-    <div class="form-group{{ $errors->has('name') ? ' has-danger' : '' }}">
-      <input class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" name="name" id="input-name" type="text" placeholder="{{ __('Name') }}" value="{{ old('name') }}" required="true" aria-required="true"/>
-      @if ($errors->has('name'))
-        <span id="name-error" class="error text-danger" for="input-name">{{ $errors->first('name') }}</span>
-      @endif
-    </div>
-  </div>
-</div>
-```
-
-Also validation rules were added so you will know exactly what to enter in the form fields (see `App\Http\Requests\UserRequest`). Note that these validation rules also apply for the user edit option.
-
-```
-public function rules()
-{
-    return [
-        'name' => [
-            'required', 'min:3'
-        ],
-        'email' => [
-            'required', 'email', Rule::unique((new User)->getTable())->ignore($this->route()->user->id ?? null)
-        ],
-        'password' => [
-            $this->route()->user ? 'nullable' : 'required', 'confirmed', 'min:6'
-        ]
-    ];
-}
-```
-
-Once you add more users, the list will get bigger and for every user you will have edit and delete options (access these options by clicking the three dotted menu that appears at the end of every line). 
-
-All the sample code for the user management can be found in `App\Http\Controllers\UserController`. See store method example bellow:
-
-```
-public function store(UserRequest $request, User $model)
-{
-    $model->create($request->merge(['password' => Hash::make($request->get('password'))])->all());
-
-    return redirect()->route('user.index')->withStatus(__('User successfully created.'));
 }
 ```
 ## Table of Contents
@@ -466,8 +415,6 @@ The documentation for the Material Dashboard Laravel is hosted at our [website](
         |       edit.blade.php
         |       
         \---users
-                create.blade.php
-                edit.blade.php
                 index.blade.php
 ```
 
