@@ -415,8 +415,6 @@ The documentation for the Material Dashboard Laravel is hosted at our [website](
         |       edit.blade.php
         |       
         \---users
-                create.blade.php
-                edit.blade.php
                 index.blade.php
 ```
 
