@@ -4,6 +4,8 @@ namespace LaravelFrontendPresets\MaterialPreset;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Foundation\Console\PresetCommand;
+use Laravel\Ui\UiCommand; 
+use Laravel\Ui\AuthCommand;
 
 class MaterialPresetServiceProvider extends ServiceProvider
 {
@@ -14,7 +16,7 @@ class MaterialPresetServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        PresetCommand::macro('material', function ($command) {
+        UiCommand::macro('material', function ($command) {
             MaterialPreset::install();
             
             $command->info('Material Dashboard scaffolding installed successfully.');
