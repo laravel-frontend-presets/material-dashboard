@@ -77,8 +77,8 @@
           <p>{{ __('RTL Support') }}</p>
         </a>
       </li>
-      <li class="nav-item active-pro{{ $activePage == 'upgrade' ? ' active' : '' }}">
-        <a class="nav-link" href="{{ route('upgrade') }}">
+      <li class="nav-item active-pro{{ $activePage == 'upgrade' ? ' active' : '' }} bg-danger">
+        <a class="nav-link text-white" href="{{ route('upgrade') }}">
           <i class="material-icons">unarchive</i>
           <p>{{ __('Upgrade to PRO') }}</p>
         </a>
