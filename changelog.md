@@ -19,5 +19,5 @@ All notable changes to `Material Dashboard` frontend preset for Laravel will be 
 ## Version 1.0.6 - 2019-09-23
 - Update to Laravel 6.x
 
-## Version 1.0.7 - 2020-03-18
+## Version 1.1.0 - 2020-03-18
 - Update to Laravel 7.x
