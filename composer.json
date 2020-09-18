@@ -6,7 +6,7 @@
     "keywords": ["Laravel", "Preset", "Material"],
     "require": {
         "laravel/framework": "^8.0",
-        "laravel/legacy-factories": "^1.0"
+        "laravel/legacy-factories": "^1.0" 
     },
     "autoload": {
         "psr-4": {
