@@ -104,7 +104,7 @@ class MaterialPreset extends Preset
         // Add Auth routes in 'routes/web.php'
         file_put_contents(
             './routes/web.php',
-            "Auth::routes();\n\nRoute::get('/home', 'HomeController@index')->name('home')->middleware('auth');\n\n",
+            "Auth::routes();\n\nRoute::get('/home', 'App\Http\Controllers\HomeController@index')->name('home')->middleware('auth');\n\n",
             FILE_APPEND
         );
         
@@ -121,7 +121,7 @@ class MaterialPreset extends Preset
     public static function addUserManagement()
     {
         // Add seeder, controllers, requests and rules
-        static::copyDirectory('database/seeds', app_path('../database/seeds'));
+        static::copyDirectory('database/seeds', app_path('../database/seeders'));
                
         static::copyFile('app/Http/Controllers/UserController.php', app_path('Http/Controllers/UserController.php'));
         static::copyFile('app/Http/Controllers/ProfileController.php', app_path('Http/Controllers/ProfileController.php'));
@@ -131,7 +131,7 @@ class MaterialPreset extends Preset
         // Add routes
         file_put_contents(
             './routes/web.php',
-            "Route::group(['middleware' => 'auth'], function () {\n\tRoute::resource('user', 'UserController', ['except' => ['show']]);\n\tRoute::get('profile', ['as' => 'profile.edit', 'uses' => 'ProfileController@edit']);\n\tRoute::put('profile', ['as' => 'profile.update', 'uses' => 'ProfileController@update']);\n\tRoute::put('profile/password', ['as' => 'profile.password', 'uses' => 'ProfileController@password']);\n});\n\n",
+            "Route::group(['middleware' => 'auth'], function () {\n\tRoute::resource('user', 'App\Http\Controllers\UserController', ['except' => ['show']]);\n\tRoute::get('profile', ['as' => 'profile.edit', 'uses' => 'App\Http\Controllers\ProfileController@edit']);\n\tRoute::put('profile', ['as' => 'profile.update', 'uses' => 'App\Http\Controllers\ProfileController@update']);\n\tRoute::put('profile/password', ['as' => 'profile.password', 'uses' => 'App\Http\Controllers\ProfileController@password']);\n});\n\n",
             FILE_APPEND
         );
 

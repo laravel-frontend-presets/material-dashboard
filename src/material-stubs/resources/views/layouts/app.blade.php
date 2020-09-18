@@ -27,7 +27,7 @@
         @guest()
             @include('layouts.page_templates.guest')
         @endguest
-        
+        @if (auth()->check())
         <div class="fixed-plugin">
           <div class="dropdown show-dropdown">
             <a href="#" data-toggle="dropdown">
@@ -101,6 +101,7 @@
             </ul>
           </div>
         </div>
+        @endif
         <!--   Core JS Files   -->
         <script src="{{ asset('material') }}/js/core/jquery.min.js"></script>
         <script src="{{ asset('material') }}/js/core/popper.min.js"></script>

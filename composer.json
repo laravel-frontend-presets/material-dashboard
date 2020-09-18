@@ -5,7 +5,8 @@
     "homepage": "https://github.com/creativetimofficial/material-dashboard-laravel",
     "keywords": ["Laravel", "Preset", "Material"],
     "require": {
-        "laravel/framework": "^7.0"
+        "laravel/framework": "^8.0",
+        "laravel/legacy-factories": "^1.0" 
     },
     "autoload": {
         "psr-4": {
