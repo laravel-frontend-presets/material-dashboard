@@ -6,7 +6,7 @@
 
 ![Product Image](https://s3.amazonaws.com/creativetim_bucket/products/154/original/opt_md_laravel_thumbnail.jpg?1554814177)
 
-Speed up your web development with the Bootstrap 4 Admin Dashboard built for Laravel Framework 5.5 and up.
+Speed up your web development with the Bootstrap 4 Admin Dashboard built for Laravel Framework 8.x and up.
 
 ## Note
 
