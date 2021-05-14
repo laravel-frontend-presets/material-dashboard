@@ -47,10 +47,10 @@ class MaterialPreset extends Preset
      *
      * @return void
      */
-    protected static function updateAssets()
-    {
-        static::copyDirectory('resources/assets', public_path('material'));
-    }
+//    protected static function updateAssets()
+//    {
+//        static::copyDirectory('resources/assets', public_path('material'));
+//    }
 
     /**
      * Update the default welcome page file.

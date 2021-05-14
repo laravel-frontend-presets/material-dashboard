@@ -37,12 +37,17 @@ class MaterialPresetServiceProvider extends ServiceProvider
         //
     }
 
+    /**
+     * Publishes the packages resources into the appropriate folders
+     *
+     * @return void
+     */
     protected function registerPublishing() {
         $this->publishes([
-            __DIR__.'/material-stubs/resources/assets/scss' => resource_path('sass/material-dashboard'),
-            __DIR__.'/material-stubs/resources/assets/js' => resource_path('js/material-dashboard'),
             __DIR__.'/material-stubs/resources/assets/css' => resource_path('css/material-dashboard'),
-            __DIR__.'/material-stubs/resources/assets/img' => public_path('material/img')
+            __DIR__.'/material-stubs/resources/assets/img' => storage_path('app/public/material/img'),
+            __DIR__.'/material-stubs/resources/assets/scss' => resource_path('sass/material-dashboard'),
+            __DIR__.'/material-stubs/resources/assets/js' => resource_path('js/material-dashboard')
         ], 'material-dashboard');
     }
 }
