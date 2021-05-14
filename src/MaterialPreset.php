@@ -17,7 +17,7 @@ class MaterialPreset extends Preset
     public static function install()
     {
         static::updatePackages();
-        static::updateAssets();
+//        static::updateAssets();
         
         static::updateWelcomePage();
         static::updateAuthViews();
