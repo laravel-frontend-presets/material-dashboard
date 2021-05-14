@@ -18,6 +18,7 @@ class MaterialPreset extends Preset
     {
         static::updatePackages();
 //        static::updateAssets();
+        static::updateWebpackMixJS();
         
         static::updateWelcomePage();
         static::updateAuthViews();
@@ -40,6 +41,20 @@ class MaterialPreset extends Preset
     protected static function updatePackageArray(array $packages)
     {
         return $packages;
+    }
+
+    /**
+     * Updates webpack.mix.js to copy the javascript directory over to the public directory
+     *
+     * @return void
+     */
+    protected static function updateWebpackMixJS() {
+        // Add Mix function to copy directories for JS
+        file_put_contents(
+            './webpack.mix.js',
+            "mix.copy('resources/js/material-dashboard', 'public/js/material-dashboard');",
+            FILE_APPEND
+        );
     }
 
     /**
