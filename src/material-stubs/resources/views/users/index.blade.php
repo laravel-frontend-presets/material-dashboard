@@ -148,7 +148,7 @@
                       <p>{{ __('RTL Support') }}</p>
                     </a>
                   </li>
-                  <li class="nav-item active-pro{{ $activePage == 'upgrade' ? ' active' : '' }}">
+                  <li class="nav-item active-pro{{ (strpos(Route::currentRouteName(), 'upgrade') == 0) ? ' active' : '' }}">
                     <a class="nav-link text-white bg-danger" href="{{ route('upgrade') }}">
                       <i class="material-icons text-white">unarchive</i>
                       <p>{{ __('Upgrade to PRO') }}</p>

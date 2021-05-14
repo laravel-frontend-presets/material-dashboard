@@ -17,12 +17,12 @@
             <i class="material-icons">dashboard</i> {{ __('Dashboard') }}
           </a>
         </li>
-        <li class="nav-item{{ $activePage == 'register' ? ' active' : '' }}">
+        <li class="nav-item{{ (strpos(Route::currentRouteName(), 'register) == 0) ? ' active' : '' }}">
           <a href="{{ route('register') }}" class="nav-link">
             <i class="material-icons">person_add</i> {{ __('Register') }}
           </a>
         </li>
-        <li class="nav-item{{ $activePage == 'login' ? ' active' : '' }}">
+        <li class="nav-item{{ (strpos(Route::currentRouteName(), 'login') == 0) ? ' active' : '' }}">
           <a href="{{ route('login') }}" class="nav-link">
             <i class="material-icons">fingerprint</i> {{ __('Login') }}
           </a>
