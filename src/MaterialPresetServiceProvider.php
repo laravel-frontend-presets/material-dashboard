@@ -43,6 +43,6 @@ class MaterialPresetServiceProvider extends ServiceProvider
             __DIR__.'/material-stubs/resources/assets/js' => resource_path('js/material-dashboard'),
             __DIR__.'/material-stubs/resources/assets/css' => resource_path('css/material-dashboard'),
             __DIR__.'/material-stubs/resources/assets/img' => public_path('material/img')
-        ], 'material-sass');
+        ], 'material-dashboard');
     }
 }
