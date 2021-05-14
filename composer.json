@@ -1,12 +1,12 @@
 {
-    "name": "laravel-frontend-presets/material-dashboard",
+    "name": "JDsWebService/material-dashboard",
     "description": "Laravel 5.x Front-end preset for material dashboard",
     "license": "MIT",
     "homepage": "https://github.com/creativetimofficial/material-dashboard-laravel",
     "keywords": ["Laravel", "Preset", "Material"],
     "require": {
         "laravel/framework": "^8.0",
-        "laravel/legacy-factories": "^1.0" 
+        "laravel/legacy-factories": "^1.0"
     },
     "autoload": {
         "psr-4": {
