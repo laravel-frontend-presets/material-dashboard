@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>{{ __('Material Dashboard Laravel - Free Frontend Preset for Laravel') }}</title>
-    <link rel="apple-touch-icon" sizes="76x76" href="/storage/material/img/apple-icon.png">
-    <link rel="icon" type="image/png" href="/storage/material/img/favicon.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ asset('storage/material/img/apple-icon.png') }}">
+    <link rel="icon" type="image/png" href="{{ asset('storage/material/img/favicon.png') }}">
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
     <!--     Fonts and icons     -->
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
@@ -51,22 +51,22 @@
               <li class="header-title">Images</li>
               <li class="active">
                 <a class="img-holder switch-trigger" href="javascript:void(0)">
-                  <img src="/storage/material/img/sidebar-1.jpg" alt="">
+                  <img src="{{ asset('storage/material/img/sidebar-1.jpg') }}" alt="">
                 </a>
               </li>
               <li>
                 <a class="img-holder switch-trigger" href="javascript:void(0)">
-                  <img src="/storage/material/img/sidebar-2.jpg" alt="">
+                  <img src="{{ asset('storage/material/img/sidebar-2.jpg') }}" alt="">
                 </a>
               </li>
               <li>
                 <a class="img-holder switch-trigger" href="javascript:void(0)">
-                  <img src="/storage/material/img/sidebar-3.jpg" alt="">
+                  <img src="{{ asset('storage/material/img/sidebar-3.jpg') }}" alt="">
                 </a>
               </li>
               <li>
                 <a class="img-holder switch-trigger" href="javascript:void(0)">
-                  <img src="/storage/material/img/sidebar-4.jpg" alt="">
+                  <img src="{{ asset('storage/material/img/sidebar-4.jpg') }}" alt="">
                 </a>
               </li>
               <li class="button-container">

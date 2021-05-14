@@ -42,16 +42,16 @@
     <meta property="og:site_name" content="Creative Tim" />
     
     <title>{{ __('Material Dashboard Laravel - Free Frontend Preset for Laravel') }}</title>
-    <link rel="apple-touch-icon" sizes="76x76" href="/storage/material/img/apple-icon.png">
-    <link rel="icon" type="image/png" href="/storage/material/img/favicon.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ asset('storage/material/img/apple-icon.png') }}">
+    <link rel="icon" type="image/png" href="{{ asset('storage/material/img/favicon.png') }}">
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
     <!--     Fonts and icons     -->
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
     <!-- CSS Files -->
-    <link href="{{ asset('material') }}/css/material-dashboard.css?v=2.1.3" rel="stylesheet" />
+    <link href="{{ asset('css/material-dashboard.css?v=2.1.3') }}" rel="stylesheet" />
     <!-- CSS Just for demo purpose, don't include it in your project -->
-    <link href="{{ asset('material') }}/demo/demo.css" rel="stylesheet" />
+    <link href="{{ asset('css/material-dashboard/demo.css') }}" rel="stylesheet" />
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
       new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -348,22 +348,22 @@
             <li class="header-title">Images</li>
             <li class="active">
               <a class="img-holder switch-trigger" href="javascript:void(0)">
-                <img src="/storage/material/img/sidebar-1.jpg" alt="">
+                <img src="{{ asset('storage/material/img/sidebar-1.jpg') }}" alt="">
               </a>
             </li>
             <li>
               <a class="img-holder switch-trigger" href="javascript:void(0)">
-                <img src="/storage/material/img/sidebar-2.jpg" alt="">
+                <img src="{{ asset('storage/material/img/sidebar-2.jpg') }}" alt="">
               </a>
             </li>
             <li>
               <a class="img-holder switch-trigger" href="javascript:void(0)">
-                <img src="/storage/material/img/sidebar-3.jpg" alt="">
+                <img src="{{ asset('storage/material/img/sidebar-3.jpg') }}" alt="">
               </a>
             </li>
             <li>
               <a class="img-holder switch-trigger" href="javascript:void(0)">
-                <img src="/storage/material/img/sidebar-4.jpg" alt="">
+                <img src="{{ asset('storage/material/img/sidebar-4.jpg') }}" alt="">
               </a>
             </li>
             <li class="button-container">
@@ -399,49 +399,49 @@
         </div>
       </div>
         <!--   Core JS Files   -->
-        <script src="{{ asset('material') }}/js/core/jquery.min.js"></script>
-        <script src="{{ asset('material') }}/js/core/popper.min.js"></script>
-        <script src="{{ asset('material') }}/js/core/bootstrap-material-design.min.js"></script>
-        <script src="{{ asset('material') }}/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+        <script src="{{ asset('js/material-dashboard/core/jquery.min.js') }}"></script>
+        <script src="{{ asset('js/material-dashboard/core/popper.min.js') }}"></script>
+        <script src="{{ asset('js/material-dashboard/core/bootstrap-material-design.min.js') }}"></script>
+        <script src="{{ asset('js/material-dashboard/plugins/perfect-scrollbar.jquery.min.js') }}"></script>
         <!-- Plugin for the momentJs  -->
-        <script src="{{ asset('material') }}/js/plugins/moment.min.js"></script>
+        <script src="{{ asset('js/material-dashboard/plugins/moment.min.js') }}"></script>
         <!--  Plugin for Sweet Alert -->
-        <script src="{{ asset('material') }}/js/plugins/sweetalert2.js"></script>
+        <script src="{{ asset('js/material-dashboard/plugins/sweetalert2.js') }}"></script>
         <!-- Forms Validations Plugin -->
-        <script src="{{ asset('material') }}/js/plugins/jquery.validate.min.js"></script>
+        <script src="{{ asset('js/material-dashboard/plugins/jquery.validate.min.js') }}"></script>
         <!-- Plugin for the Wizard, full documentation here: https://github.com/VinceG/twitter-bootstrap-wizard -->
-        <script src="{{ asset('material') }}/js/plugins/jquery.bootstrap-wizard.js"></script>
+        <script src="{{ asset('js/material-dashboard/plugins/jquery.bootstrap-wizard.js') }}"></script>
         <!--	Plugin for Select, full documentation here: http://silviomoreto.github.io/bootstrap-select -->
-        <script src="{{ asset('material') }}/js/plugins/bootstrap-selectpicker.js"></script>
+        <script src="{{ asset('js/material-dashboard/plugins/bootstrap-selectpicker.js') }}"></script>
         <!--  Plugin for the DateTimePicker, full documentation here: https://eonasdan.github.io/bootstrap-datetimepicker/ -->
-        <script src="{{ asset('material') }}/js/plugins/bootstrap-datetimepicker.min.js"></script>
+        <script src="{{ asset('js/material-dashboard/plugins/bootstrap-datetimepicker.min.js') }}"></script>
         <!--  DataTables.net Plugin, full documentation here: https://datatables.net/  -->
-        <script src="{{ asset('material') }}/js/plugins/jquery.dataTables.min.js"></script>
+        <script src="{{ asset('js/material-dashboard/plugins/jquery.dataTables.min.js') }}"></script>
         <!--	Plugin for Tags, full documentation here: https://github.com/bootstrap-tagsinput/bootstrap-tagsinputs  -->
-        <script src="{{ asset('material') }}/js/plugins/bootstrap-tagsinput.js"></script>
+        <script src="{{ asset('js/material-dashboard/plugins/bootstrap-tagsinput.js') }}"></script>
         <!-- Plugin for Fileupload, full documentation here: http://www.jasny.net/bootstrap/javascript/#fileinput -->
-        <script src="{{ asset('material') }}/js/plugins/jasny-bootstrap.min.js"></script>
+        <script src="{{ asset('js/material-dashboard/plugins/jasny-bootstrap.min.js') }}"></script>
         <!--  Full Calendar Plugin, full documentation here: https://github.com/fullcalendar/fullcalendar    -->
-        <script src="{{ asset('material') }}/js/plugins/fullcalendar.min.js"></script>
+        <script src="{{ asset('js/material-dashboard/plugins/fullcalendar.min.js') }}"></script>
         <!-- Vector Map plugin, full documentation here: http://jvectormap.com/documentation/ -->
-        <script src="{{ asset('material') }}/js/plugins/jquery-jvectormap.js"></script>
+        <script src="{{ asset('js/material-dashboard/plugins/jquery-jvectormap.js') }}"></script>
         <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
-        <script src="{{ asset('material') }}/js/plugins/nouislider.min.js"></script>
+        <script src="{{ asset('js/material-dashboard/plugins/nouislider.min.js') }}"></script>
         <!-- Include a polyfill for ES6 Promises (optional) for IE11, UC Browser and Android browser support SweetAlert -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js"></script>
         <!-- Library for adding dinamically elements -->
-        <script src="{{ asset('material') }}/js/plugins/arrive.min.js"></script>
+        <script src="{{ asset('js/material-dashboard/plugins/arrive.min.js') }}"></script>
         <!--  Google Maps Plugin    -->
         <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE'"></script>
         <!-- Chartist JS -->
-        <script src="{{ asset('material') }}/js/plugins/chartist.min.js"></script>
+        <script src="{{ asset('js/material-dashboard/plugins/chartist.min.js') }}"></script>
         <!--  Notifications Plugin    -->
-        <script src="{{ asset('material') }}/js/plugins/bootstrap-notify.js"></script>
+        <script src="{{ asset('js/material-dashboard/plugins/bootstrap-notify.js') }}"></script>
         <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
-        <script src="{{ asset('material') }}/js/material-dashboard.js?v=2.1.1" type="text/javascript"></script>
+        <script src="{{ asset('js/material-dashboard/material-dashboard.js?v=2.1.1') }}" type="text/javascript"></script>
         <!-- Material Dashboard DEMO methods, don't include it in your project! -->
-        <script src="{{ asset('material') }}/demo/demo.js"></script>
-        <script src="{{ asset('material') }}/js/settings.js"></script>
+        <script src="{{ asset('js/material-dashboard/demo.js') }}"></script>
+        <script src="{{ asset('js/material-dashboard/settings.js') }}"></script>
         <script>
           // Facebook Pixel Code Don't Delete
             ! function(f, b, e, v, n, t, s) {

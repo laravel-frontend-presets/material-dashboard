@@ -1,4 +1,4 @@
-<div class="sidebar" data-color="orange" data-background-color="white" data-image="/storage/material/img/sidebar-1.jpg">
+<div class="sidebar" data-color="orange" data-background-color="white" data-image="{{ asset('storage/material/img/sidebar-1.jpg') }}">
   <!--
       Tip 1: You can change the color of the sidebar using: data-color="purple | azure | green | orange | danger"
 
@@ -19,7 +19,7 @@
       </li>
       <li class="nav-item {{ ($activePage == 'profile' || $activePage == 'user-management') ? ' active' : '' }}">
         <a class="nav-link" data-toggle="collapse" href="#laravelExample" aria-expanded="true">
-          <i><img style="width:25px" src="/storage/material/img/laravel.svg"></i>
+          <i><img style="width:25px" src="{{ asset('storage/material/img/laravel.svg') }}"></i>
           <p>{{ __('Laravel Examples') }}
             <b class="caret"></b>
           </p>
