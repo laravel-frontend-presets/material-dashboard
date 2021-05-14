@@ -42,8 +42,8 @@
     <meta property="og:site_name" content="Creative Tim" />
     
     <title>{{ __('Material Dashboard Laravel - Free Frontend Preset for Laravel') }}</title>
-    <link rel="apple-touch-icon" sizes="76x76" href="{{ asset('material') }}/img/apple-icon.png">
-    <link rel="icon" type="image/png" href="{{ asset('material') }}/img/favicon.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/storage/material/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="/storage/material/img/favicon.png">
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
     <!--     Fonts and icons     -->
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
@@ -69,7 +69,7 @@
                   <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
               <input type="hidden" name="_token" value="NKN81BvuQSzEbJlULUVrTDRewUlcAIJhPbOwli18">            </form>
           <div class="wrapper ">
-            <div class="sidebar" data-color="orange" data-background-color="white" data-image="{{ asset('material') }}/img/sidebar-1.jpg">
+            <div class="sidebar" data-color="orange" data-background-color="white" data-image="/storage/material/img/sidebar-1.jpg">
               <!--
                   Tip 1: You can change the color of the sidebar using: data-color="purple | azure | green | orange | danger"
             
@@ -90,7 +90,7 @@
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" data-toggle="collapse" href="#laravelExample" aria-expanded="true">
-                      <i><img style="width:25px" src="{{ asset('material') }}/img/laravel.svg"></i>
+                      <i><img style="width:25px" src="/storage/material/img/laravel.svg"></i>
                       <p>{{ __('Laravel Examples') }}
                         <b class="caret"></b>
                       </p>
@@ -348,22 +348,22 @@
             <li class="header-title">Images</li>
             <li class="active">
               <a class="img-holder switch-trigger" href="javascript:void(0)">
-                <img src="{{ asset('material') }}/img/sidebar-1.jpg" alt="">
+                <img src="/storage/material/img/sidebar-1.jpg" alt="">
               </a>
             </li>
             <li>
               <a class="img-holder switch-trigger" href="javascript:void(0)">
-                <img src="{{ asset('material') }}/img/sidebar-2.jpg" alt="">
+                <img src="/storage/material/img/sidebar-2.jpg" alt="">
               </a>
             </li>
             <li>
               <a class="img-holder switch-trigger" href="javascript:void(0)">
-                <img src="{{ asset('material') }}/img/sidebar-3.jpg" alt="">
+                <img src="/storage/material/img/sidebar-3.jpg" alt="">
               </a>
             </li>
             <li>
               <a class="img-holder switch-trigger" href="javascript:void(0)">
-                <img src="{{ asset('material') }}/img/sidebar-4.jpg" alt="">
+                <img src="/storage/material/img/sidebar-4.jpg" alt="">
               </a>
             </li>
             <li class="button-container">

@@ -3,8 +3,8 @@
 
 <head>
   <meta charset="utf-8" />
-  <link rel="apple-touch-icon" sizes="76x76" href="{{ asset('material') }}/img/apple-icon.png">
-  <link rel="icon" type="image/png" href="{{ asset('material') }}/img/favicon.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/storage/material/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="/storage/material/img/favicon.png">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <title>
       {{ __('Material Dashboard by Creative Tim') }}
@@ -44,7 +44,7 @@
 
 <body class="">
   <div class="wrapper ">
-    <div class="sidebar" data-color="purple" data-background-color="white" data-image="{{ asset('material') }}/img/sidebar-1.jpg">
+    <div class="sidebar" data-color="purple" data-background-color="white" data-image="/storage/material/img/sidebar-1.jpg">
       <!--
         Tip 1: You can change the color of the sidebar using: data-color="purple | azure | green | orange | danger"
 
@@ -623,7 +623,7 @@
               <div class="card card-profile">
                 <div class="card-avatar">
                   <a href="#pablo">
-                    <img class="img" src="{{ asset('material') }}/img/faces/marc.jpg" />
+                    <img class="img" src="/storage/material/img/faces/marc.jpg" />
                   </a>
                 </div>
                 <div class="card-body">
