@@ -52,7 +52,7 @@ class MaterialPreset extends Preset
         // Add Mix function to copy directories for JS
         file_put_contents(
             './webpack.mix.js',
-            "mix.copy('resources/js/material-dashboard', 'public/js/material-dashboard')\n\n    .sass('resources/sass/material-dashboard/material-dashboard.scss', 'public/css');",
+            "mix.copy('resources/js/material-dashboard', 'public/js/material-dashboard')\n    .sass('resources/sass/material-dashboard.scss', 'public/css');",
             FILE_APPEND
         );
     }
