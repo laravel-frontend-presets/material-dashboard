@@ -4,7 +4,7 @@
 
 *Frontend version*: Material Dashboard v2.1.1. More info at https://www.creative-tim.com/product/material-dashboard
 
-![Product Image](https://s3.amazonaws.com/creativetim_bucket/products/154/original/opt_md_laravel_thumbnail.jpg?1554814177)
+<img src="screens/material-free.gif" width="100%"/>
 
 Speed up your web development with the Bootstrap 4 Admin Dashboard built for Laravel Framework 8.x and up.
 
@@ -105,10 +105,17 @@ public function rules()
 
 [<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/html-logo.jpg?raw=true" width="60" height="60" />](https://demos.creative-tim.com/argon-dashboard-pro/pages/dashboards/dashboard.html?ref=mdl-readme)
 [<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/laravel_logo.png?raw=true" width="60" height="60" />](https://argon-dashboard-pro-laravel.creative-tim.com/?ref=mdl-readme)
+[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/vue.jpg" width="60" height="60" />](https://www.creative-tim.com/product/vue-material-dashboard?ref=mdl-readme)
+[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/json-api.png" width="140" height="60" />](https://www.creative-tim.com/product/vue-material-dashboard-laravel?ref=mdl-readme)
 
 | HTML | LARAVEL |
 | --- | --- |
 | [![Material Dashboard HTML](https://s3.amazonaws.com/creativetim_bucket/products/50/original/opt_md_thumbnail.jpg?1522232645)](https://demos.creative-tim.com/material-dashboard/examples/dashboard.html?ref=mdl-readme) | [![Material Dashboard Laravel](https://s3.amazonaws.com/creativetim_bucket/products/154/original/opt_md_laravel_thumbnail.jpg?1554814177)](https://material-dashboard-laravel.creative-tim.com/?ref=mdl-readme)
+
+
+| Vue | Vue & Laravel |
+| --- | --- |
+| [<img src="https://s3.amazonaws.com/creativetim_bucket/products/81/thumb/opt_md_vue_thumbnail.jpg" width="472px"/>](https://www.creative-tim.com/product/vue-material-dashboard?ref=mdl-readme) | [<img src="https://s3.amazonaws.com/creativetim_bucket/products/331/thumb/opt_md_vuelaravel_thumbnail.jpg" width="485px" />](https://www.creative-tim.com/product/vue-material-dashboard-laravel?ref=mdl-readme) |
 
 ## Demo
 
