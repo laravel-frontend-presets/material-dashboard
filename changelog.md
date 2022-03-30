@@ -24,3 +24,5 @@ All notable changes to `Material Dashboard` frontend preset for Laravel will be 
 
 ## Version 1.0.8 - 2020-09-21
 - Update to Laravel 8.x
+## Version 1.0.9 - 2022-03-25
+- Update to Laravel 9.x
