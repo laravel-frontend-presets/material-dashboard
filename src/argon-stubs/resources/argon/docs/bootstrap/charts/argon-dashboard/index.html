@@ -1,0 +1,1519 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <link rel="apple-touch-icon" sizes="76x76" href="https://demos.creative-tim.com/argon-design-system-pro/assets/img/apple-icon.png">
+    <link rel="icon" href="https://demos.creative-tim.com/argon-design-system-pro/assets/img/apple-icon.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Creative Tim">
+    <title>
+      Charts | Argon Dashboard Bootstrap @ Creative Tim
+    </title>
+    <link rel="canonical" href="https://www.creative-tim.com/learning-lab/bootstrap/charts/argon-dashboard" />
+    <meta name="keywords" content="">
+    <meta name="description" content="The Bootstrap charts refer to a graphical representation of data. <br> Keep reading these simple yet flexible Javascript charting for designers & developers.">
+    <meta name="twitter:card" content="product">
+    <meta name="twitter:site" content="@creativetim">
+    <meta name="twitter:title" content="Charts | Argon Dashboard Bootstrap @ Creative Tim">
+    <meta name="twitter:description" content="The Bootstrap charts refer to a graphical representation of data. <br> Keep reading these simple yet flexible Javascript charting for designers & developers.">
+    <meta name="twitter:creator" content="@creativetim">
+    <meta name="twitter:image" content="https://s3.amazonaws.com/creativetim_bucket/products/137/original/opt_adp_thumbnail.jpg">
+    <meta property="fb:app_id" content="655968634437471">
+    <meta property="og:title" content="Charts | Argon Dashboard Bootstrap @ Creative Tim" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://demos.creative-tim.com/argon-dashboard/index.html" />
+    <meta property="og:image" content="https://s3.amazonaws.com/creativetim_bucket/products/137/original/opt_adp_thumbnail.jpg" />
+    <meta property="og:description" content="The Bootstrap charts refer to a graphical representation of data. <br> Keep reading these simple yet flexible Javascript charting for designers & developers." />
+    <meta property="og:site_name" content="Creative Tim" />
+    <link rel="stylesheet" href="https://demos.creative-tim.com/argon-design-system-pro/assets/css/nucleo-icons.css" type="text/css">
+    <link href="" rel="stylesheet">
+    <link rel="stylesheet" href="https://demos.creative-tim.com/test/argon-dashboard-pro/assets/css/argon-dashboard.min.css?v=2.0.0" type="text/css">
+    <link href="https://demos.creative-tim.com/test/argon-dashboard-pro/assets/css/argon-dashboard.min.css?v=2.0.0" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <link href="https://demos.creative-tim.com/argon-design-system-pro/assets/css/nucleo-icons.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+    <!-- Anti-flicker snippet (recommended)  -->
+    <style>
+      .async-hide {
+        opacity: 0 !important
+      }
+    </style>
+    <script>
+      (function(a, s, y, n, c, h, i, d, e) {
+        s.className += ' ' + y;
+        h.start = 1 * new Date;
+        h.end = i = function() {
+          s.className = s.className.replace(RegExp(' ?' + y), '')
+        };
+        (a[n] = a[n] || []).hide = h;
+        setTimeout(function() {
+          i();
+          h.end = null
+        }, c);
+        h.timeout = c;
+      })(window, document.documentElement, 'async-hide', 'dataLayer', 4000, {
+        'GTM-K9BGS8K': true
+      });
+    </script>
+    <!-- Analytics-Optimize Snippet -->
+    <script>
+      (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+          (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+          m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+      ga('create', 'UA-46172202-22', 'auto', {
+        allowLinker: true
+      });
+      ga('set', 'anonymizeIp', true);
+      ga('require', 'GTM-K9BGS8K');
+      ga('require', 'displayfeatures');
+      ga('require', 'linker');
+      ga('linker:autoLink', ["2checkout.com", "avangate.com"]);
+    </script>
+    <!-- end Analytics-Optimize Snippet -->
+    <!-- Google Tag Manager -->
+    <script>
+      (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          'gtm.start': new Date().getTime(),
+          event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-NKDMSK6');
+    </script>
+    <!-- End Google Tag Manager -->
+    <!-- This is for docs typography and layout -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <link href="../../../assets/docs-soft.css" rel="stylesheet" />
+  </head>
+
+  <body class="docs ">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NKDMSK6" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <header class="ct-docs-navbar">
+      <a class="ct-docs-navbar-brand" href="javascript:void(0)" aria-label="Bootstrap">
+        <a href="https://www.creative-tim.com/" class="ct-docs-navbar-text" target="_blank">
+          Creative Tim
+        </a>
+        <div class="ct-docs-navbar-border"></div>
+        <a href="../../overview/argon-dashboard/index.html" class="ct-docs-navbar-text">
+          Docs
+        </a>
+      </a>
+      <ul class="ct-docs-navbar-nav-left">
+        <li class="ct-docs-nav-item-dropdown">
+          <a href="javascript:;" class="ct-docs-navbar-nav-link" role="button">
+            <span class="ct-docs-navbar-nav-link-inner--text">Live Preview</span>
+          </a>
+          <div class="ct-docs-navbar-dropdown-menu" aria-labelledby="DropdownPreview">
+            <a class="ct-docs-navbar-dropdown-item" href="https://www.creative-tim.com/live/argon-dashboard-laravel" target="_blank">
+              Argon Dashboard
+            </a>
+            <a class="ct-docs-navbar-dropdown-item" href="https://www.creative-tim.com/live/argon-dashboard-pro-laravel" target="_blank">
+              Argon Dashboard Pro
+            </a>
+          </div>
+        </li>
+        <li class="ct-docs-nav-item-dropdown">
+          <a href="javascript:;" class="ct-docs-navbar-nav-link" role="button">
+            <span class="ct-docs-navbar-nav-link-inner--text">Support</span>
+          </a>
+          <div class="ct-docs-navbar-dropdown-menu" aria-labelledby="DropdownSupport">
+            <a class="ct-docs-navbar-dropdown-item" href="https://github.com/creativetimofficial/argon-dashboard-laravel/issues" target="_blank">
+              Argon Dashboard
+            </a>
+            <a class="ct-docs-navbar-dropdown-item" href="https://github.com/creativetimofficial/ct-argon-dashboard-pro-laravel/issues" target="_blank">
+              Argon Dashboard Pro
+            </a>
+          </div>
+        </li>
+      </ul>
+      <ul class="ct-docs-navbar-nav-right">
+        <li class="ct-docs-navbar-nav-item">
+          <a class="ct-docs-navbar-nav-link" href="https://creative-tim.com/product/argon-dashboard-laravel" target="_blank">Download Free</a>
+        </li>
+      </ul>
+      <a href="https://creative-tim.com/product/argon-dashboard-pro-laravel" target="_blank" class="ct-docs-btn-upgrade">
+        <span class="ct-docs-btn-inner--icon">
+          <i class="fas fa-download mr-2"></i>
+        </span>
+        <span class="ct-docs-navbar-nav-link-inner--text">Upgrade to PRO</span>
+      </a>
+      <button class="ct-docs-navbar-toggler" type="button">
+        <span class="ct-docs-navbar-toggler-icon"></span>
+      </button>
+    </header>
+    <div class="ct-docs-main-container">
+      <div class="ct-docs-main-content-row">
+        <div class="ct-docs-sidebar-col">
+          <nav class="ct-docs-sidebar-collapse-links">
+            <div class="ct-docs-sidebar-product">
+              <div class="ct-docs-sidebar-product-image">
+                <img src="../../../assets/images/bootstrap.png">
+              </div>
+              <p class="ct-docs-sidebar-product-text">Argon Dashboard</p>
+            </div>
+            <div class="ct-docs-toc-item-active">
+              <a class="ct-docs-toc-link" href="javascript:void(0)">
+                <div class="d-inline-block">
+                  <div class="icon icon-xs border-radius-md bg-gradient-primary text-center mr-2 d-flex align-items-center justify-content-center me-1">
+                    <i class="ni ni-active-40 text-white"></i>
+                  </div>
+                </div>
+                Getting started
+              </a>
+              <ul class="ct-docs-nav-sidenav ms-4 ps-1">
+                <li class="">
+                  <a href="../../../bootstrap/overview/argon-dashboard/index.html">
+                    Overview
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/license/argon-dashboard/index.html">
+                    License
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/quick-start/argon-dashboard/index.html">
+                    Quick Start
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/build-tools/argon-dashboard/index.html">
+                    Build Tools
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/what-is-bootstrap/argon-dashboard/index.html">
+                    What is Bootstrap
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="ct-docs-toc-item-active">
+                <a
+                    class="ct-docs-toc-link"
+                    href="javascript:void(0)"
+                >
+                    <div class="d-inline-block">
+                        <div
+                            class="icon icon-xs border-radius-md bg-gradient-primary text-center mr-2 d-flex align-items-center justify-content-center me-1"
+                        >
+                            <i class="fab fa-laravel fa-2xl" style="color: #ffffff; font-size: 15px;"></i>
+                        </div>
+                    </div>
+                    Laravel Example
+                </a>
+                <ul class="ct-docs-nav-sidenav ms-4 ps-1">
+                    <li class="">
+                        <a
+                            href="../../../bootstrap/login/argon-dashboard/index.html"
+                        >
+                            Login
+                        </a>
+                    </li>
+                    <li class="">
+                        <a
+                            href="../../../bootstrap/register/argon-dashboard/index.html"
+                        >
+                            Register
+                        </a>
+                    </li>
+                    <li class="">
+                        <a
+                            href="../../../bootstrap/forgot-password/argon-dashboard/index.html"
+                        >
+                            Forgot Password
+                        </a>
+                    </li>
+                    <li class="">
+                        <a
+                            href="../../../bootstrap/reset-password/argon-dashboard/index.html"
+                        >
+                            Reset Password
+                        </a>
+                    </li>
+                    <li class="">
+                        <a
+                            href="../../../bootstrap/user-profile/argon-dashboard/index.html"
+                        >
+                            User Profile
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="ct-docs-toc-item-active">
+              <a class="ct-docs-toc-link" href="javascript:void(0)">
+                <div class="d-inline-block">
+                  <div class="icon icon-xs border-radius-md bg-gradient-primary text-center mr-2 d-flex align-items-center justify-content-center me-1">
+                    <i class="ni ni-folder-17 text-white"></i>
+                  </div>
+                </div>
+                Foundation
+              </a>
+              <ul class="ct-docs-nav-sidenav ms-4 ps-1">
+                <li class="">
+                  <a href="../../../bootstrap/colors/argon-dashboard/index.html">
+                    Colors
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/grid/argon-dashboard/index.html">
+                    Grid
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/typography/argon-dashboard/index.html">
+                    Typography
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/icons/argon-dashboard/index.html">
+                    Icons
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/utilities/argon-dashboard/index.html">
+                    Utilities
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="ct-docs-toc-item-active">
+              <a class="ct-docs-toc-link" href="javascript:void(0)">
+                <div class="d-inline-block">
+                  <div class="icon icon-xs border-radius-md bg-gradient-primary text-center mr-2 d-flex align-items-center justify-content-center me-1">
+                    <i class="ni ni-app text-white"></i>
+                  </div>
+                </div>
+                Components
+              </a>
+              <ul class="ct-docs-nav-sidenav ms-4 ps-1">
+                <li class="">
+                  <a href="../../../bootstrap/alerts/argon-dashboard/index.html">
+                    Alerts
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/badge/argon-dashboard/index.html">
+                    Badge
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/breadcrumb/argon-dashboard/index.html">
+                    Breadcrumb
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/buttons/argon-dashboard/index.html">
+                    Buttons
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/social-buttons/argon-dashboard/index.html">
+                    Social Buttons
+                    <span class="ct-docs-sidenav-pro-badge">Pro</span>
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/cards/argon-dashboard/index.html">
+                    Cards
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/carousel/argon-dashboard/index.html">
+                    Carousel
+                    <span class="ct-docs-sidenav-pro-badge">Pro</span>
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/collapse/argon-dashboard/index.html">
+                    Collapse
+                    <span class="ct-docs-sidenav-pro-badge">Pro</span>
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/dropdowns/argon-dashboard/index.html">
+                    Dropdowns
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/forms/argon-dashboard/index.html">
+                    Forms
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/input-group/argon-dashboard/index.html">
+                    Input Group
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/list-group/argon-dashboard/index.html">
+                    List Group
+                    <span class="ct-docs-sidenav-pro-badge">Pro</span>
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/modal/argon-dashboard/index.html">
+                    Modal
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/navs/argon-dashboard/index.html">
+                    Navs
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/navbar/argon-dashboard/index.html">
+                    Navbar
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/pagination/argon-dashboard/index.html">
+                    Pagination
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/popovers/argon-dashboard/index.html">
+                    Popovers
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/progress/argon-dashboard/index.html">
+                    Progress
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/spinners/argon-dashboard/index.html">
+                    Spinners
+                    <span class="ct-docs-sidenav-pro-badge">Pro</span>
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/tables/argon-dashboard/index.html">
+                    Tables
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/tooltips/argon-dashboard/index.html">
+                    Tooltips
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="ct-docs-toc-item-active">
+              <a class="ct-docs-toc-link" href="javascript:void(0)">
+                <div class="d-inline-block">
+                  <div class="icon icon-xs border-radius-md bg-gradient-primary text-center mr-2 d-flex align-items-center justify-content-center me-1">
+                    <i class="ni ni-settings text-white"></i>
+                  </div>
+                </div>
+                Plugins
+              </a>
+              <ul class="ct-docs-nav-sidenav ms-4 ps-1">
+                <li class="">
+                  <a href="../../../bootstrap/countup-js/argon-dashboard/index.html">
+                    CountUp JS
+                  </a>
+                </li>
+                <li class=" ct-docs-nav-sidenav-active ">
+                  <a href="../../../bootstrap/charts/argon-dashboard/index.html">
+                    Charts
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/datepicker/argon-dashboard/index.html">
+                    Datepicker
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/fullcalendar/argon-dashboard/index.html">
+                    Fullcalendar
+                    <span class="ct-docs-sidenav-pro-badge">Pro</span>
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/sliders/argon-dashboard/index.html">
+                    Sliders
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/choices/argon-dashboard/index.html">
+                    Choices
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/dropzone/argon-dashboard/index.html">
+                    Dropzone
+                    <span class="ct-docs-sidenav-pro-badge">Pro</span>
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/datatables/argon-dashboard/index.html">
+                    Datatables
+                    <span class="ct-docs-sidenav-pro-badge">Pro</span>
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/kanban/argon-dashboard/index.html">
+                    Kanban
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/photo-swipe/argon-dashboard/index.html">
+                    Photo Swipe
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/quill/argon-dashboard/index.html">
+                    Quill
+                    <span class="ct-docs-sidenav-pro-badge">Pro</span>
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/sweet-alerts/argon-dashboard/index.html">
+                    Sweet Alerts
+                    <span class="ct-docs-sidenav-pro-badge">Pro</span>
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/wizard/argon-dashboard/index.html">
+                    Wizard
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="ct-docs-toc-col">
+          <ul class="section-nav">
+            <li class="toc-entry toc-h2"><a href="#usage">Usage</a></li>
+            <li class="toc-entry toc-h2"><a href="#examples">Examples</a>
+              <ul>
+                <li class="toc-entry toc-h3"><a href="#line-chart-example">Line chart example</a></li>
+                <li class="toc-entry toc-h3"><a href="#line-chart-with-gradient-example">Line chart with gradient example</a></li>
+                <li class="toc-entry toc-h3"><a href="#bar-chart-example">Bar chart example</a></li>
+                <li class="toc-entry toc-h3"><a href="#bar-chart-horizontal-example">Bar chart horizontal example</a></li>
+                <li class="toc-entry toc-h3"><a href="#mixed-chart-example">Mixed chart example</a></li>
+                <li class="toc-entry toc-h3"><a href="#bubble-chart-example">Bubble chart example</a></li>
+                <li class="toc-entry toc-h3"><a href="#doughnut-chart-example">Doughnut chart example</a></li>
+                <li class="toc-entry toc-h3"><a href="#pie-chart-example">Pie chart example</a></li>
+                <li class="toc-entry toc-h3"><a href="#radar-chart-example">Radar chart example</a></li>
+                <li class="toc-entry toc-h3"><a href="#polar-chart-example">Polar chart example</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <main class="ct-docs-content-col" role="main">
+          <div class="ct-docs-page-title">
+            <h1 class="ct-docs-page-h1-title" id="content">
+              Bootstrap Charts
+            </h1>
+            <div class="avatar-group mt-3">
+            </div>
+          </div>
+          <p class="ct-docs-page-title-lead">The Bootstrap charts refer to a graphical representation of data. <br /> Keep reading these simple yet flexible Javascript charting for designers &amp; developers.</p>
+          <hr class="ct-docs-hr">
+          <!-- Bootstrap docs -->
+          <h2 id="usage">Usage</h2>
+          <p>In order to use this charts on your page you will need to include the following script in the “Optional JS” area from the page’s footer:</p>
+          <div class="position-relative">
+            <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"../../assets/js/plugins/chartjs.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span></code></pre>
+            </figure>
+          </div>
+          <p>After that, simply copy one of the code examples demonstrated below and include it in your page.</p>
+          <h2 id="examples">Examples</h2>
+          <h3 id="line-chart-example">Line chart example</h3>
+          <div class="card mb-3">
+            <div class="card-body p-3">
+              <div class="chart">
+                <canvas id="line-chart" class="chart-canvas" height="300px"></canvas>
+              </div>
+            </div>
+          </div>
+          <div class="position-relative">
+            <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card mb-3"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body p-3"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"chart"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;canvas</span> <span class="na">id=</span><span class="s">"line-chart"</span> <span class="na">class=</span><span class="s">"chart-canvas"</span> <span class="na">height=</span><span class="s">"300px"</span><span class="nt">&gt;&lt;/canvas&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+            </figure>
+          </div>
+          <h3 id="line-chart-with-gradient-example">Line chart with gradient example</h3>
+          <div class="card mb-3">
+            <div class="card-body p-3">
+              <div class="chart">
+                <canvas id="line-chart-gradient" class="chart-canvas" height="300px"></canvas>
+              </div>
+            </div>
+          </div>
+          <div class="position-relative">
+            <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card mb-3"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body p-3"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"chart"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;canvas</span> <span class="na">id=</span><span class="s">"line-chart-gradient"</span> <span class="na">class=</span><span class="s">"chart-canvas"</span> <span class="na">height=</span><span class="s">"300px"</span><span class="nt">&gt;&lt;/canvas&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+            </figure>
+          </div>
+          <h3 id="bar-chart-example">Bar chart example</h3>
+          <div class="card mb-3">
+            <div class="card-body p-3">
+              <div class="chart">
+                <canvas id="bar-chart" class="chart-canvas" height="300px"></canvas>
+              </div>
+            </div>
+          </div>
+          <div class="position-relative">
+            <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card mb-3"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body p-3"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"chart"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;canvas</span> <span class="na">id=</span><span class="s">"bar-chart"</span> <span class="na">class=</span><span class="s">"chart-canvas"</span> <span class="na">height=</span><span class="s">"300px"</span><span class="nt">&gt;&lt;/canvas&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+            </figure>
+          </div>
+          <h3 id="bar-chart-horizontal-example">Bar chart horizontal example</h3>
+          <div class="card mb-3">
+            <div class="card-body p-3">
+              <div class="chart">
+                <canvas id="bar-chart-horizontal" class="chart-canvas" height="300px"></canvas>
+              </div>
+            </div>
+          </div>
+          <div class="position-relative">
+            <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card mb-3"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body p-3"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"chart"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;canvas</span> <span class="na">id=</span><span class="s">"bar-chart-horizontal"</span> <span class="na">class=</span><span class="s">"chart-canvas"</span> <span class="na">height=</span><span class="s">"300px"</span><span class="nt">&gt;&lt;/canvas&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+            </figure>
+          </div>
+          <h3 id="mixed-chart-example">Mixed chart example</h3>
+          <div class="card mb-3">
+            <div class="card-body p-3">
+              <div class="chart">
+                <canvas id="mixed-chart" class="chart-canvas" height="300px"></canvas>
+              </div>
+            </div>
+          </div>
+          <div class="position-relative">
+            <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card mb-3"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body p-3"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"chart"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;canvas</span> <span class="na">id=</span><span class="s">"mixed-chart"</span> <span class="na">class=</span><span class="s">"chart-canvas"</span> <span class="na">height=</span><span class="s">"300px"</span><span class="nt">&gt;&lt;/canvas&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+            </figure>
+          </div>
+          <h3 id="bubble-chart-example">Bubble chart example</h3>
+          <div class="card mb-3">
+            <div class="card-body p-3">
+              <div class="chart">
+                <canvas id="bubble-chart" class="chart-canvas" height="140px"></canvas>
+              </div>
+            </div>
+          </div>
+          <div class="position-relative">
+            <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card mb-3"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body p-3"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"chart"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;canvas</span> <span class="na">id=</span><span class="s">"bubble-chart"</span> <span class="na">class=</span><span class="s">"chart-canvas"</span> <span class="na">height=</span><span class="s">"140px"</span><span class="nt">&gt;&lt;/canvas&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+            </figure>
+          </div>
+          <h3 id="doughnut-chart-example">Doughnut chart example</h3>
+          <div class="card mb-3">
+            <div class="card-body p-3">
+              <div class="chart">
+                <canvas id="doughnut-chart" class="chart-canvas" height="300px"></canvas>
+              </div>
+            </div>
+          </div>
+          <div class="position-relative">
+            <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card mb-3"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body p-3"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"chart"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;canvas</span> <span class="na">id=</span><span class="s">"doughnut-chart"</span> <span class="na">class=</span><span class="s">"chart-canvas"</span> <span class="na">height=</span><span class="s">"300px"</span><span class="nt">&gt;&lt;/canvas&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+            </figure>
+          </div>
+          <h3 id="pie-chart-example">Pie chart example</h3>
+          <div class="card mb-3">
+            <div class="card-body p-3">
+              <div class="chart">
+                <canvas id="pie-chart" class="chart-canvas" height="300px"></canvas>
+              </div>
+            </div>
+          </div>
+          <div class="position-relative">
+            <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card mb-3"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body p-3"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"chart"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;canvas</span> <span class="na">id=</span><span class="s">"pie-chart"</span> <span class="na">class=</span><span class="s">"chart-canvas"</span> <span class="na">height=</span><span class="s">"300px"</span><span class="nt">&gt;&lt;/canvas&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+            </figure>
+          </div>
+          <h3 id="radar-chart-example">Radar chart example</h3>
+          <div class="card mb-3">
+            <div class="card-body p-5">
+              <div class="chart">
+                <canvas id="radar-chart" class="chart-canvas" height="100px"></canvas>
+              </div>
+            </div>
+          </div>
+          <div class="position-relative">
+            <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card mb-3"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body p-5"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"chart"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;canvas</span> <span class="na">id=</span><span class="s">"radar-chart"</span> <span class="na">class=</span><span class="s">"chart-canvas"</span> <span class="na">height=</span><span class="s">"100px"</span><span class="nt">&gt;&lt;/canvas&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+            </figure>
+          </div>
+          <h3 id="polar-chart-example">Polar chart example</h3>
+          <div class="card mb-3">
+            <div class="card-body p-5">
+              <div class="chart">
+                <canvas id="polar-chart" class="chart-canvas" height="100px"></canvas>
+              </div>
+            </div>
+          </div>
+          <div class="position-relative">
+            <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card mb-3"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body p-5"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"chart"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;canvas</span> <span class="na">id=</span><span class="s">"polar-chart"</span> <span class="na">class=</span><span class="s">"chart-canvas"</span> <span class="na">height=</span><span class="s">"100px"</span><span class="nt">&gt;&lt;/canvas&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+            </figure>
+          </div>
+          <!-- Other frameworks docs -->
+        </main>
+      </div>
+      <div class="ct-docs-main-footer-row">
+        <div class="ct-docs-main-footer-blank-col">
+        </div>
+        <div class="ct-docs-main-footer-col">
+          <footer class="ct-docs-footer">
+            <div class="ct-docs-footer-inner-row">
+              <div class="ct-docs-footer-col">
+                <div class="ct-docs-footer-copyright">
+                  © <script>
+                    document.write(new Date().getFullYear())
+                  </script>
+                  <a href="https://creative-tim.com" class="ct-docs-footer-copyright-author" target="_blank">Creative Tim</a>
+                  &
+                  <a href="https://updivision.com" class="ct-docs-footer-copyright-author" target="_blank">UPDIVISION</a>
+                </div>
+              </div>
+              <div class="ct-docs-footer-col">
+                <ul class="ct-docs-footer-nav-footer">
+                    <li>
+                        <a href="https://updivision.com" class="ct-docs-footer-nav-link" target="_blank">UPDIVISION</a>
+                    </li>
+                  <li>
+                    <a href="https://creative-tim.com" class="ct-docs-footer-nav-link" target="_blank">Creative Tim</a>
+                  </li>
+                  <li>
+                    <a href="https://www.creative-tim.com/contact-us" class="ct-docs-footer-nav-link" target="_blank">Contact Us</a>
+                  </li>
+                  <li>
+                    <a href="https://creative-tim.com/blog" class="ct-docs-footer-nav-link" target="_blank">Blog</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <script src="https://demos.creative-tim.com/argon-dashboard-pro-bs4/assets/vendor/jquery/dist/jquery.min.js" type="text/javascript"></script>
+    <script src="https://demos.creative-tim.com/soft-ui-design-system-pro/assets/js/core/popper.min.js" type="text/javascript"></script>
+    <script src="https://demos.creative-tim.com/soft-ui-design-system-pro/assets/js/core/bootstrap.min.js" type="text/javascript"></script>
+    <script src="" type="text/javascript"></script>
+    <script src="" type="text/javascript"></script>
+    <script src="" type="text/javascript"></script>
+    <script src="" type="text/javascript"></script>
+    <script src="https://demos.creative-tim.com/argon-dashboard-pro-bs4/assets/vendor/prismjs/prism.js" type="text/javascript"></script>
+    <script src="https://demos.creative-tim.com/argon-design-system-pro/assets/demo/docs.min.js" type="text/javascript"></script>
+    <script src="https://demos.creative-tim.com/argon-design-system-pro/assets/demo/vendor/holder.min.js" type="text/javascript"></script>
+    <script src="https://demos.creative-tim.com/test/argon-dashboard-pro/assets/js/plugins/chartjs.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      // Line chart
+      var ctx1 = document.getElementById("line-chart").getContext("2d");
+
+      new Chart(ctx1, {
+        type: "line",
+        data: {
+          labels: ["Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+          datasets: [{
+              label: "Organic Search",
+              tension: 0.4,
+              borderWidth: 0,
+              pointRadius: 2,
+              pointBackgroundColor: "#5e72e4",
+              borderColor: "#5e72e4",
+              borderWidth: 3,
+              backgroundColor: gradientStroke1,
+              data: [50, 40, 300, 220, 500, 250, 400, 230, 500],
+              maxBarThickness: 6
+            },
+            {
+              label: "Referral",
+              tension: 0.4,
+              borderWidth: 0,
+              pointRadius: 2,
+              pointBackgroundColor: "#3A416F",
+              borderColor: "#3A416F",
+              borderWidth: 3,
+              backgroundColor: gradientStroke2,
+              data: [30, 90, 40, 140, 290, 290, 340, 230, 400],
+              maxBarThickness: 6
+            },
+            {
+              label: "Direct",
+              tension: 0.4,
+              borderWidth: 0,
+              pointRadius: 2,
+              pointBackgroundColor: "#17c1e8",
+              borderColor: "#17c1e8",
+              borderWidth: 3,
+              backgroundColor: gradientStroke2,
+              data: [40, 80, 70, 90, 30, 90, 140, 130, 200],
+              maxBarThickness: 6
+            },
+          ],
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: {
+              display: false,
+            }
+          },
+          interaction: {
+            intersect: false,
+            mode: 'index',
+          },
+          scales: {
+            y: {
+              grid: {
+                drawBorder: false,
+                display: true,
+                drawOnChartArea: true,
+                drawTicks: false,
+                borderDash: [5, 5]
+              },
+              ticks: {
+                display: true,
+                padding: 10,
+                color: '#b2b9bf',
+                font: {
+                  size: 11,
+                  family: "Open Sans",
+                  style: 'normal',
+                  lineHeight: 2
+                },
+              }
+            },
+            x: {
+              grid: {
+                drawBorder: false,
+                display: true,
+                drawOnChartArea: true,
+                drawTicks: true,
+                borderDash: [5, 5]
+              },
+              ticks: {
+                display: true,
+                color: '#b2b9bf',
+                padding: 10,
+                font: {
+                  size: 11,
+                  family: "Open Sans",
+                  style: 'normal',
+                  lineHeight: 2
+                },
+              }
+            },
+          },
+        },
+      });
+
+      // Line chart with gradient
+      var ctx2 = document.getElementById("line-chart-gradient").getContext("2d");
+
+      var gradientStroke1 = ctx2.createLinearGradient(0, 230, 0, 50);
+
+      gradientStroke1.addColorStop(1, 'rgba(94,114,228,0.2)');
+      gradientStroke1.addColorStop(0.2, 'rgba(72,72,176,0.0)');
+      gradientStroke1.addColorStop(0, 'rgba(94,114,228,0)'); //purple colors
+
+      var gradientStroke2 = ctx2.createLinearGradient(0, 230, 0, 50);
+
+      gradientStroke2.addColorStop(1, 'rgba(20,23,39,0.2)');
+      gradientStroke2.addColorStop(0.2, 'rgba(72,72,176,0.0)');
+      gradientStroke2.addColorStop(0, 'rgba(20,23,39,0)'); //purple colors
+
+      new Chart(ctx2, {
+        type: "line",
+        data: {
+          labels: ["Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+          datasets: [{
+              label: "Mobile apps",
+              tension: 0.4,
+              borderWidth: 0,
+              pointRadius: 0,
+              borderColor: "#5e72e4",
+              borderWidth: 3,
+              backgroundColor: gradientStroke1,
+              fill: true,
+              data: [50, 40, 300, 220, 500, 250, 400, 230, 500],
+              maxBarThickness: 6
+
+            },
+            {
+              label: "Websites",
+              tension: 0.4,
+              borderWidth: 0,
+              pointRadius: 0,
+              borderColor: "#3A416F",
+              borderWidth: 3,
+              backgroundColor: gradientStroke2,
+              fill: true,
+              data: [30, 90, 40, 140, 290, 290, 340, 230, 400],
+              maxBarThickness: 6
+            },
+          ],
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: {
+              display: false,
+            }
+          },
+          interaction: {
+            intersect: false,
+            mode: 'index',
+          },
+          scales: {
+            y: {
+              grid: {
+                drawBorder: false,
+                display: true,
+                drawOnChartArea: true,
+                drawTicks: false,
+                borderDash: [5, 5]
+              },
+              ticks: {
+                display: true,
+                padding: 10,
+                color: '#b2b9bf',
+                font: {
+                  size: 11,
+                  family: "Open Sans",
+                  style: 'normal',
+                  lineHeight: 2
+                },
+              }
+            },
+            x: {
+              grid: {
+                drawBorder: false,
+                display: false,
+                drawOnChartArea: false,
+                drawTicks: false,
+                borderDash: [5, 5]
+              },
+              ticks: {
+                display: true,
+                color: '#b2b9bf',
+                padding: 10,
+                font: {
+                  size: 11,
+                  family: "Open Sans",
+                  style: 'normal',
+                  lineHeight: 2
+                },
+              }
+            },
+          },
+        },
+      });
+
+      // Doughnut chart
+      var ctx3 = document.getElementById("doughnut-chart").getContext("2d");
+
+      new Chart(ctx3, {
+        type: "doughnut",
+        data: {
+          labels: ['Creative Tim', 'Github', 'Bootsnipp', 'Dev.to', 'Codeinwp'],
+          datasets: [{
+            label: "Projects",
+            weight: 9,
+            cutout: 60,
+            tension: 0.9,
+            pointRadius: 2,
+            borderWidth: 2,
+            backgroundColor: ['#2152ff', '#3A416F', '#f53939', '#a8b8d8', '#5e72e4'],
+            data: [15, 20, 12, 60, 20],
+            fill: false
+          }],
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: {
+              display: false,
+            }
+          },
+          interaction: {
+            intersect: false,
+            mode: 'index',
+          },
+          scales: {
+            y: {
+              grid: {
+                drawBorder: false,
+                display: false,
+                drawOnChartArea: false,
+                drawTicks: false,
+              },
+              ticks: {
+                display: false
+              }
+            },
+            x: {
+              grid: {
+                drawBorder: false,
+                display: false,
+                drawOnChartArea: false,
+                drawTicks: false,
+              },
+              ticks: {
+                display: false,
+              }
+            },
+          },
+        },
+      });
+
+      // Pie chart
+      var ctx4 = document.getElementById("pie-chart").getContext("2d");
+
+      new Chart(ctx4, {
+        type: "pie",
+        data: {
+          labels: ['Facebook', 'Direct', 'Organic', 'Referral'],
+          datasets: [{
+            label: "Projects",
+            weight: 9,
+            cutout: 0,
+            tension: 0.9,
+            pointRadius: 2,
+            borderWidth: 2,
+            backgroundColor: ['#17c1e8', '#5e72e4', '#3A416F', '#a8b8d8'],
+            data: [15, 20, 12, 60],
+            fill: false
+          }],
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: {
+              display: false,
+            }
+          },
+          interaction: {
+            intersect: false,
+            mode: 'index',
+          },
+          scales: {
+            y: {
+              grid: {
+                drawBorder: false,
+                display: false,
+                drawOnChartArea: false,
+                drawTicks: false,
+              },
+              ticks: {
+                display: false
+              }
+            },
+            x: {
+              grid: {
+                drawBorder: false,
+                display: false,
+                drawOnChartArea: false,
+                drawTicks: false,
+              },
+              ticks: {
+                display: false,
+              }
+            },
+          },
+        },
+      });
+
+      // Bar chart
+      var ctx5 = document.getElementById("bar-chart").getContext("2d");
+
+      new Chart(ctx5, {
+        type: "bar",
+        data: {
+          labels: ['16-20', '21-25', '26-30', '31-36', '36-42', '42+'],
+          datasets: [{
+            label: "Sales by age",
+            weight: 5,
+            borderWidth: 0,
+            borderRadius: 4,
+            backgroundColor: '#3A416F',
+            data: [15, 20, 12, 60, 20, 15],
+            fill: false,
+            maxBarThickness: 35
+          }],
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: {
+              display: false,
+            }
+          },
+          scales: {
+            y: {
+              grid: {
+                drawBorder: false,
+                display: true,
+                drawOnChartArea: true,
+                drawTicks: false,
+                borderDash: [5, 5]
+              },
+              ticks: {
+                display: true,
+                padding: 10,
+                color: '#9ca2b7'
+              }
+            },
+            x: {
+              grid: {
+                drawBorder: false,
+                display: false,
+                drawOnChartArea: true,
+                drawTicks: true,
+              },
+              ticks: {
+                display: true,
+                color: '#9ca2b7',
+                padding: 10
+              }
+            },
+          },
+        },
+      });
+
+      // Bar chart horizontal
+      var ctx6 = document.getElementById("bar-chart-horizontal").getContext("2d");
+
+      new Chart(ctx6, {
+        type: "bar",
+        data: {
+          labels: ['16-20', '21-25', '26-30', '31-36', '36-42', '42+'],
+          datasets: [{
+            label: "Sales by age",
+            weight: 5,
+            borderWidth: 0,
+            borderRadius: 4,
+            backgroundColor: '#3A416F',
+            data: [15, 20, 12, 60, 20, 15],
+            fill: false
+          }],
+        },
+        options: {
+          indexAxis: 'y',
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: {
+              display: false,
+            }
+          },
+          scales: {
+            y: {
+              grid: {
+                drawBorder: false,
+                display: true,
+                drawOnChartArea: true,
+                drawTicks: false,
+                borderDash: [5, 5]
+              },
+              ticks: {
+                display: true,
+                padding: 10,
+                color: '#9ca2b7'
+              }
+            },
+            x: {
+              grid: {
+                drawBorder: false,
+                display: false,
+                drawOnChartArea: true,
+                drawTicks: true,
+              },
+              ticks: {
+                display: true,
+                color: '#9ca2b7',
+                padding: 10
+              }
+            },
+          },
+        },
+      });
+
+      // Mixed chart
+      var ctx7 = document.getElementById("mixed-chart").getContext("2d");
+
+      new Chart(ctx7, {
+        data: {
+          labels: ["Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+          datasets: [{
+              type: "bar",
+              label: "Organic Search",
+              weight: 5,
+              tension: 0.4,
+              borderWidth: 0,
+              pointBackgroundColor: "#3A416F",
+              borderColor: "#3A416F",
+              backgroundColor: '#3A416F',
+              borderRadius: 4,
+              borderSkipped: false,
+              data: [50, 40, 300, 220, 500, 250, 400, 230, 500],
+              maxBarThickness: 10,
+            },
+            {
+              type: "line",
+              label: "Referral",
+              tension: 0.4,
+              borderWidth: 0,
+              pointRadius: 0,
+              pointBackgroundColor: "#5e72e4",
+              borderColor: "#5e72e4",
+              borderWidth: 3,
+              backgroundColor: gradientStroke1,
+              data: [30, 90, 40, 140, 290, 290, 340, 230, 400],
+              fill: true,
+            }
+          ],
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: {
+              display: false,
+            }
+          },
+          interaction: {
+            intersect: false,
+            mode: 'index',
+          },
+          scales: {
+            y: {
+              grid: {
+                drawBorder: false,
+                display: true,
+                drawOnChartArea: true,
+                drawTicks: false,
+                borderDash: [5, 5]
+              },
+              ticks: {
+                display: true,
+                padding: 10,
+                color: '#b2b9bf',
+                font: {
+                  size: 11,
+                  family: "Open Sans",
+                  style: 'normal',
+                  lineHeight: 2
+                },
+              }
+            },
+            x: {
+              grid: {
+                drawBorder: false,
+                display: true,
+                drawOnChartArea: true,
+                drawTicks: true,
+                borderDash: [5, 5]
+              },
+              ticks: {
+                display: true,
+                color: '#b2b9bf',
+                padding: 10,
+                font: {
+                  size: 11,
+                  family: "Open Sans",
+                  style: 'normal',
+                  lineHeight: 2
+                },
+              }
+            },
+          },
+        },
+      });
+
+      // Bubble chart
+      var ctx8 = document.getElementById("bubble-chart").getContext("2d");
+
+      new Chart(ctx8, {
+        type: "bubble",
+        data: {
+          labels: ['0', '10', '20', '30', '40', '50', '60', '70', '80', '90'],
+          datasets: [{
+              label: 'Dataset 1',
+              data: [{
+                x: 100,
+                y: 0,
+                r: 10
+              }, {
+                x: 60,
+                y: 30,
+                r: 20
+              }, {
+                x: 40,
+                y: 350,
+                r: 10
+              }, {
+                x: 80,
+                y: 80,
+                r: 10
+              }, {
+                x: 20,
+                y: 30,
+                r: 15
+              }, {
+                x: 0,
+                y: 100,
+                r: 5
+              }],
+              backgroundColor: '#5e72e4',
+            },
+            {
+              label: 'Dataset 2',
+              data: [{
+                x: 70,
+                y: 40,
+                r: 10
+              }, {
+                x: 30,
+                y: 60,
+                r: 20
+              }, {
+                x: 10,
+                y: 300,
+                r: 25
+              }, {
+                x: 60,
+                y: 200,
+                r: 10
+              }, {
+                x: 50,
+                y: 300,
+                r: 15
+              }, {
+                x: 20,
+                y: 350,
+                r: 5
+              }],
+              backgroundColor: '#3A416F',
+            }
+          ]
+        },
+        options: {
+          responsive: true,
+          plugins: {
+            legend: {
+              display: false
+            }
+          },
+          scales: {
+            y: {
+              grid: {
+                drawBorder: false,
+                display: true,
+                drawOnChartArea: true,
+                drawTicks: false,
+                borderDash: [5, 5]
+              },
+              ticks: {
+                display: true,
+                padding: 10,
+                color: '#b2b9bf',
+                font: {
+                  size: 11,
+                  family: "Open Sans",
+                  style: 'normal',
+                  lineHeight: 2
+                },
+              }
+            },
+            x: {
+              grid: {
+                drawBorder: false,
+                display: true,
+                drawOnChartArea: true,
+                drawTicks: false,
+                borderDash: [5, 5]
+              },
+              ticks: {
+                display: true,
+                color: '#b2b9bf',
+                padding: 10,
+                font: {
+                  size: 11,
+                  family: "Open Sans",
+                  style: 'normal',
+                  lineHeight: 2
+                },
+              }
+            },
+          },
+        },
+      });
+
+      // Radar chart
+      var ctx9 = document.getElementById("radar-chart").getContext("2d");
+
+      new Chart(ctx9, {
+        type: "radar",
+        data: {
+          labels: ["English", "Maths", "Physics", "Chemistry", "Biology", "History"],
+          datasets: [{
+            label: "Student A",
+            backgroundColor: "rgba(58,65,111,0.2)",
+            data: [65, 75, 70, 80, 60, 80],
+            borderDash: [5, 5],
+          }, {
+            label: "Student B",
+            backgroundColor: "rgba(203,12,159,0.2)",
+            data: [54, 65, 60, 70, 70, 75]
+          }]
+        },
+        options: {
+          plugins: {
+            legend: {
+              display: false,
+            }
+          }
+        }
+      });
+
+      // Radar chart
+      var ctx10 = document.getElementById("polar-chart").getContext("2d");
+
+      new Chart(ctx10, {
+        type: "polarArea",
+        data: {
+          labels: [
+            'Red',
+            'Green',
+            'Yellow',
+            'Grey',
+            'Blue'
+          ],
+          datasets: [{
+            label: 'My First Dataset',
+            data: [11, 16, 7, 3, 14],
+            backgroundColor: ['#17c1e8', '#5e72e4', '#3A416F', '#a8b8d8', '#82d616'],
+          }]
+        },
+        options: {
+          plugins: {
+            legend: {
+              display: false,
+            }
+          }
+        }
+      });
+    </script>
+    <script src="https://demos.creative-tim.com/soft-ui-design-system-pro/assets/js/plugins/moment.min.js" type="text/javascript"></script>
+    <script src="https://demos.creative-tim.com/test/argon-dashboard-pro/assets/js/argon-dashboard.min.js?v=1.0.0" type="text/javascript"></script>
+    <script>
+      Holder.addTheme('gray', {
+        bg: '#777',
+        fg: 'rgba(255,255,255,.75)',
+        font: 'Helvetica',
+        fontweight: 'normal'
+      })
+    </script>
+    <script>
+      // Facebook Pixel Code Don't Delete
+      ! function(f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function() {
+          n.callMethod ?
+            n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = '2.0';
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s)
+      }(window,
+        document, 'script', '//connect.facebook.net/en_US/fbevents.js');
+
+      try {
+        fbq('init', '111649226022273');
+        fbq('track', "PageView");
+
+      } catch (err) {
+        console.log('Facebook Track Error:', err);
+      }
+    </script>
+    <script src="../../../assets/docs.js"></script>
+  </body>
+
+</html>

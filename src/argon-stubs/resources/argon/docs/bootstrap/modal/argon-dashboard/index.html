@@ -1,0 +1,1133 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <link rel="apple-touch-icon" sizes="76x76" href="https://demos.creative-tim.com/argon-design-system-pro/assets/img/apple-icon.png">
+    <link rel="icon" href="https://demos.creative-tim.com/argon-design-system-pro/assets/img/apple-icon.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Creative Tim">
+    <title>
+      Modal | Argon Dashboard Bootstrap @ Creative Tim
+    </title>
+    <link rel="canonical" href="https://www.creative-tim.com/learning-lab/bootstrap/modal/argon-dashboard" />
+    <meta name="keywords" content="">
+    <meta name="description" content="Our Bootstrap modals are lightweight and multi-purpose popups that are built with HTML, CSS, and JavaScript. The three primary sections of a Bootstrap modal are header, body, and footer. Modals are positioned over everything else in the document and remove scroll from the <code><body></code> so that modal content scrolls instead. Use Bootstrap’s JavaScript modal plugin to add dialogues to your site for lightboxes, user notifications, or completely custom content.">
+    <meta name="twitter:card" content="product">
+    <meta name="twitter:site" content="@creativetim">
+    <meta name="twitter:title" content="Modal | Argon Dashboard Bootstrap @ Creative Tim">
+    <meta name="twitter:description" content="Our Bootstrap modals are lightweight and multi-purpose popups that are built with HTML, CSS, and JavaScript. The three primary sections of a Bootstrap modal are header, body, and footer. Modals are positioned over everything else in the document and remove scroll from the <code><body></code> so that modal content scrolls instead. Use Bootstrap’s JavaScript modal plugin to add dialogues to your site for lightboxes, user notifications, or completely custom content.">
+    <meta name="twitter:creator" content="@creativetim">
+    <meta name="twitter:image" content="https://s3.amazonaws.com/creativetim_bucket/products/137/original/opt_adp_thumbnail.jpg">
+    <meta property="fb:app_id" content="655968634437471">
+    <meta property="og:title" content="Modal | Argon Dashboard Bootstrap @ Creative Tim" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://demos.creative-tim.com/argon-dashboard/index.html" />
+    <meta property="og:image" content="https://s3.amazonaws.com/creativetim_bucket/products/137/original/opt_adp_thumbnail.jpg" />
+    <meta property="og:description" content="Our Bootstrap modals are lightweight and multi-purpose popups that are built with HTML, CSS, and JavaScript. The three primary sections of a Bootstrap modal are header, body, and footer. Modals are positioned over everything else in the document and remove scroll from the <code><body></code> so that modal content scrolls instead. Use Bootstrap’s JavaScript modal plugin to add dialogues to your site for lightboxes, user notifications, or completely custom content." />
+    <meta property="og:site_name" content="Creative Tim" />
+    <link rel="stylesheet" href="https://demos.creative-tim.com/argon-design-system-pro/assets/css/nucleo-icons.css" type="text/css">
+    <link href="" rel="stylesheet">
+    <link rel="stylesheet" href="https://demos.creative-tim.com/test/argon-dashboard-pro/assets/css/argon-dashboard.min.css?v=2.0.0" type="text/css">
+    <link href="https://demos.creative-tim.com/test/argon-dashboard-pro/assets/css/argon-dashboard.min.css?v=2.0.0" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <link href="https://demos.creative-tim.com/argon-design-system-pro/assets/css/nucleo-icons.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+    <!-- Anti-flicker snippet (recommended)  -->
+    <style>
+      .async-hide {
+        opacity: 0 !important
+      }
+    </style>
+    <script>
+      (function(a, s, y, n, c, h, i, d, e) {
+        s.className += ' ' + y;
+        h.start = 1 * new Date;
+        h.end = i = function() {
+          s.className = s.className.replace(RegExp(' ?' + y), '')
+        };
+        (a[n] = a[n] || []).hide = h;
+        setTimeout(function() {
+          i();
+          h.end = null
+        }, c);
+        h.timeout = c;
+      })(window, document.documentElement, 'async-hide', 'dataLayer', 4000, {
+        'GTM-K9BGS8K': true
+      });
+    </script>
+    <!-- Analytics-Optimize Snippet -->
+    <script>
+      (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+          (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+          m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+      ga('create', 'UA-46172202-22', 'auto', {
+        allowLinker: true
+      });
+      ga('set', 'anonymizeIp', true);
+      ga('require', 'GTM-K9BGS8K');
+      ga('require', 'displayfeatures');
+      ga('require', 'linker');
+      ga('linker:autoLink', ["2checkout.com", "avangate.com"]);
+    </script>
+    <!-- end Analytics-Optimize Snippet -->
+    <!-- Google Tag Manager -->
+    <script>
+      (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          'gtm.start': new Date().getTime(),
+          event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-NKDMSK6');
+    </script>
+    <!-- End Google Tag Manager -->
+    <!-- This is for docs typography and layout -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <link href="../../../assets/docs-soft.css" rel="stylesheet" />
+  </head>
+
+  <body class="docs ">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NKDMSK6" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <header class="ct-docs-navbar">
+      <a class="ct-docs-navbar-brand" href="javascript:void(0)" aria-label="Bootstrap">
+        <a href="https://www.creative-tim.com/" class="ct-docs-navbar-text" target="_blank">
+          Creative Tim
+        </a>
+        <div class="ct-docs-navbar-border"></div>
+        <a href="../../overview/argon-dashboard/index.html" class="ct-docs-navbar-text">
+          Docs
+        </a>
+      </a>
+      <ul class="ct-docs-navbar-nav-left">
+        <li class="ct-docs-nav-item-dropdown">
+          <a href="javascript:;" class="ct-docs-navbar-nav-link" role="button">
+            <span class="ct-docs-navbar-nav-link-inner--text">Live Preview</span>
+          </a>
+          <div class="ct-docs-navbar-dropdown-menu" aria-labelledby="DropdownPreview">
+            <a class="ct-docs-navbar-dropdown-item" href="https://www.creative-tim.com/live/argon-dashboard-laravel" target="_blank">
+              Argon Dashboard
+            </a>
+            <a class="ct-docs-navbar-dropdown-item" href="https://www.creative-tim.com/live/argon-dashboard-pro-laravel" target="_blank">
+              Argon Dashboard Pro
+            </a>
+          </div>
+        </li>
+        <li class="ct-docs-nav-item-dropdown">
+          <a href="javascript:;" class="ct-docs-navbar-nav-link" role="button">
+            <span class="ct-docs-navbar-nav-link-inner--text">Support</span>
+          </a>
+          <div class="ct-docs-navbar-dropdown-menu" aria-labelledby="DropdownSupport">
+            <a class="ct-docs-navbar-dropdown-item" href="https://github.com/creativetimofficial/argon-dashboard-laravel/issues" target="_blank">
+              Argon Dashboard
+            </a>
+            <a class="ct-docs-navbar-dropdown-item" href="https://github.com/creativetimofficial/ct-argon-dashboard-pro-laravel/issues" target="_blank">
+              Argon Dashboard Pro
+            </a>
+          </div>
+        </li>
+      </ul>
+      <ul class="ct-docs-navbar-nav-right">
+        <li class="ct-docs-navbar-nav-item">
+          <a class="ct-docs-navbar-nav-link" href="https://creative-tim.com/product/argon-dashboard-laravel" target="_blank">Download Free</a>
+        </li>
+      </ul>
+      <a href="https://creative-tim.com/product/argon-dashboard-pro-laravel" target="_blank" class="ct-docs-btn-upgrade">
+        <span class="ct-docs-btn-inner--icon">
+          <i class="fas fa-download mr-2"></i>
+        </span>
+        <span class="ct-docs-navbar-nav-link-inner--text">Upgrade to PRO</span>
+      </a>
+      <button class="ct-docs-navbar-toggler" type="button">
+        <span class="ct-docs-navbar-toggler-icon"></span>
+      </button>
+    </header>
+    <div class="ct-docs-main-container">
+      <div class="ct-docs-main-content-row">
+        <div class="ct-docs-sidebar-col">
+          <nav class="ct-docs-sidebar-collapse-links">
+            <div class="ct-docs-sidebar-product">
+              <div class="ct-docs-sidebar-product-image">
+                <img src="../../../assets/images/bootstrap.png">
+              </div>
+              <p class="ct-docs-sidebar-product-text">Argon Dashboard</p>
+            </div>
+            <div class="ct-docs-toc-item-active">
+              <a class="ct-docs-toc-link" href="javascript:void(0)">
+                <div class="d-inline-block">
+                  <div class="icon icon-xs border-radius-md bg-gradient-primary text-center mr-2 d-flex align-items-center justify-content-center me-1">
+                    <i class="ni ni-active-40 text-white"></i>
+                  </div>
+                </div>
+                Getting started
+              </a>
+              <ul class="ct-docs-nav-sidenav ms-4 ps-1">
+                <li class="">
+                  <a href="../../../bootstrap/overview/argon-dashboard/index.html">
+                    Overview
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/license/argon-dashboard/index.html">
+                    License
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/quick-start/argon-dashboard/index.html">
+                    Quick Start
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/build-tools/argon-dashboard/index.html">
+                    Build Tools
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/what-is-bootstrap/argon-dashboard/index.html">
+                    What is Bootstrap
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="ct-docs-toc-item-active">
+                <a
+                    class="ct-docs-toc-link"
+                    href="javascript:void(0)"
+                >
+                    <div class="d-inline-block">
+                        <div
+                            class="icon icon-xs border-radius-md bg-gradient-primary text-center mr-2 d-flex align-items-center justify-content-center me-1"
+                        >
+                            <i class="fab fa-laravel fa-2xl" style="color: #ffffff; font-size: 15px;"></i>
+                        </div>
+                    </div>
+                    Laravel Example
+                </a>
+                <ul class="ct-docs-nav-sidenav ms-4 ps-1">
+                    <li class="">
+                        <a
+                            href="../../../bootstrap/login/argon-dashboard/index.html"
+                        >
+                            Login
+                        </a>
+                    </li>
+                    <li class="">
+                        <a
+                            href="../../../bootstrap/register/argon-dashboard/index.html"
+                        >
+                            Register
+                        </a>
+                    </li>
+                    <li class="">
+                        <a
+                            href="../../../bootstrap/forgot-password/argon-dashboard/index.html"
+                        >
+                            Forgot Password
+                        </a>
+                    </li>
+                    <li class="">
+                        <a
+                            href="../../../bootstrap/reset-password/argon-dashboard/index.html"
+                        >
+                            Reset Password
+                        </a>
+                    </li>
+                    <li class="">
+                        <a
+                            href="../../../bootstrap/user-profile/argon-dashboard/index.html"
+                        >
+                            User Profile
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="ct-docs-toc-item-active">
+              <a class="ct-docs-toc-link" href="javascript:void(0)">
+                <div class="d-inline-block">
+                  <div class="icon icon-xs border-radius-md bg-gradient-primary text-center mr-2 d-flex align-items-center justify-content-center me-1">
+                    <i class="ni ni-folder-17 text-white"></i>
+                  </div>
+                </div>
+                Foundation
+              </a>
+              <ul class="ct-docs-nav-sidenav ms-4 ps-1">
+                <li class="">
+                  <a href="../../../bootstrap/colors/argon-dashboard/index.html">
+                    Colors
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/grid/argon-dashboard/index.html">
+                    Grid
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/typography/argon-dashboard/index.html">
+                    Typography
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/icons/argon-dashboard/index.html">
+                    Icons
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/utilities/argon-dashboard/index.html">
+                    Utilities
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="ct-docs-toc-item-active">
+              <a class="ct-docs-toc-link" href="javascript:void(0)">
+                <div class="d-inline-block">
+                  <div class="icon icon-xs border-radius-md bg-gradient-primary text-center mr-2 d-flex align-items-center justify-content-center me-1">
+                    <i class="ni ni-app text-white"></i>
+                  </div>
+                </div>
+                Components
+              </a>
+              <ul class="ct-docs-nav-sidenav ms-4 ps-1">
+                <li class="">
+                  <a href="../../../bootstrap/alerts/argon-dashboard/index.html">
+                    Alerts
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/badge/argon-dashboard/index.html">
+                    Badge
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/breadcrumb/argon-dashboard/index.html">
+                    Breadcrumb
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/buttons/argon-dashboard/index.html">
+                    Buttons
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/social-buttons/argon-dashboard/index.html">
+                    Social Buttons
+                    <span class="ct-docs-sidenav-pro-badge">Pro</span>
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/cards/argon-dashboard/index.html">
+                    Cards
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/carousel/argon-dashboard/index.html">
+                    Carousel
+                    <span class="ct-docs-sidenav-pro-badge">Pro</span>
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/collapse/argon-dashboard/index.html">
+                    Collapse
+                    <span class="ct-docs-sidenav-pro-badge">Pro</span>
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/dropdowns/argon-dashboard/index.html">
+                    Dropdowns
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/forms/argon-dashboard/index.html">
+                    Forms
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/input-group/argon-dashboard/index.html">
+                    Input Group
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/list-group/argon-dashboard/index.html">
+                    List Group
+                    <span class="ct-docs-sidenav-pro-badge">Pro</span>
+                  </a>
+                </li>
+                <li class=" ct-docs-nav-sidenav-active ">
+                  <a href="../../../bootstrap/modal/argon-dashboard/index.html">
+                    Modal
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/navs/argon-dashboard/index.html">
+                    Navs
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/navbar/argon-dashboard/index.html">
+                    Navbar
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/pagination/argon-dashboard/index.html">
+                    Pagination
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/popovers/argon-dashboard/index.html">
+                    Popovers
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/progress/argon-dashboard/index.html">
+                    Progress
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/spinners/argon-dashboard/index.html">
+                    Spinners
+                    <span class="ct-docs-sidenav-pro-badge">Pro</span>
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/tables/argon-dashboard/index.html">
+                    Tables
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/tooltips/argon-dashboard/index.html">
+                    Tooltips
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="ct-docs-toc-item-active">
+              <a class="ct-docs-toc-link" href="javascript:void(0)">
+                <div class="d-inline-block">
+                  <div class="icon icon-xs border-radius-md bg-gradient-primary text-center mr-2 d-flex align-items-center justify-content-center me-1">
+                    <i class="ni ni-settings text-white"></i>
+                  </div>
+                </div>
+                Plugins
+              </a>
+              <ul class="ct-docs-nav-sidenav ms-4 ps-1">
+                <li class="">
+                  <a href="../../../bootstrap/countup-js/argon-dashboard/index.html">
+                    CountUp JS
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/charts/argon-dashboard/index.html">
+                    Charts
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/datepicker/argon-dashboard/index.html">
+                    Datepicker
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/fullcalendar/argon-dashboard/index.html">
+                    Fullcalendar
+                    <span class="ct-docs-sidenav-pro-badge">Pro</span>
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/sliders/argon-dashboard/index.html">
+                    Sliders
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/choices/argon-dashboard/index.html">
+                    Choices
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/dropzone/argon-dashboard/index.html">
+                    Dropzone
+                    <span class="ct-docs-sidenav-pro-badge">Pro</span>
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/datatables/argon-dashboard/index.html">
+                    Datatables
+                    <span class="ct-docs-sidenav-pro-badge">Pro</span>
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/kanban/argon-dashboard/index.html">
+                    Kanban
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/photo-swipe/argon-dashboard/index.html">
+                    Photo Swipe
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/quill/argon-dashboard/index.html">
+                    Quill
+                    <span class="ct-docs-sidenav-pro-badge">Pro</span>
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/sweet-alerts/argon-dashboard/index.html">
+                    Sweet Alerts
+                    <span class="ct-docs-sidenav-pro-badge">Pro</span>
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/wizard/argon-dashboard/index.html">
+                    Wizard
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="ct-docs-toc-col">
+          <ul class="section-nav">
+            <li class="toc-entry toc-h2"><a href="#example">Example</a>
+              <ul>
+                <li class="toc-entry toc-h5"><a href="#exampleModalLabel">Modal title</a></li>
+              </ul>
+            </li>
+            <li class="toc-entry toc-h2"><a href="#variations">Variations</a>
+              <ul>
+                <li class="toc-entry toc-h6"><a href="#modal-title-default">Type your modal title</a></li>
+                <li class="toc-entry toc-h6"><a href="#modal-title-notification">Your attention is required</a></li>
+                <li class="toc-entry toc-h4"><a href="#you-should-read-this">You should read this!</a></li>
+                <li class="toc-entry toc-h3"><a href="#welcome-back">Welcome back</a>
+                  <ul>
+                    <li class="toc-entry toc-h5"><a href="#exampleModalLongTitle">Modal title</a></li>
+                    <li class="toc-entry toc-h5"><a href="#exampleModalLabel">New message to @CT</a></li>
+                  </ul>
+                </li>
+                <li class="toc-entry toc-h3"><a href="#join-us-today">Join us today</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <main class="ct-docs-content-col" role="main">
+          <div class="ct-docs-page-title">
+            <h1 class="ct-docs-page-h1-title" id="content">
+              Bootstrap Modal
+            </h1>
+            <div class="avatar-group mt-3">
+            </div>
+          </div>
+          <p class="ct-docs-page-title-lead">Our Bootstrap modals are lightweight and multi-purpose popups that are built with HTML, CSS, and JavaScript. The three primary sections of a Bootstrap modal are header, body, and footer. Modals are positioned over everything else in the document and remove scroll from the <code>&lt;body&gt;</code> so that modal content scrolls instead. Use Bootstrap’s JavaScript modal plugin to add dialogues to your site for lightboxes, user notifications, or completely custom content.</p>
+          <hr class="ct-docs-hr">
+          <!-- Bootstrap docs -->
+          <p>Keep reading our Bootstrap Modal examples and learn how to use it.</p>
+          <h2 id="example">Example</h2>
+          <!-- Button trigger modal -->
+          <p><button type="button" class="btn bg-gradient-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Launch demo modal
+            </button></p>
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  ...
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn bg-gradient-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn bg-gradient-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="position-relative">
+            <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- Button trigger modal --&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn bg-gradient-primary"</span> <span class="na">data-bs-toggle=</span><span class="s">"modal"</span> <span class="na">data-bs-target=</span><span class="s">"#exampleModal"</span><span class="nt">&gt;</span>
+  Launch demo modal
+<span class="nt">&lt;/button&gt;</span>
+
+<span class="c">&lt;!-- Modal --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal fade"</span> <span class="na">id=</span><span class="s">"exampleModal"</span> <span class="na">tabindex=</span><span class="s">"-1"</span> <span class="na">role=</span><span class="s">"dialog"</span> <span class="na">aria-labelledby=</span><span class="s">"exampleModalLabel"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-dialog modal-dialog-centered"</span> <span class="na">role=</span><span class="s">"document"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-content"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-header"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"modal-title"</span> <span class="na">id=</span><span class="s">"exampleModalLabel"</span><span class="nt">&gt;</span>Modal title<span class="nt">&lt;/h5&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn-close"</span> <span class="na">data-bs-dismiss=</span><span class="s">"modal"</span> <span class="na">aria-label=</span><span class="s">"Close"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;span</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span><span class="ni">&amp;times;</span><span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;/button&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-body"</span><span class="nt">&gt;</span>
+        ...
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-footer"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn bg-gradient-secondary"</span> <span class="na">data-bs-dismiss=</span><span class="s">"modal"</span><span class="nt">&gt;</span>Close<span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn bg-gradient-primary"</span><span class="nt">&gt;</span>Save changes<span class="nt">&lt;/button&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+            </figure>
+          </div>
+          <h2 id="variations">Variations</h2>
+          <div class="f-flex">
+            <div class="me-2">
+              <button type="button" class="btn btn-block bg-gradient-primary mb-3" data-bs-toggle="modal" data-bs-target="#modal-default">Default</button>
+              <div class="modal fade" id="modal-default" tabindex="-1" role="dialog" aria-labelledby="modal-default" aria-hidden="true">
+                <div class="modal-dialog modal- modal-dialog-centered modal-" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h6 class="modal-title" id="modal-title-default">Type your modal title</h6>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                      <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn bg-gradient-primary">Save changes</button>
+                      <button type="button" class="btn btn-link  ml-auto" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="me-2">
+              <button type="button" class="btn btn-block bg-gradient-warning mb-3" data-bs-toggle="modal" data-bs-target="#modal-notification">Notification</button>
+              <div class="modal fade" id="modal-notification" tabindex="-1" role="dialog" aria-labelledby="modal-notification" aria-hidden="true">
+                <div class="modal-dialog modal-danger modal-dialog-centered modal-" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h6 class="modal-title" id="modal-title-notification">Your attention is required</h6>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="py-3 text-center">
+                        <i class="ni ni-bell-55 ni-3x"></i>
+                        <h4 class="text-gradient text-danger mt-4">You should read this!</h4>
+                        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary">Ok, Got it</button>
+                      <button type="button" class="btn btn-link ml-auto" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="me-2">
+              <button type="button" class="btn btn-block btn-default mb-3" data-bs-toggle="modal" data-bs-target="#modal-form">Form</button>
+              <div class="modal fade" id="modal-form" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+                  <div class="modal-content">
+                    <div class="modal-body p-0">
+                      <div class="card card-plain">
+                        <div class="card-header pb-0 text-left">
+                          <h3 class="font-weight-bolder text-info text-gradient">Welcome back</h3>
+                          <p class="mb-0">Enter your email and password to sign in</p>
+                        </div>
+                        <div class="card-body">
+                          <form role="form text-left">
+                            <label>Email</label>
+                            <div class="input-group mb-3">
+                              <input type="email" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="email-addon" />
+                            </div>
+                            <label>Password</label>
+                            <div class="input-group mb-3">
+                              <input type="email" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="password-addon" />
+                            </div>
+                            <div class="form-check form-switch">
+                              <input class="form-check-input" type="checkbox" id="rememberMe" checked="" />
+                              <label class="form-check-label" for="rememberMe">Remember me</label>
+                            </div>
+                            <div class="text-center">
+                              <button type="button" class="btn btn-round bg-gradient-info btn-lg w-100 mt-4 mb-0">Sign in</button>
+                            </div>
+                          </form>
+                        </div>
+                        <div class="card-footer text-center pt-0 px-lg-2 px-1">
+                          <p class="mb-4 text-sm mx-auto">
+                            Don't have an account?
+                            <a href="javascript:;" class="text-info text-gradient font-weight-bold">Sign up</a>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="me-2">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn bg-gradient-danger btn-block mb-3" data-bs-toggle="modal" data-bs-target="#exampleModalLong">
+              Long Modal
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    I always felt like I could do anything. That’s the main thing people are controlled by! Thoughts- their perception of themselves! They're slowed down by their perception of themselves. If you're taught you can’t do anything, you won’t do anything. I was taught I could do everything.
+                    <br /><br />
+                    As we live, our hearts turn colder. Cause pain is what we go through as we become older. We get insulted by others, lose trust for those others. We get back stabbed by friends. It becomes harder for us to give others a hand. We get our heart broken by people we love, even that we give them all we have. Then we lose family over time. What else could rust the heart more over time? Blackgold.
+                    <br /><br />
+                    We’re not always in the position that we want to be at. We’re constantly growing. We’re constantly making mistakes. We’re constantly trying to express ourselves and actualize our dreams. If you have the opportunity to play this game of life you need to appreciate every moment. A lot of people don’t appreciate the moment until it’s passed.
+                    <br /><br />
+                    There’s nothing I really wanted to do in life that I wasn’t able to get good at. That’s my skill. I’m not really specifically talented at anything except for the ability to learn. That’s what I do. That’s what I’m here for. Don’t be afraid to be wrong because you can’t learn anything from a compliment.
+                    <br /><br />
+                    It really matters and then like it really doesn’t matter. What matters is the people who are sparked by it. And the people who are like offended by it, it doesn’t matter. Because it's about motivating the doers. Because I’m here to follow my dreams and inspire other people to follow their dreams, too.
+                    <br /><br />
+                    The time is now for it to be okay to be great. People in this world shun people for being great. For being a bright color. For standing out. But the time is now to be okay to be the greatest you. Would you believe in what you believe in, if you were the only one who believed it?
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn bg-gradient-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn bg-gradient-primary">Save changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="me-2">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn bg-gradient-success btn-block mb-3" data-bs-toggle="modal" data-bs-target="#exampleModalMessage">
+              Message Modal
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalMessage" tabindex="-1" role="dialog" aria-labelledby="exampleModalMessageTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">New message to @CT</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">×</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">Recipient:</label>
+                        <input type="text" class="form-control" value="Creative Tim" id="recipient-name" />
+                      </div>
+                      <div class="form-group">
+                        <label for="message-text" class="col-form-label">Message:</label>
+                        <textarea class="form-control" id="message-text"></textarea>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn bg-gradient-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn bg-gradient-primary">Send message</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="me-2">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn bg-gradient-info btn-block" data-bs-toggle="modal" data-bs-target="#exampleModalSignUp">
+              SignUp Modal
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalSignUp" tabindex="-1" role="dialog" aria-labelledby="exampleModalSignTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+                <div class="modal-content">
+                  <div class="modal-body p-0">
+                    <div class="card card-plain">
+                      <div class="card-header pb-0 text-left">
+                        <h3 class="font-weight-bolder text-primary text-gradient">Join us today</h3>
+                        <p class="mb-0">Enter your email and password to register</p>
+                      </div>
+                      <div class="card-body pb-3">
+                        <form role="form text-left">
+                          <label>Name</label>
+                          <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Name" aria-label="Name" aria-describedby="name-addon" />
+                          </div>
+                          <label>Email</label>
+                          <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="email-addon" />
+                          </div>
+                          <label>Password</label>
+                          <div class="input-group mb-3">
+                            <input type="password" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="password-addon" />
+                          </div>
+                          <div class="form-check form-check-info text-left">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked="" />
+                            <label class="form-check-label" for="flexCheckDefault">
+                              I agree the <a href="javascrpt:;" class="text-dark font-weight-bolder">Terms and Conditions</a>
+                            </label>
+                          </div>
+                          <div class="text-center">
+                            <button type="button" class="btn bg-gradient-primary btn-lg btn-rounded w-100 mt-4 mb-0">Sign up</button>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="card-footer text-center pt-0 px-sm-4 px-1">
+                        <p class="mb-4 mx-auto">
+                          Already have an account?
+                          <a href="javascrpt:;" class="text-primary text-gradient font-weight-bold">Sign in</a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="position-relative">
+            <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-4"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-block bg-gradient-primary mb-3"</span> <span class="na">data-bs-toggle=</span><span class="s">"modal"</span> <span class="na">data-bs-target=</span><span class="s">"#modal-default"</span><span class="nt">&gt;</span>Default<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal fade"</span> <span class="na">id=</span><span class="s">"modal-default"</span> <span class="na">tabindex=</span><span class="s">"-1"</span> <span class="na">role=</span><span class="s">"dialog"</span> <span class="na">aria-labelledby=</span><span class="s">"modal-default"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-dialog modal- modal-dialog-centered modal-"</span> <span class="na">role=</span><span class="s">"document"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-content"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-header"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;h6</span> <span class="na">class=</span><span class="s">"modal-title"</span> <span class="na">id=</span><span class="s">"modal-title-default"</span><span class="nt">&gt;</span>Type your modal title<span class="nt">&lt;/h6&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn-close"</span> <span class="na">data-bs-dismiss=</span><span class="s">"modal"</span> <span class="na">aria-label=</span><span class="s">"Close"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;span</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>×<span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;/button&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-body"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;p&gt;</span>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.<span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;p&gt;</span>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.<span class="nt">&lt;/p&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-footer"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn bg-gradient-primary"</span><span class="nt">&gt;</span>Save changes<span class="nt">&lt;/button&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-link  ml-auto"</span> <span class="na">data-bs-dismiss=</span><span class="s">"modal"</span><span class="nt">&gt;</span>Close<span class="nt">&lt;/button&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-4"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-block bg-gradient-warning mb-3"</span> <span class="na">data-bs-toggle=</span><span class="s">"modal"</span> <span class="na">data-bs-target=</span><span class="s">"#modal-notification"</span><span class="nt">&gt;</span>Notification<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal fade"</span> <span class="na">id=</span><span class="s">"modal-notification"</span> <span class="na">tabindex=</span><span class="s">"-1"</span> <span class="na">role=</span><span class="s">"dialog"</span> <span class="na">aria-labelledby=</span><span class="s">"modal-notification"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-dialog modal-danger modal-dialog-centered modal-"</span> <span class="na">role=</span><span class="s">"document"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-content"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-header"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;h6</span> <span class="na">class=</span><span class="s">"modal-title"</span> <span class="na">id=</span><span class="s">"modal-title-notification"</span><span class="nt">&gt;</span>Your attention is required<span class="nt">&lt;/h6&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn-close"</span> <span class="na">data-bs-dismiss=</span><span class="s">"modal"</span> <span class="na">aria-label=</span><span class="s">"Close"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;span</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>×<span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;/button&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-body"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"py-3 text-center"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"ni ni-bell-55 ni-3x"</span><span class="nt">&gt;&lt;/i&gt;</span>
+              <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"text-gradient text-danger mt-4"</span><span class="nt">&gt;</span>You should read this!<span class="nt">&lt;/h4&gt;</span>
+              <span class="nt">&lt;p&gt;</span>A small river named Duden flows by their place and supplies it with the necessary regelialia.<span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-footer"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-white"</span><span class="nt">&gt;</span>Ok, Got it<span class="nt">&lt;/button&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-link text-white ml-auto"</span> <span class="na">data-bs-dismiss=</span><span class="s">"modal"</span><span class="nt">&gt;</span>Close<span class="nt">&lt;/button&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-4"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-block btn-default mb-3"</span> <span class="na">data-bs-toggle=</span><span class="s">"modal"</span> <span class="na">data-bs-target=</span><span class="s">"#modal-form"</span><span class="nt">&gt;</span>Form<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal fade"</span> <span class="na">id=</span><span class="s">"modal-form"</span> <span class="na">tabindex=</span><span class="s">"-1"</span> <span class="na">role=</span><span class="s">"dialog"</span> <span class="na">aria-labelledby=</span><span class="s">"modal-form"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-dialog modal-dialog-centered modal-md"</span> <span class="na">role=</span><span class="s">"document"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-content"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-body p-0"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card card-plain"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-header pb-0 text-left"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"font-weight-bolder text-info text-gradient"</span><span class="nt">&gt;</span>Welcome back<span class="nt">&lt;/h3&gt;</span>
+                <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"mb-0"</span><span class="nt">&gt;</span>Enter your email and password to sign in<span class="nt">&lt;/p&gt;</span>
+              <span class="nt">&lt;/div&gt;</span>
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;form</span> <span class="na">role=</span><span class="s">"form text-left"</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;label&gt;</span>Email<span class="nt">&lt;/label&gt;</span>
+                  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group mb-3"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"email"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">placeholder=</span><span class="s">"Email"</span> <span class="na">aria-label=</span><span class="s">"Email"</span> <span class="na">aria-describedby=</span><span class="s">"email-addon"</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;/div&gt;</span>
+                  <span class="nt">&lt;label&gt;</span>Password<span class="nt">&lt;/label&gt;</span>
+                  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group mb-3"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"email"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">placeholder=</span><span class="s">"Password"</span> <span class="na">aria-label=</span><span class="s">"Password"</span> <span class="na">aria-describedby=</span><span class="s">"password-addon"</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;/div&gt;</span>
+                  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-check form-switch"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-check-input"</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"rememberMe"</span> <span class="na">checked=</span><span class="s">""</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-check-label"</span> <span class="na">for=</span><span class="s">"rememberMe"</span><span class="nt">&gt;</span>Remember me<span class="nt">&lt;/label&gt;</span>
+                  <span class="nt">&lt;/div&gt;</span>
+                  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"text-center"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-round bg-gradient-info btn-lg w-100 mt-4 mb-0"</span><span class="nt">&gt;</span>Sign in<span class="nt">&lt;/button&gt;</span>
+                  <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;/form&gt;</span>
+              <span class="nt">&lt;/div&gt;</span>
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-footer text-center pt-0 px-lg-2 px-1"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"mb-4 text-sm mx-auto"</span><span class="nt">&gt;</span>
+                  Don't have an account?
+                  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"javascript:;"</span> <span class="na">class=</span><span class="s">"text-info text-gradient font-weight-bold"</span><span class="nt">&gt;</span>Sign up<span class="nt">&lt;/a&gt;</span>
+                <span class="nt">&lt;/p&gt;</span>
+              <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-4"</span><span class="nt">&gt;</span>
+    <span class="c">&lt;!-- Button trigger modal --&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn bg-gradient-danger btn-block mb-3"</span> <span class="na">data-bs-toggle=</span><span class="s">"modal"</span> <span class="na">data-bs-target=</span><span class="s">"#exampleModalLong"</span><span class="nt">&gt;</span>
+      Long Modal
+    <span class="nt">&lt;/button&gt;</span>
+
+    <span class="c">&lt;!-- Modal --&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal fade"</span> <span class="na">id=</span><span class="s">"exampleModalLong"</span> <span class="na">tabindex=</span><span class="s">"-1"</span> <span class="na">role=</span><span class="s">"dialog"</span> <span class="na">aria-labelledby=</span><span class="s">"exampleModalLongTitle"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-dialog"</span> <span class="na">role=</span><span class="s">"document"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-content"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-header"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"modal-title"</span> <span class="na">id=</span><span class="s">"exampleModalLongTitle"</span><span class="nt">&gt;</span>Modal title<span class="nt">&lt;/h5&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn-close"</span> <span class="na">data-bs-dismiss=</span><span class="s">"modal"</span> <span class="na">aria-label=</span><span class="s">"Close"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;span</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span><span class="ni">&amp;times;</span><span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;/button&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-body"</span><span class="nt">&gt;</span>
+            I always felt like I could do anything. That’s the main thing people are controlled by! Thoughts- their perception of themselves! They're slowed down by their perception of themselves. If you're taught you can’t do anything, you won’t do anything. I was taught I could do everything.
+            <span class="nt">&lt;br/&gt;&lt;br/&gt;</span>
+            As we live, our hearts turn colder. Cause pain is what we go through as we become older. We get insulted by others, lose trust for those others. We get back stabbed by friends. It becomes harder for us to give others a hand. We get our heart broken by people we love, even that we give them all we have. Then we lose family over time. What else could rust the heart more over time? Blackgold.
+            <span class="nt">&lt;br/&gt;&lt;br/&gt;</span>
+
+
+            We’re not always in the position that we want to be at. We’re constantly growing. We’re constantly making mistakes. We’re constantly trying to express ourselves and actualize our dreams. If you have the opportunity to play this game of life you need to appreciate every moment. A lot of people don’t appreciate the moment until it’s passed.
+            <span class="nt">&lt;br/&gt;&lt;br/&gt;</span>
+
+
+            There’s nothing I really wanted to do in life that I wasn’t able to get good at. That’s my skill. I’m not really specifically talented at anything except for the ability to learn. That’s what I do. That’s what I’m here for. Don’t be afraid to be wrong because you can’t learn anything from a compliment.
+            <span class="nt">&lt;br/&gt;&lt;br/&gt;</span>
+
+            It really matters and then like it really doesn’t matter. What matters is the people who are sparked by it. And the people who are like offended by it, it doesn’t matter. Because it's about motivating the doers. Because I’m here to follow my dreams and inspire other people to follow their dreams, too.
+            <span class="nt">&lt;br/&gt;&lt;br/&gt;</span>
+
+            The time is now for it to be okay to be great. People in this world shun people for being great. For being a bright color. For standing out. But the time is now to be okay to be the greatest you. Would you believe in what you believe in, if you were the only one who believed it?
+          <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-footer"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn bg-gradient-secondary"</span> <span class="na">data-bs-dismiss=</span><span class="s">"modal"</span><span class="nt">&gt;</span>Close<span class="nt">&lt;/button&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn bg-gradient-primary"</span><span class="nt">&gt;</span>Save changes<span class="nt">&lt;/button&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-4"</span><span class="nt">&gt;</span>
+    <span class="c">&lt;!-- Button trigger modal --&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn bg-gradient-success btn-block mb-3"</span> <span class="na">data-bs-toggle=</span><span class="s">"modal"</span> <span class="na">data-bs-target=</span><span class="s">"#exampleModalMessage"</span><span class="nt">&gt;</span>
+      Message Modal
+    <span class="nt">&lt;/button&gt;</span>
+
+    <span class="c">&lt;!-- Modal --&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal fade"</span> <span class="na">id=</span><span class="s">"exampleModalMessage"</span> <span class="na">tabindex=</span><span class="s">"-1"</span> <span class="na">role=</span><span class="s">"dialog"</span> <span class="na">aria-labelledby=</span><span class="s">"exampleModalMessageTitle"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-dialog modal-dialog-centered"</span> <span class="na">role=</span><span class="s">"document"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-content"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-header"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"modal-title"</span> <span class="na">id=</span><span class="s">"exampleModalLabel"</span><span class="nt">&gt;</span>New message to @CT<span class="nt">&lt;/h5&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn-close"</span> <span class="na">data-bs-dismiss=</span><span class="s">"modal"</span> <span class="na">aria-label=</span><span class="s">"Close"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;span</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>×<span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;/button&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-body"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;form&gt;</span>
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"recipient-name"</span> <span class="na">class=</span><span class="s">"col-form-label"</span><span class="nt">&gt;</span>Recipient:<span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">value=</span><span class="s">"Creative Tim"</span> <span class="na">id=</span><span class="s">"recipient-name"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;/div&gt;</span>
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"message-text"</span> <span class="na">class=</span><span class="s">"col-form-label"</span><span class="nt">&gt;</span>Message:<span class="nt">&lt;/label&gt;</span>
+                <span class="nt">&lt;textarea</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"message-text"</span><span class="nt">&gt;&lt;/textarea&gt;</span>
+              <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/form&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-footer"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn bg-gradient-secondary"</span> <span class="na">data-bs-dismiss=</span><span class="s">"modal"</span><span class="nt">&gt;</span>Close<span class="nt">&lt;/button&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn bg-gradient-primary"</span><span class="nt">&gt;</span>Send message<span class="nt">&lt;/button&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-4"</span><span class="nt">&gt;</span>
+    <span class="c">&lt;!-- Button trigger modal --&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn bg-gradient-info btn-block"</span> <span class="na">data-bs-toggle=</span><span class="s">"modal"</span> <span class="na">data-bs-target=</span><span class="s">"#exampleModalSignUp"</span><span class="nt">&gt;</span>
+      SignUp Modal
+    <span class="nt">&lt;/button&gt;</span>
+
+    <span class="c">&lt;!-- Modal --&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal fade"</span> <span class="na">id=</span><span class="s">"exampleModalSignUp"</span> <span class="na">tabindex=</span><span class="s">"-1"</span> <span class="na">role=</span><span class="s">"dialog"</span> <span class="na">aria-labelledby=</span><span class="s">"exampleModalSignTitle"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-dialog modal-dialog-centered modal-md"</span> <span class="na">role=</span><span class="s">"document"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-content"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-body p-0"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card card-plain"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-header pb-0 text-left"</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"font-weight-bolder text-primary text-gradient"</span><span class="nt">&gt;</span>Join us today<span class="nt">&lt;/h3&gt;</span>
+                  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"mb-0"</span><span class="nt">&gt;</span>Enter your email and password to register<span class="nt">&lt;/p&gt;</span>
+              <span class="nt">&lt;/div&gt;</span>
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body pb-3"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;form</span> <span class="na">role=</span><span class="s">"form text-left"</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;label&gt;</span>Name<span class="nt">&lt;/label&gt;</span>
+                  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group mb-3"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">placeholder=</span><span class="s">"Name"</span> <span class="na">aria-label=</span><span class="s">"Name"</span> <span class="na">aria-describedby=</span><span class="s">"name-addon"</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;/div&gt;</span>
+                  <span class="nt">&lt;label&gt;</span>Email<span class="nt">&lt;/label&gt;</span>
+                  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group mb-3"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"email"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">placeholder=</span><span class="s">"Email"</span> <span class="na">aria-label=</span><span class="s">"Email"</span> <span class="na">aria-describedby=</span><span class="s">"email-addon"</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;/div&gt;</span>
+                  <span class="nt">&lt;label&gt;</span>Password<span class="nt">&lt;/label&gt;</span>
+                  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group mb-3"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"password"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">placeholder=</span><span class="s">"Password"</span> <span class="na">aria-label=</span><span class="s">"Password"</span> <span class="na">aria-describedby=</span><span class="s">"password-addon"</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;/div&gt;</span>
+                  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-check form-check-info text-left"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-check-input"</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">value=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"flexCheckDefault"</span> <span class="na">checked=</span><span class="s">""</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-check-label"</span> <span class="na">for=</span><span class="s">"flexCheckDefault"</span><span class="nt">&gt;</span>
+                      I agree the <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"javascrpt:;"</span> <span class="na">class=</span><span class="s">"text-dark font-weight-bolder"</span><span class="nt">&gt;</span>Terms and Conditions<span class="nt">&lt;/a&gt;</span>
+                    <span class="nt">&lt;/label&gt;</span>
+                  <span class="nt">&lt;/div&gt;</span>
+                  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"text-center"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn bg-gradient-primary btn-lg btn-rounded w-100 mt-4 mb-0"</span><span class="nt">&gt;</span>Sign up<span class="nt">&lt;/button&gt;</span>
+                  <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;/form&gt;</span>
+              <span class="nt">&lt;/div&gt;</span>
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-footer text-center pt-0 px-sm-4 px-1"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"mb-4 mx-auto"</span><span class="nt">&gt;</span>
+                  Already have an account?
+                  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"javascrpt:;"</span> <span class="na">class=</span><span class="s">"text-primary text-gradient font-weight-bold"</span><span class="nt">&gt;</span>Sign in<span class="nt">&lt;/a&gt;</span>
+                <span class="nt">&lt;/p&gt;</span>
+              <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+            </figure>
+          </div>
+          <!-- Other frameworks docs -->
+        </main>
+      </div>
+      <div class="ct-docs-main-footer-row">
+        <div class="ct-docs-main-footer-blank-col">
+        </div>
+        <div class="ct-docs-main-footer-col">
+          <footer class="ct-docs-footer">
+            <div class="ct-docs-footer-inner-row">
+              <div class="ct-docs-footer-col">
+                <div class="ct-docs-footer-copyright">
+                  © <script>
+                    document.write(new Date().getFullYear())
+                  </script>
+                  <a href="https://creative-tim.com" class="ct-docs-footer-copyright-author" target="_blank">Creative Tim</a>
+                  &
+                  <a href="https://updivision.com" class="ct-docs-footer-copyright-author" target="_blank">UPDIVISION</a>
+                </div>
+              </div>
+              <div class="ct-docs-footer-col">
+                <ul class="ct-docs-footer-nav-footer">
+                    <li>
+                        <a href="https://updivision.com" class="ct-docs-footer-nav-link" target="_blank">UPDIVISION</a>
+                    </li>
+                  <li>
+                    <a href="https://creative-tim.com" class="ct-docs-footer-nav-link" target="_blank">Creative Tim</a>
+                  </li>
+                  <li>
+                    <a href="https://www.creative-tim.com/contact-us" class="ct-docs-footer-nav-link" target="_blank">Contact Us</a>
+                  </li>
+                  <li>
+                    <a href="https://creative-tim.com/blog" class="ct-docs-footer-nav-link" target="_blank">Blog</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <script src="https://demos.creative-tim.com/argon-dashboard-pro-bs4/assets/vendor/jquery/dist/jquery.min.js" type="text/javascript"></script>
+    <script src="https://demos.creative-tim.com/soft-ui-design-system-pro/assets/js/core/popper.min.js" type="text/javascript"></script>
+    <script src="https://demos.creative-tim.com/soft-ui-design-system-pro/assets/js/core/bootstrap.min.js" type="text/javascript"></script>
+    <script src="" type="text/javascript"></script>
+    <script src="" type="text/javascript"></script>
+    <script src="" type="text/javascript"></script>
+    <script src="" type="text/javascript"></script>
+    <script src="https://demos.creative-tim.com/argon-dashboard-pro-bs4/assets/vendor/prismjs/prism.js" type="text/javascript"></script>
+    <script src="https://demos.creative-tim.com/argon-design-system-pro/assets/demo/docs.min.js" type="text/javascript"></script>
+    <script src="https://demos.creative-tim.com/argon-design-system-pro/assets/demo/vendor/holder.min.js" type="text/javascript"></script>
+    <script src="https://demos.creative-tim.com/soft-ui-design-system-pro/assets/js/plugins/moment.min.js" type="text/javascript"></script>
+    <script src="https://demos.creative-tim.com/test/argon-dashboard-pro/assets/js/argon-dashboard.min.js?v=1.0.0" type="text/javascript"></script>
+    <script>
+      Holder.addTheme('gray', {
+        bg: '#777',
+        fg: 'rgba(255,255,255,.75)',
+        font: 'Helvetica',
+        fontweight: 'normal'
+      })
+    </script>
+    <script>
+      // Facebook Pixel Code Don't Delete
+      ! function(f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function() {
+          n.callMethod ?
+            n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = '2.0';
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s)
+      }(window,
+        document, 'script', '//connect.facebook.net/en_US/fbevents.js');
+
+      try {
+        fbq('init', '111649226022273');
+        fbq('track', "PageView");
+
+      } catch (err) {
+        console.log('Facebook Track Error:', err);
+      }
+    </script>
+    <script src="../../../assets/docs.js"></script>
+  </body>
+
+</html>
