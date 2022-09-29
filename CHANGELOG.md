@@ -28,7 +28,15 @@ All notable changes to `Material Dashboard Laravel` frontend preset for Laravel 
 - Update to Laravel 9.x
 
 ## Version 2.0.0 - 2022-09-27
+<<<<<<< HEAD
 - Update Bootstrap to v5.1.3
 - Update to Material Design 2
 - New Documentation version
 - New Product structure
+=======
+  - Update to Material Design 2
+  - Update Bootstrap to v5.1.3
+  - Add new example pages
+  - Add Light/Dark feature
+  - New Documentation version
+>>>>>>> 39e5c3399bbb8070eed2092fbe49d47b30da6d14
