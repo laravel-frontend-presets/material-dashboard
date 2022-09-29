@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="https://demos.creative-tim.com/argon-design-system-pro/assets/img/apple-icon.png"
+        />
+        <link
+            rel="icon"
+            href="https://demos.creative-tim.com/argon-design-system-pro/assets/img/apple-icon.png"
+            type="image/png"
+        />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <meta name="author" content="Creative Tim" />
+        <title>Forgot Password | Argon Dashboard Bootstrap @ Creative Tim</title>
+        <link
+            rel="canonical"
+            href="https://www.creative-tim.com/learning-lab/bootstrap/license/argon-dashboard"
+        />
+        <meta name="keywords" content="" />
+        <meta
+            name="description"
+            content="Learn more about the licenses Creative Tim offers and purchase the one that covers the needs of your project."
+        />
+        <meta name="twitter:card" content="product" />
+        <meta name="twitter:site" content="@creativetim" />
+        <meta
+            name="twitter:title"
+            content="License | Argon Dashboard Bootstrap @ Creative Tim"
+        />
+        <meta
+            name="twitter:description"
+            content="Learn more about the licenses Creative Tim offers and purchase the one that covers the needs of your project."
+        />
+        <meta name="twitter:creator" content="@creativetim" />
+        <meta
+            name="twitter:image"
+            content="https://s3.amazonaws.com/creativetim_bucket/products/137/original/opt_adp_thumbnail.jpg"
+        />
+        <meta property="fb:app_id" content="655968634437471" />
+        <meta
+            property="og:title"
+            content="License | Argon Dashboard Bootstrap @ Creative Tim"
+        />
+        <meta property="og:type" content="article" />
+        <meta
+            property="og:url"
+            content="https://demos.creative-tim.com/argon-dashboard/index.html"
+        />
+        <meta
+            property="og:image"
+            content="https://s3.amazonaws.com/creativetim_bucket/products/137/original/opt_adp_thumbnail.jpg"
+        />
+        <meta
+            property="og:description"
+            content="Learn more about the licenses Creative Tim offers and purchase the one that covers the needs of your project."
+        />
+        <meta property="og:site_name" content="Creative Tim" />
+        <link
+            rel="stylesheet"
+            href="https://demos.creative-tim.com/argon-design-system-pro/assets/css/nucleo-icons.css"
+            type="text/css"
+        />
+        <link href="" rel="stylesheet" />
+        <link
+            rel="stylesheet"
+            href="https://demos.creative-tim.com/test/argon-dashboard-pro/assets/css/argon-dashboard.min.css?v=2.0.0"
+            type="text/css"
+        />
+        <link
+            href="https://demos.creative-tim.com/test/argon-dashboard-pro/assets/css/argon-dashboard.min.css?v=2.0.0"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700"
+            rel="stylesheet"
+        />
+        <link
+            href="https://demos.creative-tim.com/argon-design-system-pro/assets/css/nucleo-icons.css"
+            rel="stylesheet"
+        />
+        <script
+            src="https://kit.fontawesome.com/42d5adcbca.js"
+            crossorigin="anonymous"
+        ></script>
+        <!-- Anti-flicker snippet (recommended)  -->
+        <style>
+            .async-hide {
+                opacity: 0 !important;
+            }
+        </style>
+        <script>
+            (function (a, s, y, n, c, h, i, d, e) {
+                s.className += " " + y;
+                h.start = 1 * new Date();
+                h.end = i = function () {
+                    s.className = s.className.replace(RegExp(" ?" + y), "");
+                };
+                (a[n] = a[n] || []).hide = h;
+                setTimeout(function () {
+                    i();
+                    h.end = null;
+                }, c);
+                h.timeout = c;
+            })(
+                window,
+                document.documentElement,
+                "async-hide",
+                "dataLayer",
+                4000,
+                {
+                    "GTM-K9BGS8K": true,
+                }
+            );
+        </script>
+        <!-- Analytics-Optimize Snippet -->
+        <script>
+            (function (i, s, o, g, r, a, m) {
+                i["GoogleAnalyticsObject"] = r;
+                (i[r] =
+                    i[r] ||
+                    function () {
+                        (i[r].q = i[r].q || []).push(arguments);
+                    }),
+                    (i[r].l = 1 * new Date());
+                (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m);
+            })(
+                window,
+                document,
+                "script",
+                "https://www.google-analytics.com/analytics.js",
+                "ga"
+            );
+            ga("create", "UA-46172202-22", "auto", {
+                allowLinker: true,
+            });
+            ga("set", "anonymizeIp", true);
+            ga("require", "GTM-K9BGS8K");
+            ga("require", "displayfeatures");
+            ga("require", "linker");
+            ga("linker:autoLink", ["2checkout.com", "avangate.com"]);
+        </script>
+        <!-- end Analytics-Optimize Snippet -->
+        <!-- Google Tag Manager -->
+        <script>
+            (function (w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({
+                    "gtm.start": new Date().getTime(),
+                    event: "gtm.js",
+                });
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != "dataLayer" ? "&l=" + l : "";
+                j.async = true;
+                j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+                f.parentNode.insertBefore(j, f);
+            })(window, document, "script", "dataLayer", "GTM-NKDMSK6");
+        </script>
+        <!-- End Google Tag Manager -->
+        <!-- This is for docs typography and layout -->
+        <link
+            href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700"
+            rel="stylesheet"
+        />
+        <link href="../../../assets/docs-soft.css" rel="stylesheet" />
+    </head>
+
+    <body class="docs">
+        <!-- Google Tag Manager (noscript) -->
+        <noscript
+            ><iframe
+                src="https://www.googletagmanager.com/ns.html?id=GTM-NKDMSK6"
+                height="0"
+                width="0"
+                style="display: none; visibility: hidden"
+            ></iframe
+        ></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        <header class="ct-docs-navbar">
+            <a
+                class="ct-docs-navbar-brand"
+                href="javascript:void(0)"
+                aria-label="Bootstrap"
+            >
+                <a
+                    href="https://www.creative-tim.com/"
+                    class="ct-docs-navbar-text"
+                    target="_blank"
+                >
+                    Creative Tim
+                </a>
+                <div class="ct-docs-navbar-border"></div>
+                <a
+                    href="../../overview/argon-dashboard/index.html"
+                    class="ct-docs-navbar-text"
+                >
+                    Docs
+                </a>
+            </a>
+            <ul class="ct-docs-navbar-nav-left">
+                <li class="ct-docs-nav-item-dropdown">
+                    <a
+                        href="javascript:;"
+                        class="ct-docs-navbar-nav-link"
+                        role="button"
+                    >
+                        <span class="ct-docs-navbar-nav-link-inner--text"
+                            >Live Preview</span
+                        >
+                    </a>
+                    <div
+                        class="ct-docs-navbar-dropdown-menu"
+                        aria-labelledby="DropdownPreview"
+                    >
+                        <a
+                            class="ct-docs-navbar-dropdown-item"
+                            href="https://www.creative-tim.com/live/argon-dashboard-laravel"
+                            target="_blank"
+                        >
+                            Argon Dashboard
+                        </a>
+                        <a
+                            class="ct-docs-navbar-dropdown-item"
+                            href="https://www.creative-tim.com/live/argon-dashboard-pro-laravel"
+                            target="_blank"
+                        >
+                            Argon Dashboard Pro
+                        </a>
+                    </div>
+                </li>
+                <li class="ct-docs-nav-item-dropdown">
+                    <a
+                        href="javascript:;"
+                        class="ct-docs-navbar-nav-link"
+                        role="button"
+                    >
+                        <span class="ct-docs-navbar-nav-link-inner--text"
+                            >Support</span
+                        >
+                    </a>
+                    <div
+                        class="ct-docs-navbar-dropdown-menu"
+                        aria-labelledby="DropdownSupport"
+                    >
+                        <a
+                            class="ct-docs-navbar-dropdown-item"
+                            href="https://github.com/creativetimofficial/argon-dashboard-laravel/issues"
+                            target="_blank"
+                        >
+                            Argon Dashboard
+                        </a>
+                        <a
+                            class="ct-docs-navbar-dropdown-item"
+                            href="https://github.com/creativetimofficial/ct-argon-dashboard-pro-laravel/issues"
+                            target="_blank"
+                        >
+                            Argon Dashboard Pro
+                        </a>
+                    </div>
+                </li>
+            </ul>
+            <ul class="ct-docs-navbar-nav-right">
+                <li class="ct-docs-navbar-nav-item">
+                    <a
+                        class="ct-docs-navbar-nav-link"
+                        href="https://creative-tim.com/product/argon-dashboard-laravel"
+                        target="_blank"
+                        >Download Free</a
+                    >
+                </li>
+            </ul>
+            <a
+                href="https://creative-tim.com/product/argon-dashboard-pro-laravel"
+                target="_blank"
+                class="ct-docs-btn-upgrade"
+            >
+                <span class="ct-docs-btn-inner--icon">
+                    <i class="fas fa-download mr-2"></i>
+                </span>
+                <span class="ct-docs-navbar-nav-link-inner--text"
+                    >Upgrade to PRO</span
+                >
+            </a>
+            <button class="ct-docs-navbar-toggler" type="button">
+                <span class="ct-docs-navbar-toggler-icon"></span>
+            </button>
+        </header>
+        <div class="ct-docs-main-container">
+            <div class="ct-docs-main-content-row">
+                <div class="ct-docs-sidebar-col">
+                    <nav class="ct-docs-sidebar-collapse-links">
+                        <div class="ct-docs-sidebar-product">
+                            <div class="ct-docs-sidebar-product-image">
+                                <img
+                                    src="../../../assets/images/bootstrap.png"
+                                />
+                            </div>
+                            <p class="ct-docs-sidebar-product-text">
+                                Argon Dashboard
+                            </p>
+                        </div>
+                        <div class="ct-docs-toc-item-active">
+                            <a
+                                class="ct-docs-toc-link"
+                                href="javascript:void(0)"
+                            >
+                                <div class="d-inline-block">
+                                    <div
+                                        class="icon icon-xs border-radius-md bg-gradient-primary text-center mr-2 d-flex align-items-center justify-content-center me-1"
+                                    >
+                                        <i
+                                            class="ni ni-active-40 text-white"
+                                        ></i>
+                                    </div>
+                                </div>
+                                Getting started
+                            </a>
+                            <ul class="ct-docs-nav-sidenav ms-4 ps-1">
+                                <li class="">
+                                    <a
+                                        href="../../../bootstrap/overview/argon-dashboard/index.html"
+                                    >
+                                        Overview
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a
+                                        href="../../../bootstrap/license/argon-dashboard/index.html"
+                                    >
+                                        License
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a
+                                        href="../../../bootstrap/quick-start/argon-dashboard/index.html"
+                                    >
+                                        Quick Start
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a
+                                        href="../../../bootstrap/build-tools/argon-dashboard/index.html"
+                                    >
+                                        Build Tools
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a
+                                        href="../../../bootstrap/what-is-bootstrap/argon-dashboard/index.html"
+                                    >
+                                        What is Bootstrap
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="ct-docs-toc-item-active">
+                            <a
+                                class="ct-docs-toc-link"
+                                href="javascript:void(0)"
+                            >
+                                <div class="d-inline-block">
+                                    <div
+                                        class="icon icon-xs border-radius-md bg-gradient-primary text-center mr-2 d-flex align-items-center justify-content-center me-1"
+                                    >
+                                        <i class="fab fa-laravel" style="color: #ffffff; font-size: 15px;"></i>
+                                    </div>
+                                </div>
+                                Laravel Example
+                            </a>
+                            <ul class="ct-docs-nav-sidenav ms-4 ps-1">
+                                <li class="">
+                                    <a
+                                        href="../../../bootstrap/login/argon-dashboard/index.html"
+                                    >
+                                        Login
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a
+                                        href="../../../bootstrap/register/argon-dashboard/index.html"
+                                    >
+                                        Register
+                                    </a>
+                                </li>
+                                <li class="ct-docs-nav-sidenav-active">
+                                    <a
+                                        href="../../../bootstrap/forgot-password/argon-dashboard/index.html"
+                                    >
+                                        Forgot Password
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a
+                                        href="../../../bootstrap/reset-password/argon-dashboard/index.html"
+                                    >
+                                        Reset Password
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a
+                                        href="../../../bootstrap/user-profile/argon-dashboard/index.html"
+                                    >
+                                        User Profile
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="ct-docs-toc-item-active">
+                          <a class="ct-docs-toc-link" href="javascript:void(0)">
+                            <div class="d-inline-block">
+                              <div class="icon icon-xs border-radius-md bg-gradient-primary text-center mr-2 d-flex align-items-center justify-content-center me-1">
+                                <i class="ni ni-folder-17 text-white"></i>
+                              </div>
+                            </div>
+                            Foundation
+                          </a>
+                          <ul class="ct-docs-nav-sidenav ms-4 ps-1">
+                            <li class="">
+                              <a href="../../../bootstrap/colors/argon-dashboard/index.html">
+                                Colors
+                              </a>
+                            </li>
+                            <li class="">
+                              <a href="../../../bootstrap/grid/argon-dashboard/index.html">
+                                Grid
+                              </a>
+                            </li>
+                            <li class="">
+                              <a href="../../../bootstrap/typography/argon-dashboard/index.html">
+                                Typography
+                              </a>
+                            </li>
+                            <li class="">
+                              <a href="../../../bootstrap/icons/argon-dashboard/index.html">
+                                Icons
+                              </a>
+                            </li>
+                            <li class="">
+                              <a href="../../../bootstrap/utilities/argon-dashboard/index.html">
+                                Utilities
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="ct-docs-toc-item-active">
+                            <a
+                                class="ct-docs-toc-link"
+                                href="javascript:void(0)"
+                            >
+                                <div class="d-inline-block">
+                                    <div
+                                        class="icon icon-xs border-radius-md bg-gradient-primary text-center mr-2 d-flex align-items-center justify-content-center me-1"
+                                    >
+                                        <i class="ni ni-app text-white"></i>
+                                    </div>
+                                </div>
+                                Components
+                            </a>
+                            <ul class="ct-docs-nav-sidenav ms-4 ps-1">
+                                <li class="">
+                                    <a
+                                        href="../../../bootstrap/alerts/argon-dashboard/index.html"
+                                    >
+                                        Alerts
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a
+                                        href="../../../bootstrap/badge/argon-dashboard/index.html"
+                                    >
+                                        Badge
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a
+                                        href="../../../bootstrap/breadcrumb/argon-dashboard/index.html"
+                                    >
+                                        Breadcrumb
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a
+                                        href="../../../bootstrap/buttons/argon-dashboard/index.html"
+                                    >
+                                        Buttons
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a
+                                        href="../../../bootstrap/social-buttons/argon-dashboard/index.html"
+                                    >
+                                        Social Buttons
+                                        <span class="ct-docs-sidenav-pro-badge"
+                                            >Pro</span
+                                        >
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a
+                                        href="../../../bootstrap/cards/argon-dashboard/index.html"
+                                    >
+                                        Cards
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a
+                                        href="../../../bootstrap/carousel/argon-dashboard/index.html"
+                                    >
+                                        Carousel
+                                        <span class="ct-docs-sidenav-pro-badge"
+                                            >Pro</span
+                                        >
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a
+                                        href="../../../bootstrap/collapse/argon-dashboard/index.html"
+                                    >
+                                        Collapse
+                                        <span class="ct-docs-sidenav-pro-badge"
+                                            >Pro</span
+                                        >
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a
+                                        href="../../../bootstrap/dropdowns/argon-dashboard/index.html"
+                                    >
+                                        Dropdowns
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a
+                                        href="../../../bootstrap/forms/argon-dashboard/index.html"
+                                    >
+                                        Forms
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a
+                                        href="../../../bootstrap/input-group/argon-dashboard/index.html"
+                                    >
+                                        Input Group
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a
+                                        href="../../../bootstrap/list-group/argon-dashboard/index.html"
+                                    >
+                                        List Group
+                                        <span class="ct-docs-sidenav-pro-badge"
+                                            >Pro</span
+                                        >
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a
+                                        href="../../../bootstrap/modal/argon-dashboard/index.html"
+                                    >
+                                        Modal
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a
+                                        href="../../../bootstrap/navs/argon-dashboard/index.html"
+                                    >
+                                        Navs
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a
+                                        href="../../../bootstrap/navbar/argon-dashboard/index.html"
+                                    >
+                                        Navbar
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a
+                                        href="../../../bootstrap/pagination/argon-dashboard/index.html"
+                                    >
+                                        Pagination
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a
+                                        href="../../../bootstrap/popovers/argon-dashboard/index.html"
+                                    >
+                                        Popovers
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a
+                                        href="../../../bootstrap/progress/argon-dashboard/index.html"
+                                    >
+                                        Progress
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a
+                                        href="../../../bootstrap/spinners/argon-dashboard/index.html"
+                                    >
+                                        Spinners
+                                        <span class="ct-docs-sidenav-pro-badge"
+                                            >Pro</span
+                                        >
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a
+                                        href="../../../bootstrap/tables/argon-dashboard/index.html"
+                                    >
+                                        Tables
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a
+                                        href="../../../bootstrap/tooltips/argon-dashboard/index.html"
+                                    >
+                                        Tooltips
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="ct-docs-toc-item-active">
+                            <a
+                                class="ct-docs-toc-link"
+                                href="javascript:void(0)"
+                            >
+                                <div class="d-inline-block">
+                                    <div
+                                        class="icon icon-xs border-radius-md bg-gradient-primary text-center mr-2 d-flex align-items-center justify-content-center me-1"
+                                    >
+                                        <i
+                                            class="ni ni-settings text-white"
+                                        ></i>
+                                    </div>
+                                </div>
+                                Plugins
+                            </a>
+                            <ul class="ct-docs-nav-sidenav ms-4 ps-1">
+                                <li class="">
+                                    <a
+                                        href="../../../bootstrap/countup-js/argon-dashboard/index.html"
+                                    >
+                                        CountUp JS
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a
+                                        href="../../../bootstrap/charts/argon-dashboard/index.html"
+                                    >
+                                        Charts
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a
+                                        href="../../../bootstrap/datepicker/argon-dashboard/index.html"
+                                    >
+                                        Datepicker
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a
+                                        href="../../../bootstrap/fullcalendar/argon-dashboard/index.html"
+                                    >
+                                        Fullcalendar
+                                        <span class="ct-docs-sidenav-pro-badge"
+                                            >Pro</span
+                                        >
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a
+                                        href="../../../bootstrap/sliders/argon-dashboard/index.html"
+                                    >
+                                        Sliders
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a
+                                        href="../../../bootstrap/choices/argon-dashboard/index.html"
+                                    >
+                                        Choices
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a
+                                        href="../../../bootstrap/dropzone/argon-dashboard/index.html"
+                                    >
+                                        Dropzone
+                                        <span class="ct-docs-sidenav-pro-badge"
+                                            >Pro</span
+                                        >
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a
+                                        href="../../../bootstrap/datatables/argon-dashboard/index.html"
+                                    >
+                                        Datatables
+                                        <span class="ct-docs-sidenav-pro-badge"
+                                            >Pro</span
+                                        >
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a
+                                        href="../../../bootstrap/kanban/argon-dashboard/index.html"
+                                    >
+                                        Kanban
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a
+                                        href="../../../bootstrap/photo-swipe/argon-dashboard/index.html"
+                                    >
+                                        Photo Swipe
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a
+                                        href="../../../bootstrap/quill/argon-dashboard/index.html"
+                                    >
+                                        Quill
+                                        <span class="ct-docs-sidenav-pro-badge"
+                                            >Pro</span
+                                        >
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a
+                                        href="../../../bootstrap/sweet-alerts/argon-dashboard/index.html"
+                                    >
+                                        Sweet Alerts
+                                        <span class="ct-docs-sidenav-pro-badge"
+                                            >Pro</span
+                                        >
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a
+                                        href="../../../bootstrap/wizard/argon-dashboard/index.html"
+                                    >
+                                        Wizard
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <div class="ct-docs-toc-col">
+                    <ul class="section-nav"></ul>
+                </div>
+                <main class="ct-docs-content-col" role="main">
+                    <div class="ct-docs-page-title">
+                        <h1 class="ct-docs-page-h1-title" id="content">
+                          Forgot Password
+                        </h1>
+                        <div class="avatar-group mt-3">
+                        </div>
+                      </div>
+                      <p class="ct-docs-page-title-lead">If an existing user forgot his password he has the possibility of resetting his password.</p>
+                      <hr class="ct-docs-hr">
+                      <div>
+                        <p>To reset the password the user should click on the <b><code class="language-html">here</code></b> button under the login form
+                            or add <b><code class="language-html">/reset-password</code></b> in the url.</p>
+                        <p>The <code class="language-html">App\Http\Controllers\ResetPAsswordController.php</code> takes care of sending an email to the user where he can reset the password afterwards.</p>
+                      </div>
+                      <div>
+                        <pre>
+                          <code>
+public function send(Request $request)
+{
+    $email = $request->validate([
+        'email' => ['required']
+    ]);
+    $user = User::where('email', $email)->first();
+
+    if (config('app.is_demo')){
+        return back()->with('error', 'You cannot change your password in the demo version');
+    } else {
+        if ($user) {
+            $this->notify(new ForgotPassword($user->id));
+            return back()->with('succes', 'An email was send to your email address');
+        }
+    }
+}
+                          </code>
+                        </pre>
+                      </div>
+                      <div>
+                </main>
+            </div>
+            <div class="ct-docs-main-footer-row">
+                <div class="ct-docs-main-footer-blank-col"></div>
+                <div class="ct-docs-main-footer-col">
+                    <footer class="ct-docs-footer">
+                        <div class="ct-docs-footer-inner-row">
+                            <div class="ct-docs-footer-col">
+                                <div class="ct-docs-footer-copyright">
+                                    ©
+                                    <script>
+                                        document.write(
+                                            new Date().getFullYear()
+                                        );
+                                    </script>
+                                    <a
+                                        href="https://creative-tim.com"
+                                        class="ct-docs-footer-copyright-author"
+                                        target="_blank"
+                                        >Creative Tim</a
+                                    >
+                                    &
+                                    <a
+                                    href="https://updivision.com"
+                                    class="ct-docs-footer-copyright-author"
+                                    target="_blank"
+                                    >UPDIVISION</a
+                                >
+                                </div>
+                            </div>
+                            <div class="ct-docs-footer-col">
+                                <ul class="ct-docs-footer-nav-footer">
+                                    <li>
+                                        <a href="https://updivision.com" class="ct-docs-footer-nav-link" target="_blank">UPDIVISION</a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="https://creative-tim.com"
+                                            class="ct-docs-footer-nav-link"
+                                            target="_blank"
+                                            >Creative Tim</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="https://www.creative-tim.com/contact-us"
+                                            class="ct-docs-footer-nav-link"
+                                            target="_blank"
+                                            >Contact Us</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="https://creative-tim.com/blog"
+                                            class="ct-docs-footer-nav-link"
+                                            target="_blank"
+                                            >Blog</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+        <script
+            src="https://demos.creative-tim.com/argon-dashboard-pro-bs4/assets/vendor/jquery/dist/jquery.min.js"
+            type="text/javascript"
+        ></script>
+        <script
+            src="https://demos.creative-tim.com/soft-ui-design-system-pro/assets/js/core/popper.min.js"
+            type="text/javascript"
+        ></script>
+        <script
+            src="https://demos.creative-tim.com/soft-ui-design-system-pro/assets/js/core/bootstrap.min.js"
+            type="text/javascript"
+        ></script>
+        <script src="" type="text/javascript"></script>
+        <script src="" type="text/javascript"></script>
+        <script src="" type="text/javascript"></script>
+        <script src="" type="text/javascript"></script>
+        <script
+            src="https://demos.creative-tim.com/argon-dashboard-pro-bs4/assets/vendor/prismjs/prism.js"
+            type="text/javascript"
+        ></script>
+        <script
+            src="https://demos.creative-tim.com/argon-design-system-pro/assets/demo/docs.min.js"
+            type="text/javascript"
+        ></script>
+        <script
+            src="https://demos.creative-tim.com/argon-design-system-pro/assets/demo/vendor/holder.min.js"
+            type="text/javascript"
+        ></script>
+        <script
+            src="https://demos.creative-tim.com/soft-ui-design-system-pro/assets/js/plugins/moment.min.js"
+            type="text/javascript"
+        ></script>
+        <script
+            src="https://demos.creative-tim.com/test/argon-dashboard-pro/assets/js/argon-dashboard.min.js?v=1.0.0"
+            type="text/javascript"
+        ></script>
+        <script>
+            Holder.addTheme("gray", {
+                bg: "#777",
+                fg: "rgba(255,255,255,.75)",
+                font: "Helvetica",
+                fontweight: "normal",
+            });
+        </script>
+        <script>
+            // Facebook Pixel Code Don't Delete
+            !(function (f, b, e, v, n, t, s) {
+                if (f.fbq) return;
+                n = f.fbq = function () {
+                    n.callMethod
+                        ? n.callMethod.apply(n, arguments)
+                        : n.queue.push(arguments);
+                };
+                if (!f._fbq) f._fbq = n;
+                n.push = n;
+                n.loaded = !0;
+                n.version = "2.0";
+                n.queue = [];
+                t = b.createElement(e);
+                t.async = !0;
+                t.src = v;
+                s = b.getElementsByTagName(e)[0];
+                s.parentNode.insertBefore(t, s);
+            })(
+                window,
+                document,
+                "script",
+                "//connect.facebook.net/en_US/fbevents.js"
+            );
+
+            try {
+                fbq("init", "111649226022273");
+                fbq("track", "PageView");
+            } catch (err) {
+                console.log("Facebook Track Error:", err);
+            }
+        </script>
+        <script src="../../../assets/docs.js"></script>
+    </body>
+</html>

@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <link rel="apple-touch-icon" sizes="76x76" href="https://demos.creative-tim.com/argon-design-system-pro/assets/img/apple-icon.png">
+    <link rel="icon" href="https://demos.creative-tim.com/argon-design-system-pro/assets/img/apple-icon.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Creative Tim">
+    <title>
+      Wizard | Argon Dashboard Bootstrap @ Creative Tim
+    </title>
+    <link rel="canonical" href="https://www.creative-tim.com/learning-lab/bootstrap/wizard/argon-dashboard" />
+    <meta name="keywords" content="">
+    <meta name="description" content="Animated Multi-step Form For Bootstrap">
+    <meta name="twitter:card" content="product">
+    <meta name="twitter:site" content="@creativetim">
+    <meta name="twitter:title" content="Wizard | Argon Dashboard Bootstrap @ Creative Tim">
+    <meta name="twitter:description" content="Animated Multi-step Form For Bootstrap">
+    <meta name="twitter:creator" content="@creativetim">
+    <meta name="twitter:image" content="https://s3.amazonaws.com/creativetim_bucket/products/137/original/opt_adp_thumbnail.jpg">
+    <meta property="fb:app_id" content="655968634437471">
+    <meta property="og:title" content="Wizard | Argon Dashboard Bootstrap @ Creative Tim" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://demos.creative-tim.com/argon-dashboard/index.html" />
+    <meta property="og:image" content="https://s3.amazonaws.com/creativetim_bucket/products/137/original/opt_adp_thumbnail.jpg" />
+    <meta property="og:description" content="Animated Multi-step Form For Bootstrap" />
+    <meta property="og:site_name" content="Creative Tim" />
+    <link rel="stylesheet" href="https://demos.creative-tim.com/argon-design-system-pro/assets/css/nucleo-icons.css" type="text/css">
+    <link href="" rel="stylesheet">
+    <link rel="stylesheet" href="https://demos.creative-tim.com/test/argon-dashboard-pro/assets/css/argon-dashboard.min.css?v=2.0.0" type="text/css">
+    <link href="https://demos.creative-tim.com/test/argon-dashboard-pro/assets/css/argon-dashboard.min.css?v=2.0.0" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <link href="https://demos.creative-tim.com/argon-design-system-pro/assets/css/nucleo-icons.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+    <!-- Anti-flicker snippet (recommended)  -->
+    <style>
+      .async-hide {
+        opacity: 0 !important
+      }
+    </style>
+    <script>
+      (function(a, s, y, n, c, h, i, d, e) {
+        s.className += ' ' + y;
+        h.start = 1 * new Date;
+        h.end = i = function() {
+          s.className = s.className.replace(RegExp(' ?' + y), '')
+        };
+        (a[n] = a[n] || []).hide = h;
+        setTimeout(function() {
+          i();
+          h.end = null
+        }, c);
+        h.timeout = c;
+      })(window, document.documentElement, 'async-hide', 'dataLayer', 4000, {
+        'GTM-K9BGS8K': true
+      });
+    </script>
+    <!-- Analytics-Optimize Snippet -->
+    <script>
+      (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+          (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+          m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+      ga('create', 'UA-46172202-22', 'auto', {
+        allowLinker: true
+      });
+      ga('set', 'anonymizeIp', true);
+      ga('require', 'GTM-K9BGS8K');
+      ga('require', 'displayfeatures');
+      ga('require', 'linker');
+      ga('linker:autoLink', ["2checkout.com", "avangate.com"]);
+    </script>
+    <!-- end Analytics-Optimize Snippet -->
+    <!-- Google Tag Manager -->
+    <script>
+      (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          'gtm.start': new Date().getTime(),
+          event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-NKDMSK6');
+    </script>
+    <!-- End Google Tag Manager -->
+    <!-- This is for docs typography and layout -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <link href="../../../assets/docs-soft.css" rel="stylesheet" />
+  </head>
+
+  <body class="docs ">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NKDMSK6" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <header class="ct-docs-navbar">
+      <a class="ct-docs-navbar-brand" href="javascript:void(0)" aria-label="Bootstrap">
+        <a href="https://www.creative-tim.com/" class="ct-docs-navbar-text" target="_blank">
+          Creative Tim
+        </a>
+        <div class="ct-docs-navbar-border"></div>
+        <a href="../../overview/argon-dashboard/index.html" class="ct-docs-navbar-text">
+          Docs
+        </a>
+      </a>
+      <ul class="ct-docs-navbar-nav-left">
+        <li class="ct-docs-nav-item-dropdown">
+          <a href="javascript:;" class="ct-docs-navbar-nav-link" role="button">
+            <span class="ct-docs-navbar-nav-link-inner--text">Live Preview</span>
+          </a>
+          <div class="ct-docs-navbar-dropdown-menu" aria-labelledby="DropdownPreview">
+            <a class="ct-docs-navbar-dropdown-item" href="https://www.creative-tim.com/live/argon-dashboard-laravel" target="_blank">
+              Argon Dashboard
+            </a>
+            <a class="ct-docs-navbar-dropdown-item" href="https://www.creative-tim.com/live/argon-dashboard-pro-laravel" target="_blank">
+              Argon Dashboard Pro
+            </a>
+          </div>
+        </li>
+        <li class="ct-docs-nav-item-dropdown">
+          <a href="javascript:;" class="ct-docs-navbar-nav-link" role="button">
+            <span class="ct-docs-navbar-nav-link-inner--text">Support</span>
+          </a>
+          <div class="ct-docs-navbar-dropdown-menu" aria-labelledby="DropdownSupport">
+            <a class="ct-docs-navbar-dropdown-item" href="https://github.com/creativetimofficial/argon-dashboard-laravel/issues" target="_blank">
+              Argon Dashboard
+            </a>
+            <a class="ct-docs-navbar-dropdown-item" href="https://github.com/creativetimofficial/ct-argon-dashboard-pro-laravel/issues" target="_blank">
+              Argon Dashboard Pro
+            </a>
+          </div>
+        </li>
+      </ul>
+      <ul class="ct-docs-navbar-nav-right">
+        <li class="ct-docs-navbar-nav-item">
+          <a class="ct-docs-navbar-nav-link" href="https://creative-tim.com/product/argon-dashboard-laravel" target="_blank">Download Free</a>
+        </li>
+      </ul>
+      <a href="https://creative-tim.com/product/argon-dashboard-pro-laravel" target="_blank" class="ct-docs-btn-upgrade">
+        <span class="ct-docs-btn-inner--icon">
+          <i class="fas fa-download mr-2"></i>
+        </span>
+        <span class="ct-docs-navbar-nav-link-inner--text">Upgrade to PRO</span>
+      </a>
+      <button class="ct-docs-navbar-toggler" type="button">
+        <span class="ct-docs-navbar-toggler-icon"></span>
+      </button>
+    </header>
+    <div class="ct-docs-main-container">
+      <div class="ct-docs-main-content-row">
+        <div class="ct-docs-sidebar-col">
+          <nav class="ct-docs-sidebar-collapse-links">
+            <div class="ct-docs-sidebar-product">
+              <div class="ct-docs-sidebar-product-image">
+                <img src="../../../assets/images/bootstrap.png">
+              </div>
+              <p class="ct-docs-sidebar-product-text">Argon Dashboard</p>
+            </div>
+            <div class="ct-docs-toc-item-active">
+              <a class="ct-docs-toc-link" href="javascript:void(0)">
+                <div class="d-inline-block">
+                  <div class="icon icon-xs border-radius-md bg-gradient-primary text-center mr-2 d-flex align-items-center justify-content-center me-1">
+                    <i class="ni ni-active-40 text-white"></i>
+                  </div>
+                </div>
+                Getting started
+              </a>
+              <ul class="ct-docs-nav-sidenav ms-4 ps-1">
+                <li class="">
+                  <a href="../../../bootstrap/overview/argon-dashboard/index.html">
+                    Overview
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/license/argon-dashboard/index.html">
+                    License
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/quick-start/argon-dashboard/index.html">
+                    Quick Start
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/build-tools/argon-dashboard/index.html">
+                    Build Tools
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/what-is-bootstrap/argon-dashboard/index.html">
+                    What is Bootstrap
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="ct-docs-toc-item-active">
+              <a class="ct-docs-toc-link" href="javascript:void(0)">
+                <div class="d-inline-block">
+                  <div class="icon icon-xs border-radius-md bg-gradient-primary text-center mr-2 d-flex align-items-center justify-content-center me-1">
+                    <i class="ni ni-folder-17 text-white"></i>
+                  </div>
+                </div>
+                Foundation
+              </a>
+              <ul class="ct-docs-nav-sidenav ms-4 ps-1">
+                <li class="">
+                  <a href="../../../bootstrap/colors/argon-dashboard/index.html">
+                    Colors
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/grid/argon-dashboard/index.html">
+                    Grid
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/typography/argon-dashboard/index.html">
+                    Typography
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/icons/argon-dashboard/index.html">
+                    Icons
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/utilities/argon-dashboard/index.html">
+                    Utilities
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="ct-docs-toc-item-active">
+              <a class="ct-docs-toc-link" href="javascript:void(0)">
+                <div class="d-inline-block">
+                  <div class="icon icon-xs border-radius-md bg-gradient-primary text-center mr-2 d-flex align-items-center justify-content-center me-1">
+                    <i class="ni ni-app text-white"></i>
+                  </div>
+                </div>
+                Components
+              </a>
+              <ul class="ct-docs-nav-sidenav ms-4 ps-1">
+                <li class="">
+                  <a href="../../../bootstrap/alerts/argon-dashboard/index.html">
+                    Alerts
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/badge/argon-dashboard/index.html">
+                    Badge
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/breadcrumb/argon-dashboard/index.html">
+                    Breadcrumb
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/buttons/argon-dashboard/index.html">
+                    Buttons
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/social-buttons/argon-dashboard/index.html">
+                    Social Buttons
+                    <span class="ct-docs-sidenav-pro-badge">Pro</span>
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/cards/argon-dashboard/index.html">
+                    Cards
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/carousel/argon-dashboard/index.html">
+                    Carousel
+                    <span class="ct-docs-sidenav-pro-badge">Pro</span>
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/collapse/argon-dashboard/index.html">
+                    Collapse
+                    <span class="ct-docs-sidenav-pro-badge">Pro</span>
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/dropdowns/argon-dashboard/index.html">
+                    Dropdowns
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/forms/argon-dashboard/index.html">
+                    Forms
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/input-group/argon-dashboard/index.html">
+                    Input Group
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/list-group/argon-dashboard/index.html">
+                    List Group
+                    <span class="ct-docs-sidenav-pro-badge">Pro</span>
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/modal/argon-dashboard/index.html">
+                    Modal
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/navs/argon-dashboard/index.html">
+                    Navs
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/navbar/argon-dashboard/index.html">
+                    Navbar
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/pagination/argon-dashboard/index.html">
+                    Pagination
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/popovers/argon-dashboard/index.html">
+                    Popovers
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/progress/argon-dashboard/index.html">
+                    Progress
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/spinners/argon-dashboard/index.html">
+                    Spinners
+                    <span class="ct-docs-sidenav-pro-badge">Pro</span>
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/tables/argon-dashboard/index.html">
+                    Tables
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/tooltips/argon-dashboard/index.html">
+                    Tooltips
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="ct-docs-toc-item-active">
+              <a class="ct-docs-toc-link" href="javascript:void(0)">
+                <div class="d-inline-block">
+                  <div class="icon icon-xs border-radius-md bg-gradient-primary text-center mr-2 d-flex align-items-center justify-content-center me-1">
+                    <i class="ni ni-settings text-white"></i>
+                  </div>
+                </div>
+                Plugins
+              </a>
+              <ul class="ct-docs-nav-sidenav ms-4 ps-1">
+                <li class="">
+                  <a href="../../../bootstrap/countup-js/argon-dashboard/index.html">
+                    CountUp JS
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/charts/argon-dashboard/index.html">
+                    Charts
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/datepicker/argon-dashboard/index.html">
+                    Datepicker
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/fullcalendar/argon-dashboard/index.html">
+                    Fullcalendar
+                    <span class="ct-docs-sidenav-pro-badge">Pro</span>
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/sliders/argon-dashboard/index.html">
+                    Sliders
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/choices/argon-dashboard/index.html">
+                    Choices
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/dropzone/argon-dashboard/index.html">
+                    Dropzone
+                    <span class="ct-docs-sidenav-pro-badge">Pro</span>
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/datatables/argon-dashboard/index.html">
+                    Datatables
+                    <span class="ct-docs-sidenav-pro-badge">Pro</span>
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/kanban/argon-dashboard/index.html">
+                    Kanban
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/photo-swipe/argon-dashboard/index.html">
+                    Photo Swipe
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/quill/argon-dashboard/index.html">
+                    Quill
+                    <span class="ct-docs-sidenav-pro-badge">Pro</span>
+                  </a>
+                </li>
+                <li class="">
+                  <a href="../../../bootstrap/sweet-alerts/argon-dashboard/index.html">
+                    Sweet Alerts
+                    <span class="ct-docs-sidenav-pro-badge">Pro</span>
+                  </a>
+                </li>
+                <li class=" ct-docs-nav-sidenav-active ">
+                  <a href="../../../bootstrap/wizard/argon-dashboard/index.html">
+                    Wizard
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="ct-docs-toc-col">
+          <ul class="section-nav">
+            <li class="toc-entry toc-h2"><a href="#usage">Usage</a></li>
+            <li class="toc-entry toc-h2"><a href="#example">Example</a>
+              <ul>
+                <li class="toc-entry toc-h3"><a href="#build-your-profile">Build Your Profile</a>
+                  <ul>
+                    <li class="toc-entry toc-h5"><a href="#this-information-will-let-us-know-more-about-you">This information will let us know more about you.</a></li>
+                    <li class="toc-entry toc-h5"><a href="#lets-start-with-the-basic-information">Let&#39;s start with the basic information</a></li>
+                    <li class="toc-entry toc-h5"><a href="#what-are-you-doing-checkboxes">What are you doing? (checkboxes)</a>
+                      <ul>
+                        <li class="toc-entry toc-h6"><a href="#design">Design</a></li>
+                        <li class="toc-entry toc-h6"><a href="#code">Code</a></li>
+                        <li class="toc-entry toc-h6"><a href="#develop">Develop</a></li>
+                      </ul>
+                    </li>
+                    <li class="toc-entry toc-h5"><a href="#are-you-living-in-a-nice-area">Are you living in a nice area?</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <main class="ct-docs-content-col" role="main">
+          <div class="ct-docs-page-title">
+            <h1 class="ct-docs-page-h1-title" id="content">
+              Bootstrap Wizard
+            </h1>
+            <span class="ct-docs-page-title-pro-line"> - </span>
+            <div class="ct-docs-page-title-pro-bage">Pro Component</div>
+            <div class="avatar-group mt-3">
+            </div>
+          </div>
+          <p class="ct-docs-page-title-lead">Animated Multi-step Form For Bootstrap</p>
+          <hr class="ct-docs-hr">
+          <h2 id="usage">Usage</h2>
+          <p>In order to use this plugin on your page you will need to include the following script in the “Optional JS” area from the page’s footer:</p>
+          <div class="position-relative">
+            <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"../../assets/js/plugins/multistep-form.js"</span><span class="nt">&gt;&lt;/script&gt;</span></code></pre>
+            </figure>
+          </div>
+          <h2 id="example">Example</h2>
+          <p>Simply copy one of the code examples demonstrated below and include it in your page.</p>
+          <div class="row">
+            <div class="col-12 text-center">
+              <h3 class="mt-5">Build Your Profile</h3>
+              <h5 class="text-secondary font-weight-normal">This information will let us know more about you.</h5>
+              <div class="multisteps-form mb-5">
+                <!--progress bar-->
+                <div class="row">
+                  <div class="col-12 col-lg-8 mx-auto my-5">
+                    <div class="multisteps-form__progress">
+                      <button class="multisteps-form__progress-btn js-active" type="button" title="User Info">
+                        <span>About</span>
+                      </button>
+                      <button class="multisteps-form__progress-btn" type="button" title="Address">
+                        <span>Account</span>
+                      </button>
+                      <button class="multisteps-form__progress-btn" type="button" title="Order Info">
+                        <span>Address</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!--form panels-->
+                <div class="row">
+                  <div class="col-12 col-lg-8 m-auto">
+                    <form class="multisteps-form__form">
+                      <!--single form panel-->
+                      <div class="card multisteps-form__panel p-3 border-radius-xl bg-white js-active" data-animation="FadeIn">
+                        <div class="row text-center">
+                          <div class="col-12 mx-auto">
+                            <h5 class="font-weight-normal">Let's start with the basic information</h5>
+                            <p>Let us know your name and email address. Use an address you don't mind other users contacting you at</p>
+                          </div>
+                        </div>
+                        <div class="multisteps-form__content">
+                          <div class="row mt-3">
+                            <div class="col-12 col-sm-4">
+                              <div class="avatar avatar-xxl position-relative">
+                                <img src="https://demos.creative-tim.com/test/soft-ui-dashboard-pro/assets/img/team-2.jpg" class="border-radius-md" />
+                                <a href="javascript:;" class="btn btn-sm btn-icon-only bg-gradient-light position-absolute bottom-0 end-0 mb-n2 me-n2">
+                                  <i class="fa fa-pen top-0" data-bs-toggle="tooltip" data-bs-placement="top" title="" aria-hidden="true" data-bs-original-title="Edit Image" aria-label="Edit Image"></i><span class="sr-only">Edit Image</span>
+                                </a>
+                              </div>
+                            </div>
+                            <div class="col-12 col-sm-8 mt-4 mt-sm-0 text-start">
+                              <label>First Name</label>
+                              <input class="multisteps-form__input form-control mb-3" type="text" placeholder="Eg. Michael" />
+                              <label>Last Name</label>
+                              <input class="multisteps-form__input form-control mb-3" type="text" placeholder="Eg. Tomson" />
+                              <label>Email Address</label>
+                              <input class="multisteps-form__input form-control" type="email" placeholder="Eg. argon@dashboard.com" />
+                            </div>
+                          </div>
+                          <div class="button-row d-flex mt-4">
+                            <button class="btn bg-gradient-dark ms-auto mb-0 js-btn-next" type="button" title="Next">Next</button>
+                          </div>
+                        </div>
+                      </div>
+                      <!--single form panel-->
+                      <div class="card multisteps-form__panel p-3 border-radius-xl bg-white" data-animation="FadeIn">
+                        <div class="row text-center">
+                          <div class="col-12 mx-auto">
+                            <h5 class="font-weight-normal">What are you doing? (checkboxes)</h5>
+                            <p>Give us more details about you. What do you enjoy doing in your spare time?</p>
+                          </div>
+                        </div>
+                        <div class="multisteps-form__content">
+                          <div class="row mt-4">
+                            <div class="col-sm-3 ms-auto">
+                              <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off" />
+                              <label class="btn btn-lg btn-outline-secondary border-2 px-6 py-5" for="btncheck1">
+                                <svg class="text-dark" width="20px" height="20px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                  <title>settings</title>
+                                  <g id="Basic-Elements" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <g id="Rounded-Icons" transform="translate(-2020.000000, -442.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                                      <g id="Icons-with-opacity" transform="translate(1716.000000, 291.000000)">
+                                        <g id="settings" transform="translate(304.000000, 151.000000)">
+                                          <polygon class="color-background" id="Path" opacity="0.596981957" points="18.0883333 15.7316667 11.1783333 8.82166667 13.3333333 6.66666667 6.66666667 0 0 6.66666667 6.66666667 13.3333333 8.82166667 11.1783333 15.315 17.6716667"></polygon>
+                                          <path class="color-background" d="M31.5666667,23.2333333 C31.0516667,23.2933333 30.53,23.3333333 30,23.3333333 C29.4916667,23.3333333 28.9866667,23.3033333 28.48,23.245 L22.4116667,30.7433333 L29.9416667,38.2733333 C32.2433333,40.575 35.9733333,40.575 38.275,38.2733333 L38.275,38.2733333 C40.5766667,35.9716667 40.5766667,32.2416667 38.275,29.94 L31.5666667,23.2333333 Z" id="Path" opacity="0.596981957"></path>
+                                          <path class="color-background" d="M33.785,11.285 L28.715,6.215 L34.0616667,0.868333333 C32.82,0.315 31.4483333,0 30,0 C24.4766667,0 20,4.47666667 20,10 C20,10.99 20.1483333,11.9433333 20.4166667,12.8466667 L2.435,27.3966667 C0.95,28.7083333 0.0633333333,30.595 0.00333333333,32.5733333 C-0.0583333333,34.5533333 0.71,36.4916667 2.11,37.89 C3.47,39.2516667 5.27833333,40 7.20166667,40 C9.26666667,40 11.2366667,39.1133333 12.6033333,37.565 L27.1533333,19.5833333 C28.0566667,19.8516667 29.01,20 30,20 C35.5233333,20 40,15.5233333 40,10 C40,8.55166667 39.685,7.18 39.1316667,5.93666667 L33.785,11.285 Z" id="Path"></path>
+                                        </g>
+                                      </g>
+                                    </g>
+                                  </g>
+                                </svg>
+                              </label>
+                              <h6>Design</h6>
+                            </div>
+                            <div class="col-sm-3">
+                              <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off" />
+                              <label class="btn btn-lg btn-outline-secondary border-2 px-6 py-5" for="btncheck2">
+                                <svg class="text-dark" width="20px" height="20px" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                  <title>box-3d-50</title>
+                                  <g id="Basic-Elements" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <g id="Rounded-Icons" transform="translate(-2319.000000, -291.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                                      <g id="Icons-with-opacity" transform="translate(1716.000000, 291.000000)">
+                                        <g id="box-3d-50" transform="translate(603.000000, 0.000000)">
+                                          <path class="color-background" d="M22.7597136,19.3090182 L38.8987031,11.2395234 C39.3926816,10.9925342 39.592906,10.3918611 39.3459167,9.89788265 C39.249157,9.70436312 39.0922432,9.5474453 38.8987261,9.45068056 L20.2741875,0.1378125 L20.2741875,0.1378125 C19.905375,-0.04725 19.469625,-0.04725 19.0995,0.1378125 L3.1011696,8.13815822 C2.60720568,8.38517662 2.40701679,8.98586148 2.6540352,9.4798254 C2.75080129,9.67332903 2.90771305,9.83023153 3.10122239,9.9269862 L21.8652864,19.3090182 C22.1468139,19.4497819 22.4781861,19.4497819 22.7597136,19.3090182 Z" id="Path"></path>
+                                          <path class="color-background" d="M23.625,22.429159 L23.625,39.8805372 C23.625,40.4328219 24.0727153,40.8805372 24.625,40.8805372 C24.7802551,40.8805372 24.9333778,40.8443874 25.0722402,40.7749511 L41.2741875,32.673375 L41.2741875,32.673375 C41.719125,32.4515625 42,31.9974375 42,31.5 L42,14.241659 C42,13.6893742 41.5522847,13.241659 41,13.241659 C40.8447549,13.241659 40.6916418,13.2778041 40.5527864,13.3472318 L24.1777864,21.5347318 C23.8390024,21.7041238 23.625,22.0503869 23.625,22.429159 Z" id="Path" opacity="0.7"></path>
+                                          <path class="color-background" d="M20.4472136,21.5347318 L1.4472136,12.0347318 C0.953235098,11.7877425 0.352562058,11.9879669 0.105572809,12.4819454 C0.0361450918,12.6208008 6.47121774e-16,12.7739139 0,12.929159 L0,30.1875 L0,30.1875 C0,30.6849375 0.280875,31.1390625 0.7258125,31.3621875 L19.5528096,40.7750766 C20.0467945,41.0220531 20.6474623,40.8218132 20.8944388,40.3278283 C20.963859,40.1889789 21,40.0358742 21,39.8806379 L21,22.429159 C21,22.0503869 20.7859976,21.7041238 20.4472136,21.5347318 Z" id="Path" opacity="0.7"></path>
+                                        </g>
+                                      </g>
+                                    </g>
+                                  </g>
+                                </svg>
+                              </label>
+                              <h6>Code</h6>
+                            </div>
+                            <div class="col-sm-3 me-auto">
+                              <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off" />
+                              <label class="btn btn-lg btn-outline-secondary border-2 px-6 py-5" for="btncheck3">
+                                <svg class="text-dark" width="20px" height="20px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                  <title>spaceship</title>
+                                  <g id="Basic-Elements" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <g id="Rounded-Icons" transform="translate(-1720.000000, -592.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                                      <g id="Icons-with-opacity" transform="translate(1716.000000, 291.000000)">
+                                        <g id="spaceship" transform="translate(4.000000, 301.000000)">
+                                          <path class="color-background" d="M39.3,0.706666667 C38.9660984,0.370464027 38.5048767,0.192278529 38.0316667,0.216666667 C14.6516667,1.43666667 6.015,22.2633333 5.93166667,22.4733333 C5.68236407,23.0926189 5.82664679,23.8009159 6.29833333,24.2733333 L15.7266667,33.7016667 C16.2013871,34.1756798 16.9140329,34.3188658 17.535,34.065 C17.7433333,33.98 38.4583333,25.2466667 39.7816667,1.97666667 C39.8087196,1.50414529 39.6335979,1.04240574 39.3,0.706666667 Z M25.69,19.0233333 C24.7367525,19.9768687 23.3029475,20.2622391 22.0572426,19.7463614 C20.8115377,19.2304837 19.9992882,18.0149658 19.9992882,16.6666667 C19.9992882,15.3183676 20.8115377,14.1028496 22.0572426,13.5869719 C23.3029475,13.0710943 24.7367525,13.3564646 25.69,14.31 C26.9912731,15.6116662 26.9912731,17.7216672 25.69,19.0233333 L25.69,19.0233333 Z" id="Shape"></path>
+                                          <path class="color-background" d="M1.855,31.4066667 C3.05106558,30.2024182 4.79973884,29.7296005 6.43969145,30.1670277 C8.07964407,30.6044549 9.36054508,31.8853559 9.7979723,33.5253085 C10.2353995,35.1652612 9.76258177,36.9139344 8.55833333,38.11 C6.70666667,39.9616667 0,40 0,40 C0,40 0,33.2566667 1.855,31.4066667 Z" id="Path"></path>
+                                          <path class="color-background" d="M17.2616667,3.90166667 C12.4943643,3.07192755 7.62174065,4.61673894 4.20333333,8.04166667 C3.31200265,8.94126033 2.53706177,9.94913142 1.89666667,11.0416667 C1.5109569,11.6966059 1.61721591,12.5295394 2.155,13.0666667 L5.47,16.3833333 C8.55036617,11.4946947 12.5559074,7.25476565 17.2616667,3.90166667 L17.2616667,3.90166667 Z" id="color-2" opacity="0.598539807"></path>
+                                          <path class="color-background" d="M36.0983333,22.7383333 C36.9280725,27.5056357 35.3832611,32.3782594 31.9583333,35.7966667 C31.0587397,36.6879974 30.0508686,37.4629382 28.9583333,38.1033333 C28.3033941,38.4890431 27.4704606,38.3827841 26.9333333,37.845 L23.6166667,34.53 C28.5053053,31.4496338 32.7452344,27.4440926 36.0983333,22.7383333 L36.0983333,22.7383333 Z" id="color-3" opacity="0.598539807"></path>
+                                        </g>
+                                      </g>
+                                    </g>
+                                  </g>
+                                </svg>
+                              </label>
+                              <h6>Develop</h6>
+                            </div>
+                          </div>
+                          <div class="button-row d-flex mt-4">
+                            <button class="btn bg-gradient-light mb-0 js-btn-prev" type="button" title="Prev">Prev</button>
+                            <button class="btn bg-gradient-dark ms-auto mb-0 js-btn-next" type="button" title="Next">Next</button>
+                          </div>
+                        </div>
+                      </div>
+                      <!--single form panel-->
+                      <div class="card multisteps-form__panel p-3 border-radius-xl bg-white" data-animation="FadeIn">
+                        <div class="row text-center">
+                          <div class="col-12 mx-auto">
+                            <h5 class="font-weight-normal">Are you living in a nice area?</h5>
+                            <p>One thing I love about the later sunsets is the chance to go for a walk through the neighborhood woods before dinner</p>
+                          </div>
+                        </div>
+                        <div class="multisteps-form__content">
+                          <div class="row text-start">
+                            <div class="col-12 col-md-8 ms-auto mt-3">
+                              <label>Street Name</label>
+                              <input class="multisteps-form__input form-control" type="text" placeholder="Eg. Argon" />
+                            </div>
+                            <div class="col-12 col-md-4 ms-auto mt-3">
+                              <label>Street No</label>
+                              <input class="multisteps-form__input form-control" type="number" placeholder="Eg. 221" />
+                            </div>
+                            <div class="col-12 col-md-7 ms-auto mt-3">
+                              <label>City</label>
+                              <input class="multisteps-form__input form-control" type="text" placeholder="Eg. Tokyo" />
+                            </div>
+                            <div class="col-12 col-md-5 ms-auto mt-3 text-start">
+                              <label>Country</label>
+                              <select class="form-control" name="choices-country" id="choices-country">
+                                <option value="Argentina">Argentina</option>
+                                <option value="Albania">Albania</option>
+                                <option value="Algeria">Algeria</option>
+                                <option value="Andorra">Andorra</option>
+                                <option value="Angola">Angola</option>
+                                <option value="Brasil">Brasil</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="button-row d-flex mt-4 col-12">
+                              <button class="btn bg-gradient-light mb-0 js-btn-prev" type="button" title="Prev">Prev</button>
+                              <button class="btn bg-gradient-dark ms-auto mb-0" type="button" title="Send">Send</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+      <div class="ct-docs-main-footer-row">
+        <div class="ct-docs-main-footer-blank-col">
+        </div>
+        <div class="ct-docs-main-footer-col">
+          <footer class="ct-docs-footer">
+            <div class="ct-docs-footer-inner-row">
+              <div class="ct-docs-footer-col">
+                <div class="ct-docs-footer-copyright">
+                  © <script>
+                    document.write(new Date().getFullYear())
+                  </script>
+                  <a href="https://creative-tim.com" class="ct-docs-footer-copyright-author" target="_blank">Creative Tim</a>
+                  &
+                  <a href="https://updivision.com" class="ct-docs-footer-copyright-author" target="_blank">UPDIVISION</a>
+                </div>
+              </div>
+              <div class="ct-docs-footer-col">
+                <ul class="ct-docs-footer-nav-footer">
+                    <li>
+                        <a href="https://updivision.com" class="ct-docs-footer-nav-link" target="_blank">UPDIVISION</a>
+                   <li>
+                    <a href="https://creative-tim.com" class="ct-docs-footer-nav-link" target="_blank">Creative Tim</a>
+                  </li>
+                  <li>
+                    <a href="https://www.creative-tim.com/contact-us" class="ct-docs-footer-nav-link" target="_blank">Contact Us</a>
+                  </li>
+                  <li>
+                    <a href="https://creative-tim.com/blog" class="ct-docs-footer-nav-link" target="_blank">Blog</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <script src="https://demos.creative-tim.com/argon-dashboard-pro-bs4/assets/vendor/jquery/dist/jquery.min.js" type="text/javascript"></script>
+    <script src="https://demos.creative-tim.com/soft-ui-design-system-pro/assets/js/core/popper.min.js" type="text/javascript"></script>
+    <script src="https://demos.creative-tim.com/soft-ui-design-system-pro/assets/js/core/bootstrap.min.js" type="text/javascript"></script>
+    <script src="" type="text/javascript"></script>
+    <script src="" type="text/javascript"></script>
+    <script src="" type="text/javascript"></script>
+    <script src="" type="text/javascript"></script>
+    <script src="https://demos.creative-tim.com/argon-dashboard-pro-bs4/assets/vendor/prismjs/prism.js" type="text/javascript"></script>
+    <script src="https://demos.creative-tim.com/argon-design-system-pro/assets/demo/docs.min.js" type="text/javascript"></script>
+    <script src="https://demos.creative-tim.com/argon-design-system-pro/assets/demo/vendor/holder.min.js" type="text/javascript"></script>
+    <script src="https://demos.creative-tim.com/soft-ui-design-system-pro/assets/js/plugins/moment.min.js" type="text/javascript"></script>
+    <script src="https://demos.creative-tim.com/test/argon-dashboard-pro/assets/js/argon-dashboard.min.js?v=1.0.0" type="text/javascript"></script>
+    <script>
+      Holder.addTheme('gray', {
+        bg: '#777',
+        fg: 'rgba(255,255,255,.75)',
+        font: 'Helvetica',
+        fontweight: 'normal'
+      })
+    </script>
+    <script>
+      // Facebook Pixel Code Don't Delete
+      ! function(f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function() {
+          n.callMethod ?
+            n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = '2.0';
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s)
+      }(window,
+        document, 'script', '//connect.facebook.net/en_US/fbevents.js');
+
+      try {
+        fbq('init', '111649226022273');
+        fbq('track', "PageView");
+
+      } catch (err) {
+        console.log('Facebook Track Error:', err);
+      }
+    </script>
+    <script src="https://demos.creative-tim.com/test/argon-dashboard-pro/assets/js/plugins/multistep-form.js" type="text/javascript"></script>
+    <script src="../../../assets/docs.js"></script>
+  </body>
+
+</html>
