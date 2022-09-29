@@ -26,3 +26,9 @@ All notable changes to `Material Dashboard` frontend preset for Laravel will be 
 - Update to Laravel 8.x
 ## Version 1.0.9 - 2022-03-25
 - Update to Laravel 9.x
+
+## Version 2.0.0 - 2022-04-18
+- Update to Material Design 2
+- Update Bootstrap to v5.1.3
+- New Documentation version
+- New Product structure
