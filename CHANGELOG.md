@@ -32,6 +32,7 @@ All notable changes to `Argon` frontend preset for Laravel will be documented in
   - Update to Laravel 9.x
 
 ## Version 2.0.0 - 2022-09-27
+  - Update to Material Design 2
   - Update Bootstrap to v5.1.3
   - Add new example pages
   - Add Light/Dark feature
