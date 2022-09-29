@@ -1,9 +1,9 @@
 {
-    "name": "laravel-frontend-presets/argon",
-    "description": "Laravel 9.x Front-end preset for argon",
+    "name": "laravel-frontend-presets/material",
+    "description": "Laravel 9.x Front-end preset for material",
     "license": "MIT",
-    "homepage": "https://github.com/creativetimofficial/argon-dashboard-laravel",
-    "keywords": ["Laravel", "Preset", "Argon"],
+    "homepage": "https://github.com/creativetimofficial/material-dashboard-laravel",
+    "keywords": ["Laravel", "Preset", "Material"],
     "require": {
         "laravel/framework": "^9.0",
         "laravel/legacy-factories": "^1.0"
@@ -16,7 +16,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "LaravelFrontendPresets\\ArgonPreset\\ArgonPresetServiceProvider"
+                "LaravelFrontendPresets\\MaterialPreset\\MaterialPresetServiceProvider"
             ]
         }
     }

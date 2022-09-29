@@ -1,12 +1,12 @@
-# [Argon Dashboard 2 Laravel - Free](https://www.creative-tim.com/product/argon-dashboard-laravel)
+# [Material Dashboard 2 Laravel - Free](https://material-dashboard-laravel.creative-tim.com)
 
 ![version](https://img.shields.io/badge/version-3.0.0-blue.svg) 
 ![license](https://img.shields.io/badge/license-MIT-blue.svg)
-[![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/argon-dashboard-laravel.svg)](https://github.com/creativetimofficial/argon-dashboard-laravel/issues?q=is%3Aopen+is%3Aissue) 
-[![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/argon-dashboard-laravel.svg)](https://github.com/creativetimofficial/argon-dashboard-laravel/issues?q=is%3Aissue+is%3Aclosed)
+[![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/material-dashboard-laravel.svg)](https://github.com/creativetimofficial/material-dashboard-laravel/issues?q=is%3Aopen+is%3Aissue) 
+[![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/material-dashboard-laravel.svg)](https://github.com/creativetimofficial/material-dashboard-laravel/issues?q=is%3Aissue+is%3Aclosed)
 
-*Frontend version*: Argon Dashboard v3.0.0. More info at https://www.creative-tim.com/product/argon-dashboard
-[ <img src="https://s3.amazonaws.com/creativetim_bucket/products/140/original/argon-dashboard-laravel.jpg" width="100%" />](https://argon-dashboard-laravel.creative-tim.com)
+*Frontend version*: Material Dashboard v3.0.0. More info at https://www.creative-tim.com/product/material-dashboard
+[ <img src="https://s3.amazonaws.com/creativetim_bucket/products/154/original/material-dashboard-laravel.jpg" width="100%" />](https://material-dashboard-laravel.creative-tim.com)
 
 Speed up your web development with the Bootstrap 5 Admin Dashboard built for Laravel Framework 9.x and up.
 
@@ -42,6 +42,7 @@ If you don't already have an Apache local environment with PHP and MySQL, use on
 Also, you will need to install Composer: https://getcomposer.org/doc/00-intro.md   
 And Laravel: https://laravel.com/docs/9.x/installation
 
+
 ## Installation
 
 After initializing a fresh instance of Laravel (and making all the necessary configurations), install the preset using one of the provided methods:
@@ -50,8 +51,8 @@ After initializing a fresh instance of Laravel (and making all the necessary con
 
 1. `Cd` to your Laravel app  
 2. Type in your terminal: `composer require laravel/ui`
-3. Install this preset via `composer require laravel-frontend-presets/argon`. No need to register the service provider. Laravel 9.x & up can auto detect the package.
-4. Run `php artisan ui argon` command to install the Argon preset. This will install all the necessary assets and also the custom auth views, it will also add the auth route in `routes/web.php`
+3. Install this preset via `composer require laravel-frontend-presets/material`. No need to register the service provider. Laravel 9.x & up can auto detect the package.
+4. Run `php artisan ui material` command to install the Argon preset. This will install all the necessary assets and also the custom auth views, it will also add the auth route in `routes/web.php`
 (NOTE: If you run this command several times, be sure to clean up the duplicate Auth entries in routes/web.php)
 5. In your terminal run `composer dump-autoload`
 6. Run `php artisan migrate:fresh --seed` to create basic users table
@@ -60,163 +61,171 @@ After initializing a fresh instance of Laravel (and making all the necessary con
 
 1. In your application's root create a **presets** folder
 2. Download the archive of the repo and unzip it
-3. Copy and paste the downloaded folder in presets (created in step 2) and rename it to **argon**
+3. Copy and paste the downloaded folder in presets (created in step 2) and rename it to **material**
 4. Open `composer.json` file 
-5. Add `"LaravelFrontendPresets\\ArgonPreset\\": "presets/argon/src"` to `autoload/psr-4` and to `autoload-dev/psr-4`
-6. Add `LaravelFrontendPresets\ArgonPreset\ArgonPresetServiceProvider::class` to `config/app.php` file
+5. Add `"LaravelFrontendPresets\\MaterialPreset\\": "presets/material/src"` to `autoload/psr-4` and to `autoload-dev/psr-4`
+6. Add `LaravelFrontendPresets\MaterialPreset\MaterialPresetServiceProvider::class` to `config/app.php` file
 7. Type in your terminal: `composer require laravel/ui`
 8. In your terminal run `composer dump-autoload`
-9. Run `php artisan ui argon` command to install the Argon preset. This will install all the necessary assets and also the custom auth views, it will also add the auth route in `routes/web.php`
+9. Run `php artisan ui material` command to install the Argon preset. This will install all the necessary assets and also the custom auth views, it will also add the auth route in `routes/web.php`
 (NOTE: If you run this command several times, be sure to clean up the duplicate Auth entries in routes/web.php)
 10. Add in your **.env** file the info for your database
 11. Run `php artisan migrate:fresh --seed` to create basic users table
-12. Run `npm install perfect-scrollbar`
+
 
 ## Usage
-Register a user or login with default user **admin@argon.com** and password **secret** from your database and start testing (make sure to run the migrations and seeders for these credentials to be available).
+Register a user or login with default user **admin@material.com** and password **secret** from your database and start testing (make sure to run the migrations and seeders for these credentials to be available).
 
 Besides the dashboard, the auth pages, the billing and table pages, there is also has an edit profile page. All the necessary files are installed out of the box and all the needed routes are added to `routes/web.php`. Keep in mind that all of the features can be viewed once you login using the credentials provided or by registering your own user. 
 
 
 ## Versions
+[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/html-logo.jpg?raw=true" width="60" height="60" />](https://demos.creative-tim.com/material-dashboard/examples/dashboard.html)
+[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/laravel_logo.png?raw=true" width="60" height="60" />](https://material-dashboard-laravel.creative-tim.com/)
 
-[<img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/html-logo.jpg" width="60" height="60" />](https://www.creative-tim.com/product/argon-dashboard)
-[<img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/react-logo.jpg" width="60" height="60" />](https://www.creative-tim.com/product/argon-dashboard-react)
-[<img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/vue-logo.jpg" width="60" height="60" />](https://www.creative-tim.com/product/vue-argon-dashboard)
-[<img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/angular-logo.jpg" width="60" height="60" />](https://www.creative-tim.com/product/argon-dashboard-angular)
-[<img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/aspnet-logo.jpg" width="60" height="60" />](https://www.creative-tim.com/product/argon-dashboard-asp-net)
-[<img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/nodejs-logo.jpg" width="60" height="60" />](https://www.creative-tim.com/product/argon-dashboard-nodejs)
-[<img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/laravel_logo.png" width="60" height="60" />](https://www.creative-tim.com/product/argon-dashboard-laravel)
+| HTML | Laravel |
+| --- | --- |
+| [![HTML](https://s3.amazonaws.com/creativetim_bucket/products/50/thumb/material-dashboard.jpg?raw=true)](https://www.creative-tim.com/product/material-dashboard) | [![Laravel](https://s3.amazonaws.com/creativetim_bucket/products/154/original/material-dashboard-laravel.jpg?raw=true)](https://www.creative-tim.com/product/material-dashboard-laravel)  |
 
-
-
-| HTML | Vue | Laravel |
-| --- | --- | --- |
-| [![Argon Dashboard HTML](https://s3.amazonaws.com/creativetim_bucket/products/96/thumb/argon-dashboard-2.jpg)](https://www.creative-tim.com/product/argon-dashboard) | [![Vue Argon Dashboard ](https://s3.amazonaws.com/creativetim_bucket/products/156/thumb/vue-argon-dashboard.jpg?)](https://www.creative-tim.com/product/vue-argon-dashboard) | [![Argon Dashboard Laravel](https://s3.amazonaws.com/creativetim_bucket/products/140/original/argon-dashboard-laravel.jpg)](https://www.creative-tim.com/product/argon-dashboard-laravel) |
+| Vue | React |
+| --- | --- |
+| [![Vue](https://s3.amazonaws.com/creativetim_bucket/products/596/thumb/vue-material-dashboard-2.jpg?raw=true)](https://www.creative-tim.com/product/vue-material-dashboard-2) | [![React](https://s3.amazonaws.com/creativetim_bucket/products/71/thumb/material-dashboard-react.jpg?raw=true)](https://www.creative-tim.com/product/material-dashboard-react)  | 
 
 
 ## Demo
 | Register | Login | Dashboard |
 | --- | --- | ---  |
-| [<img src="src/argon-stubs/resources/argon/screens/register.png" width="322" />](https://argon-dashboard-laravel.creative-tim.com/register) | [<img src="src/argon-stubs/resources/argon/screens/login.png" width="322" />](https://argon-dashboard-laravel.creative-tim.com/login)  | [<img src="src/argon-stubs/resources/argon/screens/dashboard.png" width="322" />](https://argon-dashboard-laravel.creative-tim.com/dashboard)
+| [<img src="src/material-stubs/screens/register.png" width="322" />](https://material-dashboard-laravel.creative-tim.com/sign-up) | [<img src="src/material-stubs/screens/login.png" width="322" />](https://material-dashboard-laravel.creative-tim.com/sign-in)  | [<img src="src/material-stubs/screens/dashboard.png" width="322" />](https://material-dashboard-laravel.creative-tim.com/dashboard)
 
 | Forgot Password Page | Reset Password Page | Profile Page  |
 | --- | --- | ---  |
-| [<img src="src/argon-stubs/resources/argon/screens/reset-password.png" width="322" />](https://argon-dashboard-laravel.creative-tim.com/reset-password)  | [<img src="src/argon-stubs/resources/argon/screens/change-password.png" width="322" />](https://argon-dashboard-laravel.creative-tim.com/login) | [<img src="src/argon-stubs/resources/argon/screens/profile.png" width="322" />](https://argon-dashboard-laravel.creative-tim.com/profile)
-[View More](https://www.creative-tim.com/product/argon-dashboard-laravel)
+| [<img src="src/material-stubs/screens/forgot-password.png" width="322" />](https://material-dashboard-laravel.creative-tim.com/verify)  | [<img src="src/material-stubs/screens/reset-password.png" width="322" />](https://material-dashboard-laravel.creative-tim.com/sign-in) | [<img src="src/material-stubs/screens/profile.png" width="322" />](https://material-dashboard-laravel.creative-tim.com/user-profile)
+[View More](https://material-dashboard-laravel.creative-tim.com/dashboard)
 
 ## Documentation
-The documentation for the Material Dashboard Laravel is hosted at our [website](https://www.creative-tim.com/product/argon-dashboard-laravel/docs/bootstrap/quick-start/argon-dashboard/index.html).
+The documentation for the Material Dashboard Laravel is hosted at our [website](https://material-dashboard-laravel.creative-tim.com/documentation/getting-started/installation.html).
 
 ### Login
-If you are not logged in you can only access this page or the Sign Up page. The default url takes you to the login page where you use the default credentials **admin@argon.com** with the password **secret**. Logging in is possible only with already existing credentials. For this to work you should have run the migrations. 
+If you are not logged in you can only access this page or the Sign Up page. The default url takes you to the login page where you use the default credentials **admin@material.com** with the password **secret**. Logging in is possible only with already existing credentials. For this to work you should have run the migrations. 
 
-The `App/Http/Controllers/Logincontroller.php` handles the logging in of an existing user.
+The `App/Http/Controllers/SessionsController.php` handles the logging in of an existing user.
 
 ```
-    public function login(Request $request)
+       public function store()
     {
-        $credentials = $request->validate([
-            'email' => ['required', 'email'],
-            'password' => ['required'],
+        $attributes = request()->validate([
+            'email' => 'required|email',
+            'password' => 'required'
         ]);
 
-        if (Auth::attempt(['email' => $request->email, 'password' => $request->password])) {
-            $request->session()->regenerate();
-
-            return redirect()->intended('dashboard');
+        if (! auth()->attempt($attributes)) {
+            throw ValidationException::withMessages([
+                'email' => 'Your provided credentials could not be verified.'
+            ]);
         }
 
-        return back()->withErrors([
-            'email' => 'The provided credentials do not match our records.',
-        ]);
+        session()->regenerate();
+
+        return redirect('/dashboard');
+
     }
 ```
 
 ### Register
-You can register as a user by filling in the name, email and password for your account. You can do this by accessing the sign up page from the "**Sign Up**" button in the top navbar or by clicking the "**Sign Up**" button from the bottom of the log in form.. Another simple way is adding **/register** in the url.
+You can register as a user by filling in the name, email and password for your account. You can do this by accessing the sign up page from the "**Sign Up**" button in the top navbar or by clicking the "**Sign Up**" button from the bottom of the log in form.. Another simple way is adding **/sign-up** in the url.
 
 The `App/Http/Controllers/RegisterController.php` handles the registration of a new user.
 
 ```
-    public function store()
-    {
+   public function store(){
+
         $attributes = request()->validate([
-            'username' => 'required|max:255|min:2',
+            'name' => 'required|max:255|unique:users,name',
             'email' => 'required|email|max:255|unique:users,email',
             'password' => 'required|min:5|max:255',
-            'terms' => 'required'
         ]);
+
         $user = User::create($attributes);
         auth()->login($user);
-
+        
         return redirect('/dashboard');
-    }
+    } 
 ```
 
 ### Forgot Password
 If a user forgets the account's password it is possible to reset the password. For this the user should click on the "**here**" under the login form.
 
-The `App/Http/Controllers/ResetPasswordController.php ` takes care of sending an email to the user where he can reset the password afterwards.
+The `App/Http/Controllers/SessionsController.php ` takes care of sending an email to the user where he can reset the password afterwards.
 
 ```
-    public function send(Request $request)
-    {
-        $email = $request->validate([
-            'email' => ['required']
-        ]);
-        $user = User::where('email', $email)->first();
+       public function show(){
 
-        if ($user) {
-            $this->notify(new ForgotPassword($user->id));
-            return back()->with('succes', 'An email was send to your email address');
-        }
+        request()->validate([
+            'email' => 'required|email',
+        ]);
+
+        $status = Password::sendResetLink(
+            request()->only('email')
+        );
+    
+        return $status === Password::RESET_LINK_SENT
+                    ? back()->with(['status' => __($status)])
+                    : back()->withErrors(['email' => __($status)]);
     }
 ```
 
 ### Reset Password
 The user who forgot the password gets an email on the account's email address. The user can access the reset password page by clicking the button found in the email. The link for resetting the password is available for 12 hours. The user must add the email, the password and confirm the password for his password to be updated.
 
-The `App/Http/Controllers/ChangePasswordController.php` helps the user reset the password.
+The `App/Http/Controllers/SessionsController.php` helps the user reset the password.
 
 ```
-    public function update(Request $request)
-    {
-        $attributes = $request->validate([
-            'email' => ['required'],
-            'password' => ['required', 'min:5'],
-            'confirm-password' => ['same:password']
-        ]);
-
-        $existingUser = User::where('email', $attributes['email'])->first();
-        if ($existingUser) {
-            $existingUser->update([
-                'password' => $attributes['password']
-            ]);
-            return redirect('login');
-        } else {
-            return back()->with('error', 'Your email does not match the email who requested the password change');
-        }
+     public function update(){
+        
+        request()->validate([
+            'token' => 'required',
+            'email' => 'required|email',
+            'password' => 'required|min:8|confirmed',
+        ]); 
+          
+        $status = Password::reset(
+            request()->only('email', 'password', 'password_confirmation', 'token'),
+            function ($user, $password) {
+                $user->forceFill([
+                    'password' => ($password)
+                ])->setRememberToken(Str::random(60));
+    
+                $user->save();
+    
+                event(new PasswordReset($user));
+            }
+        );
+    
+        return $status === Password::PASSWORD_RESET
+                    ? redirect()->route('login')->with('status', __($status))
+                    : back()->withErrors(['email' => [__($status)]]);
     }
 ```
 
 ### User Profile
-The profile can be accessed by a logged in user by clicking "**Profile**" from the sidebar or adding **/profile** in the url. The user can add information like phone number, location, description or change the name and email.
+The profile can be accessed by a logged in user by clicking "**User Profile**" from the sidebar or adding **/user-profile** in the url. The user can add information like phone number, location, description or change the name and email.
 
-The `App/Http/Controllers/UserProfileController.php ` handles the user's profile information.
+The `App/Http/Controllers/ProfileController.php ` handles the user's profile information.
 
 ```
-        auth()->user()->update([
-            'username' => $request->get('username'),
-            'firstname' => $request->get('firstname'),
-            'lastname' => $request->get('lastname'),
-            'email' => config('app.is_demo') ? auth()->user()->email : $request->get('email') ,
-            'address' => $request->get('address'),
-            'city' => $request->get('city'),
-            'country' => $request->get('country'),
-            'postal' => $request->get('postal'),
-            'about' => $request->get('about')
+    public function update()
+    {
+            
+        $user = request()->user();
+        $attributes = request()->validate([
+            'email' => 'required|email|unique:users,email,'.$user->id,
+            'name' => 'required',
+            'phone' => 'required|max:10',
+            'about' => 'required:max:150',
+            'location' => 'required'
         ]);
+        auth()->user()->update($attributes);
+        return back()->withStatus('Profile successfully updated.');
     
 }
 ```
@@ -226,43 +235,103 @@ You can access the dashboard either by using the "**Dashboard**" link in the lef
 
 ## File Structure
 ```
- ┣ 📂Console
- ┃ ┗ 📜Kernel.php
- ┣ 📂Exceptions
- ┃ ┗ 📜Handler.php
- ┣ 📂Http
- ┃ ┣ 📂Controllers
- ┃ ┃ ┣ 📜ChangePassword.php
- ┃ ┃ ┣ 📜Controller.php
- ┃ ┃ ┣ 📜HomeController.php
- ┃ ┃ ┣ 📜LoginController.php
- ┃ ┃ ┣ 📜PageController.php
- ┃ ┃ ┣ 📜RegisterController.php
- ┃ ┃ ┣ 📜ResetPassword.php
- ┃ ┃ ┗ 📜UserProfileController.php
- ┃ ┣ 📂Middleware
- ┃ ┃ ┣ 📜Authenticate.php
- ┃ ┃ ┣ 📜EncryptCookies.php
- ┃ ┃ ┣ 📜PreventRequestsDuringMaintenance.php
- ┃ ┃ ┣ 📜RedirectIfAuthenticated.php
- ┃ ┃ ┣ 📜TrimStrings.php
- ┃ ┃ ┣ 📜TrustHosts.php
- ┃ ┃ ┣ 📜TrustProxies.php
- ┃ ┃ ┗ 📜VerifyCsrfToken.php
- ┃ ┗ 📜Kernel.php
- ┣ 📂Models
- ┃ ┗ 📜User.php
- ┣ 📂Notifications
- ┃ ┗ 📜ForgotPassword.php
- ┣ 📂Providers
- ┃ ┣ 📜AppServiceProvider.php
- ┃ ┣ 📜AuthServiceProvider.php
- ┃ ┣ 📜BroadcastServiceProvider.php
- ┃ ┣ 📜EventServiceProvider.php
- ┃ ┗ 📜RouteServiceProvider.php
- ┗ 📂View
- ┃ ┗ 📂Components
- ┃ ┃ ┗ 📜Alert.php
++---app
+|   +---Console
+|   |       Kernel.php
+|   +---Exceptions
+|   |       Handler.php
+|   +---Http
+|   |   +---Controllers
+|   |   |       Controller.php
+|   |   |       DashboardController.php
+|   |   |       ProfileController.php
+|   |   |       SessionsController.php
+|   |   |       RegisterController.php
+|   |   |       
+|   |   +---Middleware
+|   |   |       Authenticate.php
+|   |   |       EncryptCookies.php
+|   |   |       PreventRequestsDuringMaintenance.php
+|   |   |       RedirectIfAuthenticated.php
+|   |   |       TrimStrings.php
+|   |   |       TrustHosts.php
+|   |   |       TrustProxies.php
+|   |   |       VerifyCsrfToken.php
+|   |   |
+|   |    \---Kernel.php   
+|   |   
+|   +---Models
+|   |        User.php
+|   |     
+|   \---Proviers
+|          AppServiceProvider.php
+|          AuthServiceProvider.php
+|          BroadcastServiceProvider.php
+|          EventServiceProvider.php
+|          RouteServiceProvider.php
+|   
++---database
+|   \---seeders
+|           DatabaseSeeder.php
+|
+\---resources
+    |
+    |
+    \---views
+        |   welcome.blade.php
+        |   
+        +---sessions
+        |   |   create.blade.php
+        |   |   
+        |   \---passwords
+        |           reset.blade.php
+        |           verify.blade.php
+        |           
+        +---components
+        |   |   layout.blade.php
+        |   |   plugins.blade.php
+        |   |   
+        |   +---footers
+        |   |       auth.blade.php
+        |   |       guest.blade.php
+        |   |       
+        |   \---navbars
+        |      |   sidebar.blade.php
+        |      |   
+        |      \---navs
+        |             auth.blade.php
+        |             guest.blade.php
+        |              
+        |           
+        +---pages
+        |   |   billing.blade.php
+        |   |   notifications.blade.php
+        |   |   profile.blade.php
+        |   |   rtl.blade.php
+        |   |   static-sign-in.blade.php
+        |   |   static-sign-up.blade.php
+        |   |   tables.blade.php
+        |   |   virtual-reality.blade.php
+        |   |  
+        |   \---laravel-examples
+        |           user-management.blade.php
+        |           user-profile.blade.php
+        |       
+        +---dashboard
+        |       index.blade.php
+        | 
+        +---errors
+        |       401.blade.php
+        |       403.blade.php
+        |       404.blade.php
+        |       405.blade.php
+        |       419.blade.php
+        |       429.blade.php
+        |       500.blade.php
+        |       503.blade.php
+        |
+        \---register
+                create.blade.php
 ```
 
 ## Browser Support
