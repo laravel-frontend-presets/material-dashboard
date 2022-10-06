@@ -10,7 +10,7 @@
     },
     "autoload": {
         "psr-4": {
-            "LaravelFrontendPresets\MaterialPreset\": "src/"
+            "LaravelFrontendPresets\\MaterialPreset\\": "src/"
         }
     },
     "extra": {
