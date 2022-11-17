@@ -10,6 +10,8 @@
 
 Speed up your web development with the Bootstrap 5 Admin Dashboard built for Laravel Framework 9.x and up.
 
+If you want to get more features, go PRO with [Material Dashboard 2 PRO Laravel](https://www.creative-tim.com/product/material-dashboard-pro-laravel).
+
 ## Table of Contents
 * [Prerequisites](#prerequisites)
 * [Installation](#installation)
