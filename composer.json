@@ -1,11 +1,11 @@
 {
     "name": "laravel-frontend-presets/material",
-    "description": "Laravel 9.x Front-end preset for material",
+    "description": "Laravel 10.x Front-end preset for material",
     "license": "MIT",
     "homepage": "https://github.com/creativetimofficial/material-dashboard-laravel",
     "keywords": ["Laravel", "Preset", "Material"],
     "require": {
-        "laravel/framework": "^9.0",
+        "laravel/framework": "^10.0",
         "laravel/legacy-factories": "^1.0"
     },
     "autoload": {
