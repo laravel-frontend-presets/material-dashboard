@@ -8,7 +8,7 @@
 *Frontend version*: Material Dashboard v3.0.0. More info at https://www.creative-tim.com/product/material-dashboard
 [ <img src="https://s3.amazonaws.com/creativetim_bucket/products/154/original/material-dashboard-laravel.jpg" width="100%" />](https://material-dashboard-laravel.creative-tim.com)
 
-Speed up your web development with the Bootstrap 5 Admin Dashboard built for Laravel Framework 9.x and up.
+Speed up your web development with the Bootstrap 5 Admin Dashboard built for Laravel Framework 11.x and up.
 
 If you want to get more features, go PRO with [Material Dashboard 2 PRO Laravel](https://www.creative-tim.com/product/material-dashboard-pro-laravel).
 
@@ -42,7 +42,7 @@ If you don't already have an Apache local environment with PHP and MySQL, use on
  - Mac: https://wpshout.com/quick-guides/how-to-install-mamp-on-your-mac/
 
 Also, you will need to install Composer: https://getcomposer.org/doc/00-intro.md   
-And Laravel: https://laravel.com/docs/9.x/installation
+And Laravel: https://laravel.com/docs/11.x/installation
 
 
 ## Installation
@@ -53,7 +53,7 @@ After initializing a fresh instance of Laravel (and making all the necessary con
 
 1. `Cd` to your Laravel app  
 2. Type in your terminal: `composer require laravel/ui`
-3. Install this preset via `composer require laravel-frontend-presets/material-dashboard`. No need to register the service provider. Laravel 9.x & up can auto detect the package.
+3. Install this preset via `composer require laravel-frontend-presets/material-dashboard`. No need to register the service provider. Laravel 11.x & up can auto detect the package.
 4. Run `php artisan ui material` command to install the Material preset. This will install all the necessary assets and also the custom auth views, it will also add the auth route in `routes/web.php`
 (NOTE: If you run this command several times, be sure to clean up the duplicate Auth entries in routes/web.php)
 5. In your terminal run `composer dump-autoload`
